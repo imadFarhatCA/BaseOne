@@ -1,5 +1,6 @@
 <script>
   import PageHero from '$lib/components/PageHero.svelte';
+  import TripSimulator from '$lib/components/TripSimulator.svelte';
 </script>
 
 <svelte:head><title>Plan Your Trip — Base One</title>
@@ -9,7 +10,7 @@
 </svelte:head>
 
 <PageHero
-  image="/images/hero-plan.jpg"
+  image="/images/alt-diving-1.jpg"
   eyebrow="Plan Your Trip"
   heading="Start With the Idea.<br>We'll Help Build the Experience."
   sub="Training, cave diving, projects, logistics, testing, events — tell us where you want to go."
@@ -20,6 +21,17 @@
     <p class="section-label reveal-left">The Conversation</p>
     <h2 class="reveal-left delay-1">Not with a generic package. With a question: what are you here to build?</h2>
     <p class="lead mt-sm reveal-left delay-2">No two divers arrive with the same goal. Some are coming for their first serious step into cave training. Some are returning to continue a journey started years ago. Some are organizing a team, an event, or a test program.</p>
+  </div>
+</section>
+
+<section class="section section-dark sim-section">
+  <div class="container">
+    <div class="section-header reveal">
+      <p class="section-label" style="color:var(--teal-light)">Trip Simulator</p>
+      <h2 style="color:#fff">Build Your Estimate</h2>
+      <p class="lead" style="color:rgba(255,255,255,0.65)">Walk through your planned trip and get an indicative cost breakdown in seconds.</p>
+    </div>
+    <TripSimulator />
   </div>
 </section>
 
@@ -82,6 +94,7 @@
     </div>
   </div>
 </section>
+
 
 <section class="section section-dark cta-block">
   <div class="container reveal">
