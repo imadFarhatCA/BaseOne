@@ -44,6 +44,18 @@
   });
 </script>
 
+<svelte:head>
+  <meta name="description" content="Base One is a technical dive center in Cala Gonone, Sardinia — specialising in cave diving, GUE training, DPV operations, and underwater exploration.">
+  <meta name="robots" content="index, follow">
+  <meta property="og:site_name" content="Base One">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://baseone-ec0.pages.dev/images/og-image.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://baseone-ec0.pages.dev/images/og-image.jpg">
+</svelte:head>
+
 <Nav />
 <slot />
 <Footer />

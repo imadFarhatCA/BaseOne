@@ -3,7 +3,11 @@
   import CtaBlock from '$lib/components/CtaBlock.svelte';
 </script>
 
-<svelte:head><title>Exploration — Base One</title></svelte:head>
+<svelte:head><title>Exploration — Base One</title>
+  <meta property="og:title" content="Exploration — Base One">
+  <meta property="og:description" content="Cave survey, DPV operations, and the Phreatic citizen-science programme. Pushing the boundaries of what is known beneath Sardinia.">
+  <meta name="description" content="Cave survey, DPV operations, and the Phreatic citizen-science programme. Pushing the boundaries of what is known beneath Sardinia.">
+</svelte:head>
 
 <PageHero
   image="/images/hero-exploration.jpg"

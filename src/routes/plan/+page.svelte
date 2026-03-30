@@ -2,7 +2,11 @@
   import PageHero from '$lib/components/PageHero.svelte';
 </script>
 
-<svelte:head><title>Plan Your Trip — Base One</title></svelte:head>
+<svelte:head><title>Plan Your Trip — Base One</title>
+  <meta property="og:title" content="Plan Your Trip — Base One">
+  <meta property="og:description" content="Plan your cave diving trip to Cala Gonone, Sardinia. Contact Base One for dive planning, accommodation advice, and course bookings.">
+  <meta name="description" content="Plan your cave diving trip to Cala Gonone, Sardinia. Contact Base One for dive planning, accommodation advice, and course bookings.">
+</svelte:head>
 
 <PageHero
   image="/images/hero-plan.jpg"

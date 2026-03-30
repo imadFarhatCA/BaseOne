@@ -3,7 +3,11 @@
   import CtaBlock from '$lib/components/CtaBlock.svelte';
 </script>
 
-<svelte:head><title>Diving — Base One</title></svelte:head>
+<svelte:head><title>Diving — Base One</title>
+  <meta property="og:title" content="Diving — Base One">
+  <meta property="og:description" content="Cave and technical diving in the Gulf of Orosei, Sardinia. One of Europe's finest cave diving destinations, guided and supported by Base One.">
+  <meta name="description" content="Cave and technical diving in the Gulf of Orosei, Sardinia. One of Europe's finest cave diving destinations, guided and supported by Base One.">
+</svelte:head>
 
 <PageHero
   image="/images/hero-diving.jpg"

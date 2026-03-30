@@ -3,7 +3,11 @@
   import CtaBlock from '$lib/components/CtaBlock.svelte';
 </script>
 
-<svelte:head><title>Facility — Base One</title></svelte:head>
+<svelte:head><title>Facility — Base One</title>
+  <meta property="og:title" content="Facility — Base One">
+  <meta property="og:description" content="Full technical diving support in Cala Gonone — gas fills, DPV charging, boat fleet, equipment hire, and secure storage.">
+  <meta name="description" content="Full technical diving support in Cala Gonone — gas fills, DPV charging, boat fleet, equipment hire, and secure storage.">
+</svelte:head>
 
 <PageHero
   image="/images/hero-facility.jpg"

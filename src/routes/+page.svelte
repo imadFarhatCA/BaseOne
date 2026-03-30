@@ -2,7 +2,11 @@
   import PhotoGallery from '$lib/components/PhotoGallery.svelte';
 </script>
 
-<svelte:head><title>Base One</title></svelte:head>
+<svelte:head><title>Base One</title>
+  <meta property="og:title" content="Base One | Cave Diving &amp; Technical Training in Sardinia">
+  <meta property="og:description" content="A technical dive center in Cala Gonone, Sardinia. Cave diving, GUE training, DPV operations, and exploration — built for serious divers.">
+  <meta name="description" content="A technical dive center in Cala Gonone, Sardinia. Cave diving, GUE training, DPV operations, and exploration — built for serious divers.">
+</svelte:head>
 
 <section class="hero">
   <div class="hero-bg" style="background-image:url('/images/hero-cave.jpg')"></div>

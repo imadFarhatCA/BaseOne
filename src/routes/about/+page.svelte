@@ -3,7 +3,11 @@
   import CtaBlock from '$lib/components/CtaBlock.svelte';
 </script>
 
-<svelte:head><title>About — Base One</title></svelte:head>
+<svelte:head><title>About — Base One</title>
+  <meta property="og:title" content="About — Base One">
+  <meta property="og:description" content="Base One is part of AION Group, alongside SUEX and Blueprint Subsea. A community built around serious diving in Sardinia.">
+  <meta name="description" content="Base One is part of AION Group, alongside SUEX and Blueprint Subsea. A community built around serious diving in Sardinia.">
+</svelte:head>
 
 <PageHero
   image="/images/hero-about.jpg"

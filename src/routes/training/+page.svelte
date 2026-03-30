@@ -3,7 +3,11 @@
   import CtaBlock from '$lib/components/CtaBlock.svelte';
 </script>
 
-<svelte:head><title>Training — Base One</title></svelte:head>
+<svelte:head><title>Training — Base One</title>
+  <meta property="og:title" content="Training — Base One">
+  <meta property="og:description" content="GUE training courses in Sardinia — Fundamentals through advanced cave and CCR. Taught by experienced instructors at Base One.">
+  <meta name="description" content="GUE training courses in Sardinia — Fundamentals through advanced cave and CCR. Taught by experienced instructors at Base One.">
+</svelte:head>
 
 <PageHero
   image="/images/hero-training.jpg"
