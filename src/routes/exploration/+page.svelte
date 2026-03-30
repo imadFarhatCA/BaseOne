@@ -36,17 +36,17 @@
     </div>
     <div class="feature-cards">
       <div class="feature-card reveal-left delay-1">
-        <div class="feature-icon">◈</div>
+        <div class="feature-icon"><img src="/images/icons/compass.svg" alt="" /></div>
         <h3>Cave Survey</h3>
         <p>Systematic mapping of cave passages using line surveys and 3D scanning — expanding the known extent of Gulf of Orosei systems.</p>
       </div>
       <div class="feature-card reveal-right delay-2">
-        <div class="feature-icon">◈</div>
+        <div class="feature-icon"><img src="/images/icons/phreatic.png" alt="" /></div>
         <h3>Phreatic</h3>
         <p>A citizen-science programme connecting recreational and technical divers to environmental monitoring and biological documentation.</p>
       </div>
       <div class="feature-card reveal-left delay-3">
-        <div class="feature-icon">◈</div>
+        <div class="feature-icon"><img src="/images/icons/dpv.svg" alt="" /></div>
         <h3>DPV Operations</h3>
         <p>Using SUEX DPVs to extend range and access in long cave systems — pushing the boundary of what can be safely explored in a single dive.</p>
       </div>

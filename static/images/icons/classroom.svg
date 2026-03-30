@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 283.46 283.46">
+  <!-- TV / Monitor screen -->
+  <rect x="40" y="60" width="203" height="140" rx="12" ry="12" fill="none" stroke="currentColor" stroke-width="9"/>
+  <!-- Screen inner border -->
+  <rect x="54" y="74" width="175" height="112" rx="6" ry="6" fill="none" stroke="currentColor" stroke-width="5"/>
+  <!-- Stand -->
+  <line x1="141" y1="200" x2="141" y2="222" stroke="currentColor" stroke-width="9" stroke-linecap="round"/>
+  <line x1="100" y1="222" x2="182" y2="222" stroke="currentColor" stroke-width="9" stroke-linecap="round"/>
+</svg>

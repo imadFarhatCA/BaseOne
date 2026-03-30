@@ -28,9 +28,9 @@
       <p class="lead">Three brands, one vision — advancing what is possible underwater.</p>
     </div>
     <div class="feature-cards">
-      <div class="feature-card reveal-left delay-1"><div class="feature-icon">◈</div><h3>Base One</h3><p>The operational hub. A dive center in Sardinia built for cave diving, technical training, and exploration.</p></div>
-      <div class="feature-card reveal-up delay-2"><div class="feature-icon">◈</div><h3>SUEX</h3><p>Underwater propulsion vehicles engineered for performance. DPVs built for cave, technical, and professional diving.</p></div>
-      <div class="feature-card reveal-right delay-3"><div class="feature-icon">◈</div><h3>Blueprint Subsea</h3><p>Subsea technology and survey solutions. Precision tools for underwater mapping and data collection.</p></div>
+      <div class="feature-card reveal-left delay-1"><div class="feature-logo"><img src="/images/logo.png" alt="Base One" /></div><h3>Base One</h3><p>The operational hub. A dive center in Sardinia built for cave diving, technical training, and exploration.</p></div>
+      <div class="feature-card reveal-up delay-2"><div class="feature-logo"><img src="/images/logo-suex.svg" alt="SUEX" /></div><h3>SUEX</h3><p>Underwater propulsion vehicles engineered for performance. DPVs built for cave, technical, and professional diving.</p></div>
+      <div class="feature-card reveal-right delay-3"><div class="feature-logo"><img src="/images/logo-blueprint.png" alt="Blueprint Subsea" /></div><h3>Blueprint Subsea</h3><p>Subsea technology and survey solutions. Precision tools for underwater mapping and data collection.</p></div>
     </div>
   </div>
 </section>

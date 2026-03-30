@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 283.46 283.46">
+  <!-- Left fin -->
+  <path d="M100,240 L72,240 Q52,240 44,224 Q36,208 42,185
+           L62,105 Q65,92 72,85 Q80,78 90,80
+           Q100,82 104,94 L124,185
+           Q130,208 122,224 Q114,240 100,240 Z" fill="currentColor"/>
+  <!-- Left fin blade flare -->
+  <path d="M44,190 Q30,178 20,160 Q14,148 18,138 Q22,128 34,132
+           L62,148 L52,185 Z" fill="currentColor"/>
+
+  <!-- Right fin -->
+  <path d="M183,240 L211,240 Q231,240 239,224 Q247,208 241,185
+           L221,105 Q218,92 211,85 Q203,78 193,80
+           Q183,82 179,94 L159,185
+           Q153,208 161,224 Q169,240 183,240 Z" fill="currentColor"/>
+  <!-- Right fin blade flare -->
+  <path d="M239,190 Q253,178 263,160 Q269,148 265,138 Q261,128 249,132
+           L221,148 L231,185 Z" fill="currentColor"/>
+</svg>
