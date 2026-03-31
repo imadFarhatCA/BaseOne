@@ -51,7 +51,7 @@ export function fillPrice(cylId, gasId) {
   const cyl = CYLINDERS.find(c => c.id === cylId);
   const gas = FILL_GASES.find(g => g.id === gasId);
   if (!cyl || !gas) return 0;
-  return Math.round(cyl.volumeL * gas.pricePerLitre * 100) / 100;
+  return Math.ceil(cyl.volumeL * gas.pricePerLitre);
 }
 
 // Returns cylinders relevant to the selected dive type
