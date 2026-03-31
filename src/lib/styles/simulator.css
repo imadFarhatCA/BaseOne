@@ -476,6 +476,58 @@
 .sim-hint { font-weight: 500; text-transform: none; letter-spacing: 0; font-size: 0.75rem; opacity: 0.7; }
 .sim-hint-text { font-size: 0.82rem; color: var(--text-muted); margin-top: 1rem; }
 
+/* ── Fill sections (fills step) ────────────────────────── */
+.sim-fill-section {
+  margin-bottom: 1.25rem;
+  border: 2px solid var(--border);
+  border-radius: 12px;
+  overflow: hidden;
+}
+.sim-fill-section:last-of-type { margin-bottom: 0; }
+.sim-fill-section-label {
+  font-size: 0.78rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: #fff;
+  background: var(--charcoal);
+  padding: 0.6rem 1rem;
+  margin: 0;
+}
+.sim-fill-section .sim-fills-grid { padding: 0.5rem; gap: 0.4rem; }
+.sim-fill-section .sim-fill-row {
+  border-radius: 8px;
+  border-width: 1px;
+}
+
+/* ── Gear right side (price or qty counter) ────────────── */
+.sim-gear-right { display: flex; align-items: center; gap: 0.5rem; flex-shrink: 0; }
+
+/* ── Summary actions ───────────────────────────────────── */
+.sim-summary-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 0.85rem;
+}
+.sim-pricelist-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: var(--teal);
+  text-decoration: none;
+  padding: 0.6rem;
+  border: 1px solid rgba(26,140,142,0.2);
+  border-radius: 10px;
+  transition: background .2s, border-color .2s;
+}
+.sim-pricelist-link:hover {
+  background: rgba(26,140,142,0.05);
+  border-color: var(--teal);
+}
+
 @media (max-width: 600px) {
   .sim-card { padding: 1.75rem 1.25rem; }
   .sim-option-grid { grid-template-columns: 1fr 1fr; }

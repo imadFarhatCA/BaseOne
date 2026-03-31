@@ -1,90 +1,94 @@
 <script>
-  import { STANDARD_GASES, CCR_TANKS, SCR_TANKS, STAGE_TANKS, GEAR_ITEMS, PRICING } from '$lib/data/simulator.js';
-  import { fly, fade } from 'svelte/transition';
+  import { DIVE_TYPES, CYLINDERS, FILL_GASES, GEAR_ITEMS, PRICING, cylindersForDiveType, fillPrice } from '$lib/data/simulator.js';
+  import { fly } from 'svelte/transition';
 
-  const STEPS = ['Basics', 'Dive Type', 'Gas Fills', 'Stages', 'Gear', 'DPV', 'Summary'];
-  let direction = 1; // 1 = forward, -1 = backward
-  let visible = true;
-
-  // ── State ──────────────────────────────────────────────
+  const STEPS = ['Days', 'Dive Type', 'Cylinders', 'Fills', 'Gear', 'DPV', 'Summary'];
+  let direction = 1;
   let step = 0;
 
-  let divingDays   = 3;
-  let divesPerDay  = 2;
+  // ── State ──────────────────────────────────────────────
+  let divingDays = 3;
+  let diveType   = '';
 
-  let diveType  = '';   // backmount | sidemount | ccr | scr
-  let ccrTanks  = [];
-  let scrTanks  = [];
+  let cylinderRentals = {};   // { cylId: qty }
+  let fills = {};             // { cylId: { gasId: qty } }
 
-  let fills = {};       // { gasId: qty }
-
-  let needStages  = null;
-  let stages      = []; // [{ tank, gas }]
-  let stageTank   = 'S80';
-  let stageGas    = '';
-
-  let needGear     = null;
-  let selectedGear = [];
+  let needGear  = null;
+  let gearQtys  = {};         // { gearId: qty } — qty >= 1 if selected
 
   let needDPV  = null;
   let dpvDives = 1;
 
   // ── Navigation ─────────────────────────────────────────
-  async function next() { direction = 1; step = Math.min(step + 1, STEPS.length - 1); window.scrollTo({ top: document.getElementById('simulator').offsetTop - 80, behavior: 'smooth' }); }
-  async function back() { direction = -1; step = Math.max(step - 1, 0); }
+  function next() {
+    direction = 1;
+    step = Math.min(step + 1, STEPS.length - 1);
+    window.scrollTo({ top: document.getElementById('simulator').offsetTop - 80, behavior: 'smooth' });
+  }
+  function back() { direction = -1; step = Math.max(step - 1, 0); }
+
+  function reset() {
+    step = 0; diveType = '';
+    cylinderRentals = {}; fills = {};
+    needGear = null; gearQtys = {};
+    needDPV = null; dpvDives = 1;
+  }
 
   // ── Helpers ────────────────────────────────────────────
-  function toggle(arr, id) {
-    return arr.includes(id) ? arr.filter(x => x !== id) : [...arr, id];
-  }
-
-  function setFill(gasId, val) {
+  function setRental(cylId, val) {
     const n = Math.max(0, parseInt(val) || 0);
-    if (n === 0) { const { [gasId]: _, ...rest } = fills; fills = rest; }
-    else fills = { ...fills, [gasId]: n };
+    if (n === 0) { const { [cylId]: _, ...rest } = cylinderRentals; cylinderRentals = rest; }
+    else cylinderRentals = { ...cylinderRentals, [cylId]: n };
   }
 
-  function addStage() {
-    if (!stageGas) return;
-    stages = [...stages, { tank: stageTank, gas: stageGas }];
-    stageGas = '';
-  }
-  function removeStage(i) { stages = stages.filter((_, idx) => idx !== i); }
-
-  // ── Labels ─────────────────────────────────────────────
-  const DIVE_TYPE_LABELS = {
-    backmount: 'Backmount — D12',
-    sidemount: 'Sidemount — 12L × 2',
-    ccr:       'CCR',
-    scr:       'SCR',
-  };
-
-  function gasLabel(id) {
-    return STANDARD_GASES.find(g => g.id === id)?.label ?? id;
+  function setFill(cylId, gasId, val) {
+    const n = Math.max(0, parseInt(val) || 0);
+    const cyls = { ...(fills[cylId] || {}) };
+    if (n === 0) delete cyls[gasId]; else cyls[gasId] = n;
+    if (Object.keys(cyls).length === 0) {
+      const { [cylId]: _, ...rest } = fills; fills = rest;
+    } else {
+      fills = { ...fills, [cylId]: cyls };
+    }
   }
 
-  // ── Totals ─────────────────────────────────────────────
-  $: fillTotal = Object.entries(fills).reduce((s, [, qty]) => s + qty * PRICING.fillPerCylinder, 0);
+  function toggleGear(gearId) {
+    if (gearQtys[gearId]) { const { [gearId]: _, ...rest } = gearQtys; gearQtys = rest; }
+    else gearQtys = { ...gearQtys, [gearId]: 1 };
+  }
 
-  $: stageTotal = stages.reduce((s) => s + PRICING.stagePerFill, 0);
+  function setGearQty(gearId, val) {
+    const n = Math.max(1, parseInt(val) || 1);
+    gearQtys = { ...gearQtys, [gearId]: n };
+  }
 
-  $: gearTotal = selectedGear.reduce((s, id) => {
-    const item = GEAR_ITEMS.find(g => g.id === id);
-    return s + (item ? item.pricePerDay * divingDays : 0);
+  // ── Derived ────────────────────────────────────────────
+  $: relevantCylinders = cylindersForDiveType(diveType);
+
+  $: rentalTotal = Object.entries(cylinderRentals).reduce((s, [cylId, qty]) => {
+    const cyl = CYLINDERS.find(c => c.id === cylId);
+    return s + (cyl ? cyl.pricePerRental * qty : 0);
   }, 0);
 
-  $: dpvTotal = needDPV === 'yes' ? dpvDives * PRICING.dpvPerDive : 0;
+  $: fillTotal = Object.entries(fills).reduce((s, [cylId, gases]) =>
+    s + Object.entries(gases).reduce((gs, [gasId, qty]) =>
+      gs + fillPrice(cylId, gasId) * qty, 0), 0);
 
-  $: grandTotal = fillTotal + stageTotal + gearTotal + dpvTotal;
+  $: gearTotal = Object.entries(gearQtys).reduce((s, [gearId, qty]) => {
+    const item = GEAR_ITEMS.find(g => g.id === gearId);
+    return s + (item ? item.pricePerDay * divingDays * qty : 0);
+  }, 0);
 
-  // ── Step validation ────────────────────────────────────
+  $: boatTotal  = divingDays * PRICING.boatCaveDivePerDay;
+  $: dpvTotal   = needDPV === 'yes' ? dpvDives * PRICING.dpvPerDive : 0;
+  $: grandTotal = boatTotal + rentalTotal + fillTotal + gearTotal + dpvTotal;
+
   $: canProceed = (
     (step === 0 && divingDays >= 1) ||
-    (step === 1 && diveType !== '') ||
-    (step === 2) ||
-    (step === 3 && needStages !== null) ||
+    (step === 1 && diveType !== '')  ||
+    step === 2 || step === 3        ||
     (step === 4 && needGear !== null) ||
-    (step === 5 && needDPV !== null) ||
+    (step === 5 && needDPV !== null)  ||
     step === 6
   );
 </script>
@@ -92,7 +96,7 @@
 <!-- ═══════════════════════════════════════════════════════ -->
 <div class="simulator" id="simulator">
 
-  <!-- Progress bar -->
+  <!-- Progress -->
   <div class="sim-progress">
     {#each STEPS as label, i}
       <button
@@ -114,34 +118,24 @@
 
   <!-- Card -->
   <div class="sim-card">
-
-    <!-- ── Step 0: Basics ──────────────────────────────── -->
     {#key step}
     <div in:fly={{ x: direction * 40, duration: 300, delay: 80 }} out:fly={{ x: direction * -40, duration: 200 }}>
+
+    <!-- ── Step 0: Days ────────────────────────────────── -->
     {#if step === 0}
       <div class="sim-step-content">
         <p class="sim-eyebrow">Step 1</p>
-        <h3>How are you planning your trip?</h3>
-
+        <h3>How many days are you planning to dive?</h3>
         <div class="sim-field">
-          <label>How many diving days?</label>
+          <label>Diving days</label>
           <div class="sim-counter">
             <button on:click={() => divingDays = Math.max(1, divingDays - 1)}>−</button>
             <span>{divingDays}</span>
             <button on:click={() => divingDays++}>+</button>
           </div>
         </div>
-
-        <div class="sim-field">
-          <label>How many dives per day?</label>
-          <div class="sim-toggle-group">
-            <button class="sim-toggle" class:selected={divesPerDay === 1} on:click={() => divesPerDay = 1}>1 dive</button>
-            <button class="sim-toggle" class:selected={divesPerDay === 2} on:click={() => divesPerDay = 2}>2 dives</button>
-          </div>
-        </div>
-
         <div class="sim-summary-line">
-          <strong>{divingDays} days</strong> · <strong>{divesPerDay} dive{divesPerDay > 1 ? 's' : ''}/day</strong> = {divingDays * divesPerDay} dives total
+          <strong>{divingDays} day{divingDays > 1 ? 's' : ''}</strong> · 1 dive per day = <strong>{divingDays} dive{divingDays > 1 ? 's' : ''}</strong> total
         </div>
       </div>
 
@@ -149,127 +143,70 @@
     {:else if step === 1}
       <div class="sim-step-content">
         <p class="sim-eyebrow">Step 2</p>
-        <h3>What type of diving are you doing?</h3>
-
+        <h3>What type of diving are you planning?</h3>
         <div class="sim-option-grid">
-          {#each [['backmount','Backmount','D12'],['sidemount','Sidemount','12L × 2'],['ccr','CCR','Closed Circuit'],['scr','SCR','Semi-Closed']] as [val, label, sub]}
+          {#each DIVE_TYPES as dt}
             <button
               class="sim-option"
-              class:selected={diveType === val}
-              on:click={() => { diveType = val; ccrTanks = []; scrTanks = []; }}
+              class:selected={diveType === dt.id}
+              on:click={() => { diveType = dt.id; cylinderRentals = {}; fills = {}; }}
             >
-              <span class="sim-option-label">{label}</span>
-              <span class="sim-option-sub">{sub}</span>
+              <span class="sim-option-label">{dt.label}</span>
+              <span class="sim-option-sub">{dt.sub}</span>
             </button>
           {/each}
         </div>
-
-        <!-- CCR sub-prompt -->
-        {#if diveType === 'ccr'}
-          <div class="sim-sub-prompt">
-            <label>Which tanks will you be using? <span class="sim-hint">(select all that apply)</span></label>
-            <div class="sim-check-group">
-              {#each CCR_TANKS as t}
-                <button
-                  class="sim-check"
-                  class:selected={ccrTanks.includes(t.id)}
-                  on:click={() => ccrTanks = toggle(ccrTanks, t.id)}
-                >{t.label}</button>
-              {/each}
-            </div>
-          </div>
-        {/if}
-
-        <!-- SCR sub-prompt -->
-        {#if diveType === 'scr'}
-          <div class="sim-sub-prompt">
-            <label>Which tanks will you be using? <span class="sim-hint">(select all that apply)</span></label>
-            <div class="sim-check-group">
-              {#each SCR_TANKS as t}
-                <button
-                  class="sim-check"
-                  class:selected={scrTanks.includes(t.id)}
-                  on:click={() => scrTanks = toggle(scrTanks, t.id)}
-                >{t.label}</button>
-              {/each}
-            </div>
-          </div>
-        {/if}
       </div>
 
-    <!-- ── Step 2: Gas Fills ───────────────────────────── -->
+    <!-- ── Step 2: Cylinder Rentals ───────────────────── -->
     {:else if step === 2}
       <div class="sim-step-content">
         <p class="sim-eyebrow">Step 3</p>
-        <h3>What fills do you need?</h3>
-        <p class="sim-desc">Select each gas mix and the number of fills required.</p>
-
+        <h3>Which cylinders do you need to rent?</h3>
+        <p class="sim-desc">Enter the number of rentals for each. Leave at 0 if you're bringing your own.</p>
         <div class="sim-fills-grid">
-          {#each STANDARD_GASES as gas}
-            <div class="sim-fill-row" class:active={fills[gas.id] > 0}>
-              <span class="sim-fill-label">{gas.label}</span>
+          {#each relevantCylinders as cyl}
+            <div class="sim-fill-row" class:active={cylinderRentals[cyl.id] > 0}>
+              <span class="sim-fill-label">{cyl.label}</span>
               <div class="sim-counter small">
-                <button on:click={() => setFill(gas.id, (fills[gas.id] || 0) - 1)}>−</button>
-                <span>{fills[gas.id] || 0}</span>
-                <button on:click={() => setFill(gas.id, (fills[gas.id] || 0) + 1)}>+</button>
+                <button on:click={() => setRental(cyl.id, (cylinderRentals[cyl.id] || 0) - 1)}>−</button>
+                <span>{cylinderRentals[cyl.id] || 0}</span>
+                <button on:click={() => setRental(cyl.id, (cylinderRentals[cyl.id] || 0) + 1)}>+</button>
               </div>
             </div>
           {/each}
         </div>
-
-        {#if Object.keys(fills).length === 0}
-          <p class="sim-hint-text">Select 0 fills if you are providing your own gas.</p>
-        {/if}
       </div>
 
-    <!-- ── Step 3: Stages ─────────────────────────────── -->
+    <!-- ── Step 3: Gas Fills ───────────────────────────── -->
     {:else if step === 3}
       <div class="sim-step-content">
         <p class="sim-eyebrow">Step 4</p>
-        <h3>Do you need stages?</h3>
+        <h3>What fills do you need?</h3>
+        <p class="sim-desc">Specify gas type and number of fills per cylinder. Leave at 0 if not needed.</p>
 
-        <div class="sim-toggle-group">
-          <button class="sim-toggle" class:selected={needStages === 'no'} on:click={() => { needStages = 'no'; stages = []; }}>No</button>
-          <button class="sim-toggle" class:selected={needStages === 'yes'} on:click={() => needStages = 'yes'}>Yes</button>
-        </div>
-
-        {#if needStages === 'yes'}
-          <div class="sim-sub-prompt">
-            <label>Add a stage configuration</label>
-            <div class="sim-stage-builder">
-              <div class="sim-stage-selects">
-                <div class="sim-select-wrap">
-                  <span class="sim-select-label">Tank</span>
-                  <div class="sim-check-group">
-                    {#each STAGE_TANKS as t}
-                      <button class="sim-check" class:selected={stageTank === t.id} on:click={() => stageTank = t.id}>{t.label}</button>
-                    {/each}
+        {#each relevantCylinders as cyl}
+          <div class="sim-fill-section">
+            <p class="sim-fill-section-label">{cyl.label}</p>
+            <div class="sim-fills-grid">
+              {#each FILL_GASES as gas}
+                <div class="sim-fill-row" class:active={fills[cyl.id]?.[gas.id] > 0}>
+                  <span class="sim-fill-label">{gas.label}</span>
+                  <div class="sim-counter small">
+                    <button on:click={() => setFill(cyl.id, gas.id, (fills[cyl.id]?.[gas.id] || 0) - 1)}>−</button>
+                    <span>{fills[cyl.id]?.[gas.id] || 0}</span>
+                    <button on:click={() => setFill(cyl.id, gas.id, (fills[cyl.id]?.[gas.id] || 0) + 1)}>+</button>
                   </div>
                 </div>
-                <div class="sim-select-wrap">
-                  <span class="sim-select-label">Gas</span>
-                  <div class="sim-check-group">
-                    {#each STANDARD_GASES as g}
-                      <button class="sim-check" class:selected={stageGas === g.id} on:click={() => stageGas = g.id}>{g.label}</button>
-                    {/each}
-                  </div>
-                </div>
-              </div>
-              <button class="sim-add-btn" on:click={addStage} disabled={!stageGas}>+ Add Stage</button>
+              {/each}
             </div>
-
-            {#if stages.length > 0}
-              <div class="sim-stage-list">
-                {#each stages as s, i}
-                  <div class="sim-stage-item">
-                    <span>{s.tank} — {gasLabel(s.gas)}</span>
-                    <button class="sim-remove" on:click={() => removeStage(i)}>✕</button>
-                  </div>
-                {/each}
-              </div>
-            {/if}
           </div>
-        {/if}
+        {/each}
+
+        <div class="sim-note">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+          Trimix fills are available and priced separately — contact us for a tailored quote.
+        </div>
       </div>
 
     <!-- ── Step 4: Gear Rental ────────────────────────── -->
@@ -277,9 +214,8 @@
       <div class="sim-step-content">
         <p class="sim-eyebrow">Step 5</p>
         <h3>Do you need to rent any gear?</h3>
-
         <div class="sim-toggle-group">
-          <button class="sim-toggle" class:selected={needGear === 'no'} on:click={() => { needGear = 'no'; selectedGear = []; }}>No</button>
+          <button class="sim-toggle" class:selected={needGear === 'no'}  on:click={() => { needGear = 'no';  gearQtys = {}; }}>No</button>
           <button class="sim-toggle" class:selected={needGear === 'yes'} on:click={() => needGear = 'yes'}>Yes</button>
         </div>
 
@@ -288,14 +224,27 @@
             <label>Select items <span class="sim-hint">(priced per diving day)</span></label>
             <div class="sim-gear-list">
               {#each GEAR_ITEMS as item}
-                <button
+                <div
                   class="sim-gear-item"
-                  class:selected={selectedGear.includes(item.id)}
-                  on:click={() => selectedGear = toggle(selectedGear, item.id)}
+                  class:selected={gearQtys[item.id] > 0}
+                  on:click={() => toggleGear(item.id)}
+                  role="button"
+                  tabindex="0"
+                  on:keydown={e => e.key === 'Enter' && toggleGear(item.id)}
                 >
                   <span class="sim-gear-label">{item.label}</span>
-                  <span class="sim-gear-price">€{item.pricePerDay}/day</span>
-                </button>
+                  <div class="sim-gear-right">
+                    {#if item.hasQty && gearQtys[item.id] > 0}
+                      <div class="sim-counter small" on:click|stopPropagation>
+                        <button on:click|stopPropagation={() => setGearQty(item.id, (gearQtys[item.id] || 1) - 1)}>−</button>
+                        <span>{gearQtys[item.id]}</span>
+                        <button on:click|stopPropagation={() => setGearQty(item.id, (gearQtys[item.id] || 1) + 1)}>+</button>
+                      </div>
+                    {:else}
+                      <span class="sim-gear-price">€{item.pricePerDay}/day</span>
+                    {/if}
+                  </div>
+                </div>
               {/each}
             </div>
           </div>
@@ -307,12 +256,10 @@
       <div class="sim-step-content">
         <p class="sim-eyebrow">Step 6</p>
         <h3>Do you need a DPV?</h3>
-
         <div class="sim-toggle-group">
-          <button class="sim-toggle" class:selected={needDPV === 'no'} on:click={() => { needDPV = 'no'; dpvDives = 1; }}>No</button>
+          <button class="sim-toggle" class:selected={needDPV === 'no'}  on:click={() => { needDPV = 'no'; dpvDives = 1; }}>No</button>
           <button class="sim-toggle" class:selected={needDPV === 'yes'} on:click={() => needDPV = 'yes'}>Yes</button>
         </div>
-
         {#if needDPV === 'yes'}
           <div class="sim-sub-prompt">
             <label>How many dives with DPV?</label>
@@ -321,7 +268,7 @@
               <span>{dpvDives}</span>
               <button on:click={() => dpvDives++}>+</button>
             </div>
-            <div class="sim-note">
+            <div class="sim-note" style="margin-top:1rem;">
               <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
               DPV cave rental includes a backup DPV at no extra cost.
             </div>
@@ -337,78 +284,78 @@
 
         <div class="sim-summary">
 
+          <!-- Overview -->
           <div class="sim-summary-section">
-            <div class="sim-summary-row header">
-              <span>Trip Overview</span>
-            </div>
+            <div class="sim-summary-row header"><span>Trip Overview</span></div>
             <div class="sim-summary-row">
               <span>Duration</span>
-              <span>{divingDays} days · {divesPerDay} dive{divesPerDay > 1 ? 's' : ''}/day</span>
+              <span>{divingDays} day{divingDays > 1 ? 's' : ''} · 1 dive/day</span>
             </div>
             <div class="sim-summary-row">
               <span>Configuration</span>
-              <span>{DIVE_TYPE_LABELS[diveType] || '—'}</span>
+              <span>{DIVE_TYPES.find(d => d.id === diveType)?.label || '—'}</span>
             </div>
-            {#if diveType === 'ccr' && ccrTanks.length > 0}
-              <div class="sim-summary-row">
-                <span>CCR Tanks</span>
-                <span>{ccrTanks.map(id => CCR_TANKS.find(t => t.id === id)?.label).join(', ')}</span>
-              </div>
-            {/if}
-            {#if diveType === 'scr' && scrTanks.length > 0}
-              <div class="sim-summary-row">
-                <span>SCR Tanks</span>
-                <span>{scrTanks.map(id => SCR_TANKS.find(t => t.id === id)?.label).join(', ')}</span>
-              </div>
-            {/if}
           </div>
 
+          <!-- Boat cave dive fee -->
+          <div class="sim-summary-section">
+            <div class="sim-summary-row header"><span>Boat Cave Diving</span><span>Cost</span></div>
+            <div class="sim-summary-row">
+              <span>Cave dive fee × {divingDays} day{divingDays > 1 ? 's' : ''}</span>
+              <span>€{boatTotal}</span>
+            </div>
+            <div class="sim-summary-row subtotal"><span>Boat subtotal</span><span>€{boatTotal}</span></div>
+          </div>
+
+          <!-- Cylinder rentals -->
+          {#if Object.keys(cylinderRentals).length > 0}
+            <div class="sim-summary-section">
+              <div class="sim-summary-row header"><span>Cylinder Rentals</span><span>Cost</span></div>
+              {#each Object.entries(cylinderRentals) as [cylId, qty]}
+                {@const cyl = CYLINDERS.find(c => c.id === cylId)}
+                <div class="sim-summary-row">
+                  <span>{cyl?.label} × {qty}</span>
+                  <span>€{cyl ? cyl.pricePerRental * qty : 0}</span>
+                </div>
+              {/each}
+              <div class="sim-summary-row subtotal"><span>Rentals subtotal</span><span>€{rentalTotal}</span></div>
+            </div>
+          {/if}
+
+          <!-- Fills -->
           {#if Object.keys(fills).length > 0}
             <div class="sim-summary-section">
               <div class="sim-summary-row header"><span>Gas Fills</span><span>Cost</span></div>
-              {#each Object.entries(fills) as [gasId, qty]}
-                <div class="sim-summary-row">
-                  <span>{gasLabel(gasId)} × {qty}</span>
-                  <span>€{qty * PRICING.fillPerCylinder}</span>
-                </div>
+              {#each Object.entries(fills) as [cylId, gases]}
+                {@const cyl = CYLINDERS.find(c => c.id === cylId)}
+                {#each Object.entries(gases) as [gasId, qty]}
+                  {@const gas = FILL_GASES.find(g => g.id === gasId)}
+                  <div class="sim-summary-row">
+                    <span>{cyl?.label} — {gas?.label} × {qty}</span>
+                    <span>€{fillPrice(cylId, gasId) * qty}</span>
+                  </div>
+                {/each}
               {/each}
-              <div class="sim-summary-row subtotal">
-                <span>Fills subtotal</span><span>€{fillTotal}</span>
-              </div>
+              <div class="sim-summary-row subtotal"><span>Fills subtotal</span><span>€{fillTotal}</span></div>
             </div>
           {/if}
 
-          {#if needStages === 'yes' && stages.length > 0}
-            <div class="sim-summary-section">
-              <div class="sim-summary-row header"><span>Stages</span><span>Cost</span></div>
-              {#each stages as s}
-                <div class="sim-summary-row">
-                  <span>{s.tank} — {gasLabel(s.gas)}</span>
-                  <span>€{PRICING.stagePerFill}</span>
-                </div>
-              {/each}
-              <div class="sim-summary-row subtotal">
-                <span>Stages subtotal</span><span>€{stageTotal}</span>
-              </div>
-            </div>
-          {/if}
-
-          {#if needGear === 'yes' && selectedGear.length > 0}
+          <!-- Gear -->
+          {#if Object.keys(gearQtys).length > 0}
             <div class="sim-summary-section">
               <div class="sim-summary-row header"><span>Gear Rental ({divingDays} days)</span><span>Cost</span></div>
-              {#each selectedGear as id}
-                {@const item = GEAR_ITEMS.find(g => g.id === id)}
+              {#each Object.entries(gearQtys) as [gearId, qty]}
+                {@const item = GEAR_ITEMS.find(g => g.id === gearId)}
                 <div class="sim-summary-row">
-                  <span>{item.label}</span>
-                  <span>€{item.pricePerDay * divingDays}</span>
+                  <span>{item?.label}{qty > 1 ? ` × ${qty}` : ''}</span>
+                  <span>€{item ? item.pricePerDay * divingDays * qty : 0}</span>
                 </div>
               {/each}
-              <div class="sim-summary-row subtotal">
-                <span>Gear subtotal</span><span>€{gearTotal}</span>
-              </div>
+              <div class="sim-summary-row subtotal"><span>Gear subtotal</span><span>€{gearTotal}</span></div>
             </div>
           {/if}
 
+          <!-- DPV -->
           {#if needDPV === 'yes'}
             <div class="sim-summary-section">
               <div class="sim-summary-row header"><span>DPV Rental</span><span>Cost</span></div>
@@ -416,9 +363,7 @@
                 <span>DPV × {dpvDives} dive{dpvDives > 1 ? 's' : ''} (incl. backup)</span>
                 <span>€{dpvTotal}</span>
               </div>
-              <div class="sim-summary-row subtotal">
-                <span>DPV subtotal</span><span>€{dpvTotal}</span>
-              </div>
+              <div class="sim-summary-row subtotal"><span>DPV subtotal</span><span>€{dpvTotal}</span></div>
             </div>
           {/if}
 
@@ -432,13 +377,20 @@
           These figures are approximations based on standard rates and are provided for planning purposes only. Final pricing may vary depending on gas volumes, equipment availability, dive conditions, and specific requirements. Please contact us to confirm your booking and receive an accurate quote.
         </div>
 
-        <a href="#contact" class="sim-cta-btn">Send Your Inquiry</a>
+        <div class="sim-summary-actions">
+          <a href="#contact" class="sim-cta-btn">Send Your Inquiry</a>
+          <a href="/pricelist.pdf" target="_blank" class="sim-pricelist-link">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+            Download full pricelist
+          </a>
+        </div>
       </div>
     {/if}
+
     </div>
     {/key}
 
-    <!-- Navigation buttons -->
+    <!-- Navigation -->
     {#if step < 6}
       <div class="sim-nav">
         {#if step > 0}
@@ -453,9 +405,7 @@
     {:else}
       <div class="sim-nav">
         <button class="sim-btn-back" on:click={back}>← Back</button>
-        <button class="sim-btn-next" on:click={() => { step = 0; fills = {}; stages = []; selectedGear = []; diveType = ''; needStages = null; needGear = null; needDPV = null; }}>
-          Start Over
-        </button>
+        <button class="sim-btn-next" on:click={reset}>Start Over</button>
       </div>
     {/if}
 
