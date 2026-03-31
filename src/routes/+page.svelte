@@ -48,13 +48,13 @@
   <meta name="description" content="A technical dive center in Cala Gonone, Sardinia. Cave diving, GUE training, DPV operations, and exploration — built for serious divers.">
 </svelte:head>
 
-<section class="hero" on:mousemove={onMouseMove}>
+<section class="hero" role="region" aria-label="Hero" on:mousemove={onMouseMove}>
   <div class="hero-bg" style="background-image:url('/images/hero-cave.jpg')"></div>
   <div class="hero-spotlight" style="--mx:{mx}%;--my:{my}%"></div>
   {#if showGyroBtn}
     <div class="gyro-prompt">
       <div class="gyro-prompt-inner">
-        <div class="gyro-icon">☽</div>
+        <div class="gyro-icon">🔦</div>
         <p class="gyro-title">Move the light</p>
         <p class="gyro-sub">Tilt your phone to explore the cave</p>
         <button class="gyro-confirm" on:click={enableGyro}>Enable</button>
