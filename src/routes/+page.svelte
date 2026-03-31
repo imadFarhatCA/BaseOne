@@ -1,5 +1,27 @@
 <script>
   import PhotoGallery from '$lib/components/PhotoGallery.svelte';
+
+  import { onMount } from 'svelte';
+
+  let mx = 50, my = 50;
+
+  function onMouseMove(e) {
+    const r = e.currentTarget.getBoundingClientRect();
+    mx = ((e.clientX - r.left) / r.width) * 100;
+    my = ((e.clientY - r.top) / r.height) * 100;
+  }
+
+  onMount(() => {
+    function onOrient(e) {
+      // gamma: left/right tilt (-90 to 90), beta: front/back tilt (-180 to 180)
+      mx = 50 + (e.gamma / 45) * 50;
+      my = 50 + ((e.beta - 30) / 45) * 50;
+      mx = Math.min(100, Math.max(0, mx));
+      my = Math.min(100, Math.max(0, my));
+    }
+    window.addEventListener('deviceorientation', onOrient);
+    return () => window.removeEventListener('deviceorientation', onOrient);
+  });
 </script>
 
 <svelte:head><title>Base One</title>
@@ -8,8 +30,9 @@
   <meta name="description" content="A technical dive center in Cala Gonone, Sardinia. Cave diving, GUE training, DPV operations, and exploration — built for serious divers.">
 </svelte:head>
 
-<section class="hero">
+<section class="hero" on:mousemove={onMouseMove}>
   <div class="hero-bg" style="background-image:url('/images/hero-cave.jpg')"></div>
+  <div class="hero-spotlight" style="--mx:{mx}%;--my:{my}%"></div>
   <div class="hero-content">
     <div class="eyebrow stone">Cala Gonone, Sardinia</div>
     <h1>Where Serious Divers<br>Come to Grow</h1>
