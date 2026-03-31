@@ -83,7 +83,7 @@
 
   $: boatTotal  = divingDays * PRICING.boatCaveDivePerDay;
   $: dpvTotal   = needDPV === 'yes' ? dpvDives * PRICING.dpvPerDive : 0;
-  $: grandTotal = boatTotal + rentalTotal + fillTotal + gearTotal + dpvTotal;
+  $: grandTotal = Math.ceil(boatTotal + rentalTotal + fillTotal + gearTotal + dpvTotal);
 
   $: canProceed = (
     (step === 0 && divingDays >= 1) ||
@@ -186,7 +186,7 @@
           </div>
         {/each}
         <div class="sim-note">
-          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
           Trimix fills are available and priced separately — contact us for a tailored quote.
         </div>
       </div>
@@ -250,7 +250,7 @@
               <button on:click={() => dpvDives++}>+</button>
             </div>
             <div class="sim-note" style="margin-top:1rem;">
-              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
               DPV cave rental includes a backup DPV at no extra cost.
             </div>
           </div>
