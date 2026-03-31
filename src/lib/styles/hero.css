@@ -28,6 +28,22 @@
   );
   z-index: 1;
 }
+.gyro-btn {
+  position: absolute;
+  bottom: 2rem;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 3;
+  background: rgba(255,255,255,.1);
+  border: 1px solid rgba(255,255,255,.25);
+  color: rgba(255,255,255,.7);
+  font-size: .75rem;
+  letter-spacing: .08em;
+  padding: .5rem 1rem;
+  border-radius: 2rem;
+  backdrop-filter: blur(8px);
+  cursor: pointer;
+}
 .hero-bg::after {
   content: '';
   position: absolute;

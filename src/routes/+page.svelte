@@ -4,6 +4,8 @@
   import { onMount } from 'svelte';
 
   let mx = 50, my = 50;
+  let showGyroBtn = false;
+  let gyroActive = false;
 
   function onMouseMove(e) {
     const r = e.currentTarget.getBoundingClientRect();
@@ -11,29 +13,32 @@
     my = ((e.clientY - r.top) / r.height) * 100;
   }
 
-  onMount(() => {
-    function onOrient(e) {
-      mx = 50 + (e.gamma / 45) * 50;
-      my = 50 + ((e.beta - 30) / 45) * 50;
-      mx = Math.min(100, Math.max(0, mx));
-      my = Math.min(100, Math.max(0, my));
-    }
+  function onOrient(e) {
+    mx = Math.min(100, Math.max(0, 50 + (e.gamma / 45) * 50));
+    my = Math.min(100, Math.max(0, 50 + ((e.beta - 30) / 45) * 50));
+  }
 
-    async function enable() {
-      if (typeof DeviceOrientationEvent !== 'undefined' && typeof DeviceOrientationEvent.requestPermission === 'function') {
-        const perm = await DeviceOrientationEvent.requestPermission();
-        if (perm === 'granted') window.addEventListener('deviceorientation', onOrient);
-      } else {
+  async function enableGyro() {
+    if (typeof DeviceOrientationEvent !== 'undefined' && typeof DeviceOrientationEvent.requestPermission === 'function') {
+      const perm = await DeviceOrientationEvent.requestPermission();
+      if (perm === 'granted') {
         window.addEventListener('deviceorientation', onOrient);
+        gyroActive = true;
+        showGyroBtn = false;
       }
-      window.removeEventListener('touchstart', enable);
+    } else {
+      window.addEventListener('deviceorientation', onOrient);
+      gyroActive = true;
+      showGyroBtn = false;
     }
+  }
 
-    window.addEventListener('touchstart', enable, { once: true });
-    return () => {
-      window.removeEventListener('touchstart', enable);
-      window.removeEventListener('deviceorientation', onOrient);
-    };
+  onMount(() => {
+    // Show button only on touch devices that support orientation
+    if (window.matchMedia('(hover: none)').matches && typeof DeviceOrientationEvent !== 'undefined') {
+      showGyroBtn = true;
+    }
+    return () => window.removeEventListener('deviceorientation', onOrient);
   });
 </script>
 
@@ -46,6 +51,9 @@
 <section class="hero" on:mousemove={onMouseMove}>
   <div class="hero-bg" style="background-image:url('/images/hero-cave.jpg')"></div>
   <div class="hero-spotlight" style="--mx:{mx}%;--my:{my}%"></div>
+  {#if showGyroBtn}
+    <button class="gyro-btn" on:click={enableGyro}>◎ Move light with tilt</button>
+  {/if}
   <div class="hero-content">
     <div class="eyebrow stone">Cala Gonone, Sardinia</div>
     <h1>Where Serious Divers<br>Come to Grow</h1>
