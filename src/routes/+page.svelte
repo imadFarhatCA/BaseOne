@@ -52,7 +52,15 @@
   <div class="hero-bg" style="background-image:url('/images/hero-cave.jpg')"></div>
   <div class="hero-spotlight" style="--mx:{mx}%;--my:{my}%"></div>
   {#if showGyroBtn}
-    <button class="gyro-btn" on:click={enableGyro}>◎ Move light with tilt</button>
+    <div class="gyro-prompt">
+      <div class="gyro-prompt-inner">
+        <div class="gyro-icon">☽</div>
+        <p class="gyro-title">Move the light</p>
+        <p class="gyro-sub">Tilt your phone to explore the cave</p>
+        <button class="gyro-confirm" on:click={enableGyro}>Enable</button>
+        <button class="gyro-skip" on:click={() => showGyroBtn = false}>Skip</button>
+      </div>
+    </div>
   {/if}
   <div class="hero-content">
     <div class="eyebrow stone">Cala Gonone, Sardinia</div>
