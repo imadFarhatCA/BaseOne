@@ -1,6 +1,21 @@
 <script>
   import { DIVE_TYPES, CYLINDERS, FILL_GASES, GEAR_ITEMS, PRICING, cylindersForDiveType, fillPrice } from '$lib/data/simulator.js';
   import { fly } from 'svelte/transition';
+  import { tick } from 'svelte';
+
+  let progressEl;
+
+  $: step, centerActiveStep();
+  async function centerActiveStep() {
+    await tick();
+    if (!progressEl) return;
+    const dot = progressEl.querySelector('.sim-step-dot.active');
+    if (!dot) return;
+    progressEl.scrollTo({
+      left: dot.offsetLeft - progressEl.offsetWidth / 2 + dot.offsetWidth / 2,
+      behavior: 'smooth'
+    });
+  }
 
   const STEPS = ['Days', 'Dive Type', 'Cylinders', 'Fills', 'Gear', 'DPV', 'Summary'];
   let direction = 1;
@@ -97,7 +112,7 @@
 <div class="simulator" id="simulator">
 
   <!-- Progress -->
-  <div class="sim-progress">
+  <div class="sim-progress" bind:this={progressEl}>
     {#each STEPS as label, i}
       <button
         class="sim-step-dot"

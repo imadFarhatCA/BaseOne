@@ -14,8 +14,12 @@
   align-items: center;
   margin-bottom: 2.5rem;
   overflow-x: auto;
-  padding-bottom: 0.5rem;
+  padding: 12px 8px 1rem;
+  margin-left: -8px;
+  margin-right: -8px;
+  scrollbar-width: none;
 }
+.sim-progress::-webkit-scrollbar { display: none; }
 .sim-step-dot {
   all: unset;
   display: flex;
@@ -533,5 +537,7 @@
   .sim-option-grid { grid-template-columns: 1fr 1fr; }
   .sim-progress { gap: 0; }
   .sim-step-label { display: none; }
-  .sim-step-num { width: 36px; height: 36px; }
+  .sim-step-num { width: 34px; height: 34px; }
+  .sim-step-dot.active .sim-step-num { width: 42px; height: 42px; }
+  .sim-step-line { min-width: 8px; }
 }
