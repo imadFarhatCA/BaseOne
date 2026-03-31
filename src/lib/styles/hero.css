@@ -51,8 +51,8 @@
   gap: .75rem;
 }
 .gyro-icon {
-  font-size: 2.5rem;
-  opacity: .8;
+  color: rgba(255,255,255,.8);
+  line-height: 0;
 }
 .gyro-title {
   font-size: 1.25rem;
@@ -76,14 +76,6 @@
   font-size: 1rem;
   font-weight: 600;
   cursor: pointer;
-}
-.gyro-skip {
-  background: none;
-  border: none;
-  color: rgba(255,255,255,.35);
-  font-size: .8rem;
-  cursor: pointer;
-  padding: .25rem;
 }
 .hero-bg::after {
   content: '';
