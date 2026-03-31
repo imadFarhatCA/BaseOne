@@ -35,7 +35,9 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background: transparent;
+  background: rgba(4,10,18,.45);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
 }
 .gyro-prompt-inner {
   background: rgba(10,20,30,.85);
