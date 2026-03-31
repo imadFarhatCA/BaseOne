@@ -13,14 +13,27 @@
 
   onMount(() => {
     function onOrient(e) {
-      // gamma: left/right tilt (-90 to 90), beta: front/back tilt (-180 to 180)
       mx = 50 + (e.gamma / 45) * 50;
       my = 50 + ((e.beta - 30) / 45) * 50;
       mx = Math.min(100, Math.max(0, mx));
       my = Math.min(100, Math.max(0, my));
     }
-    window.addEventListener('deviceorientation', onOrient);
-    return () => window.removeEventListener('deviceorientation', onOrient);
+
+    async function enable() {
+      if (typeof DeviceOrientationEvent !== 'undefined' && typeof DeviceOrientationEvent.requestPermission === 'function') {
+        const perm = await DeviceOrientationEvent.requestPermission();
+        if (perm === 'granted') window.addEventListener('deviceorientation', onOrient);
+      } else {
+        window.addEventListener('deviceorientation', onOrient);
+      }
+      window.removeEventListener('touchstart', enable);
+    }
+
+    window.addEventListener('touchstart', enable, { once: true });
+    return () => {
+      window.removeEventListener('touchstart', enable);
+      window.removeEventListener('deviceorientation', onOrient);
+    };
   });
 </script>
 
