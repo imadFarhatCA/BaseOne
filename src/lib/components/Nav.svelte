@@ -9,7 +9,8 @@
     { href: '/training',    label: 'Training' },
     { href: '/exploration', label: 'Exploration' },
     { href: '/facility',    label: 'Facility' },
-    { href: '/about',       label: 'About' },
+    { href: '/about',        label: 'About' },
+    { href: '/cala-gonone', label: 'Cala Gonone' },
   ];
 
   function closeMenu() { open = false; }

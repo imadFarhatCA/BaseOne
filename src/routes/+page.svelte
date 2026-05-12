@@ -1,5 +1,6 @@
 <script>
   import PhotoGallery from '$lib/components/PhotoGallery.svelte';
+  import Testimonials from '$lib/components/Testimonials.svelte';
 
   import { onMount } from 'svelte';
 
@@ -146,6 +147,8 @@
 </section>
 
 <div class="image-divider scale-reveal" style="background-image:url('/images/divider-cave.jpg')"></div>
+
+<Testimonials />
 
 <section class="cta-final">
   <div class="cta-final-inner scale-reveal">
