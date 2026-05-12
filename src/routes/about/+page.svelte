@@ -1,6 +1,7 @@
 <script>
   import PageHero from '$lib/components/PageHero.svelte';
   import CtaBlock from '$lib/components/CtaBlock.svelte';
+  import { team } from '$lib/data/team.js';
 </script>
 
 <svelte:head><title>About — Base One</title>
@@ -21,6 +22,36 @@
     <p class="section-label reveal-left">The Story</p>
     <h2 class="reveal-left delay-1">A place built around contribution, not ownership.</h2>
     <p class="lead mt-sm reveal-left delay-2">Base One is shaped by the people who teach here, guide here, test here, return here, and invest their energy here. What holds it together is a shared belief that diving can be done better.</p>
+  </div>
+</section>
+
+<section class="team-section">
+  <div class="section-header blur-reveal">
+    <p class="section-label">The People</p>
+    <h2>Behind Base One</h2>
+    <p class="lead">Two decades of cave diving experience, exploration, and education — distilled into one place.</p>
+  </div>
+
+  <div class="team-grid">
+    {#each team as member}
+      <div class="team-card">
+        <div class="team-photo">
+          <img src={member.photo} alt={member.name} />
+        </div>
+        <div class="team-body">
+          <p class="team-role">{member.role}</p>
+          <h3 class="team-name">{member.name}</h3>
+          {#each member.bio as paragraph}
+            <p class="team-bio">{paragraph}</p>
+          {/each}
+          <div class="team-tags">
+            {#each member.tags as tag}
+              <span class="team-tag">{tag}</span>
+            {/each}
+          </div>
+        </div>
+      </div>
+    {/each}
   </div>
 </section>
 

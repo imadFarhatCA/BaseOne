@@ -158,9 +158,72 @@
 }
 .form-field textarea { min-height: 140px; resize: vertical; }
 
+/* Team */
+.team-section { background: var(--bg-alt); padding: var(--section-pad); }
+.team-grid {
+  max-width: var(--container); margin: 0 auto; padding: 0 var(--gutter);
+  display: grid; grid-template-columns: 1fr 1fr; gap: 2rem;
+}
+.team-section .section-header { max-width: var(--container); margin: 0 auto 4rem; padding: 0 var(--gutter); text-align: center; }
+
+.team-card {
+  border-radius: 16px; background: #fff;
+  border: 1px solid var(--border);
+  box-shadow: 0 2px 16px rgba(0,0,0,0.05);
+  transition: border-color .15s, box-shadow .15s, transform .15s;
+  cursor: default;
+  display: flex; flex-direction: column;
+}
+.team-card:hover {
+  border-color: var(--teal);
+  box-shadow: 0 24px 56px rgba(0,0,0,0.18), 0 0 0 1px rgba(26,140,142,0.3);
+  transform: translateY(-8px) scale(1.02);
+}
+
+.team-photo {
+  position: relative; width: 100%; height: 340px; overflow: hidden; flex-shrink: 0;
+  border-radius: 16px 16px 0 0;
+}
+.team-photo img {
+  width: 100%; height: 100%; object-fit: cover; object-position: center 30%;
+  display: block;
+}
+.team-photo::after {
+  content: ''; position: absolute; inset: 0;
+  background: linear-gradient(to bottom, transparent 55%, rgba(255,255,255,0.15) 100%);
+  pointer-events: none;
+}
+
+.team-body {
+  padding: 1.5rem 1.75rem 1.75rem;
+  display: flex; flex-direction: column; flex: 1;
+}
+.team-role {
+  font-size: 0.68rem; font-weight: 700; letter-spacing: 0.14em;
+  text-transform: uppercase; color: var(--teal); margin-bottom: 0.4rem;
+}
+.team-name {
+  font-size: 1.5rem; font-weight: 800; color: var(--charcoal);
+  margin: 0 0 0.85rem; line-height: 1.1; letter-spacing: -0.01em;
+}
+.team-bio {
+  font-size: 0.9rem; line-height: 1.72;
+  color: var(--text-muted); margin-bottom: 0;
+}
+.team-tags { display: flex; flex-wrap: wrap; gap: 0.4rem; margin-top: auto; padding-top: 1.25rem; }
+.team-tag {
+  font-size: 0.68rem; font-weight: 700; letter-spacing: 0.04em;
+  padding: 0.28rem 0.7rem; border-radius: 2rem;
+  background: var(--dark); color: #fff;
+  border: 1px solid var(--dark);
+}
+
 @media (max-width: 1024px) {
   .footer-inner { grid-template-columns: 1fr 1fr; }
   .grid-3 { grid-template-columns: 1fr; }
+}
+@media (max-width: 768px) {
+  .team-grid { grid-template-columns: 1fr; max-width: 480px; }
 }
 @media (max-width: 768px) {
   .section { padding: 3rem 0; }

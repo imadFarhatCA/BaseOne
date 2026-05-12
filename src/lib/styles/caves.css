@@ -1,0 +1,118 @@
+/* Cave Selector */
+.cave-selector { background: var(--dark); padding-bottom: 0; position: relative; overflow: hidden; }
+.cave-selector-header { padding-top: 7rem; padding-bottom: 3rem; position: relative; }
+.cave-selector-header h2 { color: #fff; }
+.cave-selector-header .section-label { color: var(--teal-light); }
+.cave-selector-header .lead { color: rgba(255,255,255,.55); max-width: 700px; }
+
+.cave-timeline-wrap {
+  max-width: var(--container);
+  margin: 0 auto;
+  padding: 12px var(--gutter) 0;
+  position: relative;
+}
+.cave-timeline {
+  display: flex; align-items: flex-end;
+  padding-bottom: 14px; position: relative;
+}
+.cave-timeline-line {
+  position: absolute; bottom: 14px; left: 0; right: 0; height: 1px;
+  background: rgba(255,255,255,0.18);
+  pointer-events: none;
+}
+
+.cave-milestone {
+  flex: 1; display: flex; flex-direction: column; align-items: center;
+  cursor: pointer; background: none; border: none; padding: 0 0.3rem;
+  transition: transform .18s;
+}
+.cave-milestone:hover { transform: translateY(-3px); }
+
+.cave-bubble {
+  background: rgba(255,255,255,0.04);
+  border: 1px solid rgba(255,255,255,0.1);
+  border-radius: 10px; padding: 0.75rem 1rem;
+  display: flex; flex-direction: column; align-items: flex-start; gap: 0.15rem;
+  position: relative; margin: 0 0 10px;
+  width: 100%; min-width: 0; box-sizing: border-box;
+  transition: background .18s, border-color .18s, box-shadow .18s;
+}
+.cave-bubble::after {
+  content: ''; position: absolute; bottom: -7px; left: 50%; transform: translateX(-50%);
+  border-left: 6px solid transparent; border-right: 6px solid transparent;
+  border-top: 7px solid rgba(255,255,255,0.1);
+  transition: border-top-color .18s;
+}
+.cave-milestone.active .cave-bubble {
+  background: rgba(26,140,142,0.14);
+  border-color: rgba(26,140,142,0.55);
+  box-shadow: 0 4px 20px rgba(26,140,142,0.15);
+}
+.cave-milestone.active .cave-bubble::after { border-top-color: rgba(26,140,142,0.55); }
+.cave-milestone:hover .cave-bubble { background: rgba(255,255,255,0.07); }
+
+.cave-connector {
+  width: 1px; height: 16px;
+  background: rgba(255,255,255,0.12); transition: background .18s;
+}
+.cave-milestone.active .cave-connector { background: rgba(26,140,142,0.7); }
+
+.cave-bullet {
+  width: 11px; height: 11px; border-radius: 50%;
+  background: rgba(255,255,255,0.12);
+  border: 1.5px solid rgba(255,255,255,0.25);
+  transition: all .18s; flex-shrink: 0; position: relative; z-index: 1;
+}
+.cave-milestone.active .cave-bullet {
+  background: var(--teal); border-color: var(--teal-light);
+  box-shadow: 0 0 0 5px rgba(26,140,142,0.18);
+}
+.cave-milestone:hover .cave-bullet { border-color: rgba(255,255,255,0.6); }
+
+.cave-num {
+  font-size: 2.6rem; font-weight: 900; line-height: 1;
+  letter-spacing: -0.04em; color: rgba(255,255,255,0.15);
+  transition: color .18s;
+}
+.cave-milestone.active .cave-num { color: var(--teal-light); }
+.cave-milestone:hover .cave-num { color: rgba(255,255,255,0.4); }
+
+.cave-label {
+  font-size: 0.85rem; font-weight: 600; letter-spacing: 0.01em;
+  color: rgba(255,255,255,0.35); white-space: nowrap;
+  overflow: hidden; text-overflow: ellipsis; max-width: 100%;
+  transition: color .18s;
+}
+.cave-milestone.active .cave-label { color: rgba(255,255,255,0.9); }
+.cave-milestone:hover .cave-label { color: rgba(255,255,255,0.65); }
+
+.cave-panel { animation: caveFade 0.25s ease; }
+@keyframes caveFade { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; transform: translateY(0); } }
+
+.cave-panel-body { padding: 3rem var(--gutter) 2.5rem; max-width: var(--container); margin: 0 auto; }
+.cave-panel-text { max-width: 760px; }
+.cave-access { font-size: 0.7rem; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase; color: var(--teal-light); margin-bottom: 0.5rem; }
+.cave-title { font-size: 2rem; font-weight: 800; color: #fff; margin-bottom: 1rem; line-height: 1.1; }
+.cave-desc { font-size: 0.97rem; line-height: 1.75; color: rgba(255,255,255,0.6); margin-bottom: 1.5rem; }
+.cave-tags { display: flex; flex-wrap: wrap; gap: 0.4rem; }
+.cave-tag {
+  font-size: 0.68rem; font-weight: 700; letter-spacing: 0.04em;
+  padding: 0.28rem 0.75rem; border-radius: 2rem;
+  background: rgba(26,140,142,0.15); color: var(--teal-light);
+  border: 1px solid rgba(26,140,142,0.3);
+}
+.cave-panel .image-carousel { padding-bottom: 4rem; }
+
+@media (max-width: 768px) {
+  .cave-timeline-wrap {
+    max-width: 100%;
+    margin-left: 0;
+    overflow-x: auto;
+    overflow-y: visible;
+    scrollbar-width: none;
+    padding-left: var(--gutter);
+  }
+  .cave-timeline-wrap::-webkit-scrollbar { display: none; }
+  .cave-timeline { width: max-content !important; transform: none !important; }
+  .cave-milestone { flex: 0 0 140px; }
+}

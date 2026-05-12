@@ -1,5 +1,5 @@
 <script>
-  import { onMount } from 'svelte';
+  import ImageCarousel from './ImageCarousel.svelte';
 
   const images = [
     { src: '/images/hero-cave.jpg',         alt: 'Cave entrance, divers at the surface' },
@@ -16,13 +16,6 @@
     { src: '/images/divider-facility.jpg',   alt: 'Dive RIB on the water' },
     { src: '/images/hero-plan.jpg',          alt: 'Cave passage with blue tones' },
   ];
-
-  let slider;
-
-  function scroll(dir) {
-    const card = slider.querySelector('.gallery-card');
-    slider.scrollBy({ left: dir * (card.offsetWidth + 20), behavior: 'smooth' });
-  }
 </script>
 
 <section class="section section-alt gallery-section">
@@ -33,19 +26,7 @@
         <h2>See It for Yourself</h2>
         <p class="lead mt-sm">A place unlike any other — from the caves below to the people who dive them.</p>
       </div>
-      <div class="gallery-nav">
-        <button class="gallery-arrow" on:click={() => scroll(-1)} aria-label="Previous">←</button>
-        <button class="gallery-arrow" on:click={() => scroll(1)} aria-label="Next">→</button>
-      </div>
     </div>
   </div>
-  <div class="gallery-slider-wrap">
-    <div class="gallery-slider" bind:this={slider}>
-      {#each images as img}
-        <div class="gallery-card">
-          <img src={img.src} alt={img.alt} loading="lazy" />
-        </div>
-      {/each}
-    </div>
-  </div>
+  <ImageCarousel {images} alt="Base One" />
 </section>
