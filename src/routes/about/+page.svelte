@@ -4,6 +4,11 @@
   import { team } from '$lib/data/team.js';
 </script>
 
+<style>
+  :global(.team-card.reveal-left:not(.visible))  { transform: translateX(-160px); }
+  :global(.team-card.reveal-right:not(.visible)) { transform: translateX(160px); }
+</style>
+
 <svelte:head><title>About — Base One</title>
   <meta property="og:title" content="About — Base One">
   <meta property="og:description" content="Base One is part of AION Group, alongside SUEX and Blueprint Subsea. A community built around serious diving in Sardinia.">
@@ -33,18 +38,18 @@
   </div>
 
   <div class="team-grid">
-    {#each team as member}
-      <div class="team-card">
+    {#each team as member, i}
+      <div class="team-card {i % 2 === 0 ? 'reveal-left' : 'reveal-right'}">
         <div class="team-photo">
           <img src={member.photo} alt={member.name} />
         </div>
         <div class="team-body">
-          <p class="team-role">{member.role}</p>
-          <h3 class="team-name">{member.name}</h3>
-          {#each member.bio as paragraph}
-            <p class="team-bio">{paragraph}</p>
+          <p class="team-role reveal-up delay-2">{member.role}</p>
+          <h3 class="team-name reveal-up delay-3">{member.name}</h3>
+          {#each member.bio as paragraph, j}
+            <p class="team-bio reveal-up delay-{j + 4}">{paragraph}</p>
           {/each}
-          <div class="team-tags">
+          <div class="team-tags reveal-up delay-5">
             {#each member.tags as tag}
               <span class="team-tag">{tag}</span>
             {/each}
@@ -70,7 +75,7 @@
   </div>
 </section>
 
-<div class="quote-divider"><p class="brand-line">A place that changes how you dive.</p></div>
+<div class="quote-divider blur-reveal"><p class="brand-line">A place that changes how you dive.</p></div>
 
 <section class="section">
   <div class="container-narrow">
