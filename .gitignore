@@ -6,3 +6,6 @@ build/
 !.env.example
 vite.config.js.timestamp-*
 .DS_Store
+
+content-audit.xlsx
+content-audit-manifest.json
