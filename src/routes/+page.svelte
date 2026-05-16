@@ -128,7 +128,7 @@
       <div class="pillar-card reveal-left delay-1"><ul class="tag-list"><li>Cave</li><li>Technical</li><li>Recreational</li></ul><h3>Diving</h3><p>Cave systems of the Gulf of Orosei — broad passages, halocline zones, speleothem galleries, and exploration frontiers.</p><a href="/diving" class="pillar-link">Explore the Diving →</a></div>
       <div class="pillar-card reveal-right delay-2"><ul class="tag-list"><li>GUE</li><li>Cave</li><li>CCR</li><li>DPV</li></ul><h3>Training</h3><p>Real development in an environment shaped by real operations. GUE courses from Fundamentals through advanced cave and CCR.</p><a href="/training" class="pillar-link">View Training →</a></div>
       <div class="pillar-card reveal-left delay-3"><ul class="tag-list"><li>Survey</li><li>Science</li><li>Projects</li></ul><h3>Exploration</h3><p>Active survey projects, citizen science through Phreatic, and support for demanding operations where discovery still happens.</p><a href="/exploration" class="pillar-link">See Projects →</a></div>
-      <div class="pillar-card reveal-right delay-4"><ul class="tag-list"><li>Trimix</li><li>DPV</li><li>CCR Support</li></ul><h3>Facility</h3><p>Gas fills, boats, classrooms, DPV charging, equipment hire. Infrastructure that removes friction from serious diving.</p><a href="/facility" class="pillar-link">View Facility →</a></div>
+      <div class="pillar-card reveal-right delay-4"><ul class="tag-list"><li>Trimix</li><li>DPV</li><li>CCR Support</li></ul><h3>Facility</h3><p>Gas fills, boats, classrooms, DPV charging, equipment hire. Infrastructure that removes friction from serious diving.</p><a href="/about#the-facility" class="pillar-link">View Facility →</a></div>
     </div>
   </div>
 </section>
@@ -169,7 +169,7 @@
       <div class="cta-stat-sep"></div>
       <div class="cta-stat">
         <span class="cta-stat-num">GUE</span>
-        <span class="cta-stat-label">Certified Center</span>
+        <span class="cta-stat-label">Affiliated Center</span>
       </div>
       <div class="cta-stat-sep"></div>
       <div class="cta-stat">

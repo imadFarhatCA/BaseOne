@@ -11,8 +11,7 @@
         <li><a href="/diving">Diving</a></li>
         <li><a href="/training">Training</a></li>
         <li><a href="/exploration">Exploration</a></li>
-        <li><a href="/facility">Facility</a></li>
-        <li><a href="/about">About</a></li>
+        <li><a href="/about">The Facility</a></li>
       </ul>
     </div>
     <div>

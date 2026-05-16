@@ -8,8 +8,7 @@
     { href: '/diving',      label: 'Diving' },
     { href: '/training',    label: 'Training' },
     { href: '/exploration', label: 'Exploration' },
-    { href: '/facility',    label: 'Facility' },
-    { href: '/about',        label: 'About' },
+    { href: '/about',       label: 'The Facility' },
     { href: '/cala-gonone', label: 'Cala Gonone' },
   ];
 
