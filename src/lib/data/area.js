@@ -2,7 +2,7 @@ export const activities = [
   {
     icon: 'boat',
     title: 'DPV Snorkel Experience',
-    desc: 'This is snorkelling with a boost: you'll use easy-to-handle scooters to explore coastline and shallow-water scenery with a supervisor—at a pace that's fun, controlled, and beginner-friendly.',
+    desc: `This is snorkelling with a boost: you'll use easy-to-handle scooters to explore coastline and shallow-water scenery with a supervisor—at a pace that's fun, controlled, and beginner-friendly.`,
     tags: ['Cala Luna', 'Cala Mariolu', 'Cala Sisine'],
   },
   {

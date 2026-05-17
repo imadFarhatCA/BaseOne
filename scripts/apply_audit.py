@@ -61,15 +61,35 @@ def main():
     for file_rel, edits in by_file.items():
         path = ROOT / file_rel
         text = path.read_text(encoding="utf-8")
+        is_js = file_rel.endswith((".js", ".ts"))
         for e in edits:
-            if e["old_anchor"] in text:
-                text = text.replace(e["old_anchor"], e["new_anchor"], 1)
-                applied += 1
-                print(f"  ✓ {e['id']:10s} {e['file']:40s}  {e['old_text'][:35]} → {e['new_text'][:35]}")
-            else:
+            if e["old_anchor"] not in text:
                 unmatched.append(e)
                 print(f"  ⚠ {e['id']:10s} anchor not found verbatim — needs manual edit")
                 print(f"     anchor: {e['old_anchor'][:100]}")
+                continue
+            new_anchor = e["new_anchor"]
+            # JS data files: if new text has an apostrophe and the surrounding
+            # string literal uses single quotes, rewrite the whole literal as a
+            # template literal (backticks) to keep syntax valid.
+            if is_js and "'" in new_anchor:
+                idx = text.find(e["old_anchor"])
+                j = idx - 1
+                while j >= 0 and text[j] not in ("'", '"', "`"):
+                    j -= 1
+                open_q = text[j] if j >= 0 else "'"
+                if open_q == "'":
+                    k = idx + len(e["old_anchor"])
+                    while k < len(text) and text[k] != "'":
+                        k += 1
+                    new_inner = new_anchor.replace("`", "\\`").replace("${", "\\${")
+                    text = text[:j] + "`" + new_inner + "`" + text[k+1:]
+                    applied += 1
+                    print(f"  ✓ {e['id']:10s} {e['file']:40s}  {e['old_text'][:35]} → {e['new_text'][:35]}  [backtick-wrapped]")
+                    continue
+            text = text.replace(e["old_anchor"], new_anchor, 1)
+            applied += 1
+            print(f"  ✓ {e['id']:10s} {e['file']:40s}  {e['old_text'][:35]} → {e['new_text'][:35]}")
         path.write_text(text, encoding="utf-8")
 
     print(f"\nApplied {applied} change(s). Unmatched: {len(unmatched)}.")
