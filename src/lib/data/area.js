@@ -1,8 +1,8 @@
 export const activities = [
   {
     icon: 'boat',
-    title: 'Boat Tours to the Coves',
-    desc: 'The most iconic experience in the Gulf of Orosei. Cala Luna, Cala Mariolu, and Cala Sisine are only reachable by sea — stunning white pebble beaches framed by towering limestone cliffs.',
+    title: 'DPV Snorkel Experience',
+    desc: 'This is snorkelling with a boost: you'll use easy-to-handle scooters to explore coastline and shallow-water scenery with a supervisor—at a pace that's fun, controlled, and beginner-friendly.',
     tags: ['Cala Luna', 'Cala Mariolu', 'Cala Sisine'],
   },
   {
@@ -42,25 +42,25 @@ export const gettingHere = [
     icon: 'plane',
     from: 'Olbia Airport',
     time: 'approx. 2 hours',
-    notes: 'Closest for summer connections from Northern Europe. Follow SS131 south then SS125 east. Scenic road through Barbagia.',
+    notes: 'Closest for summer connections; direct flights from North Europe and USA.',
   },
   {
     icon: 'plane',
     from: 'Cagliari Airport',
     time: 'approx. 2.5 hours',
-    notes: 'Best option from Rome and Southern Italy. SS131 north then SS125. Larger airport, more year-round flights.',
+    notes: 'Best option from Rome and Southern Italy. Larger airport, more year-round flights.',
   },
   {
     icon: 'plane',
     from: 'Alghero Airport',
     time: 'approx. 3 hours',
-    notes: 'Good for low-cost European flights. Longer drive through the interior — rewarding scenery, light traffic.',
+    notes: 'Good for low-cost European flights. Longer drive through the interior, but in a rewarding natural scenery.',
   },
   {
     icon: 'ferry',
-    from: 'Ferry — Olbia or Cagliari',
+    from: 'Ferry — Olbia, Porto Torres or Cagliari',
     time: 'varies by crossing',
-    notes: 'Overnight ferries from Genova, Livorno, Civitavecchia, and Palermo dock at Olbia or Cagliari. Direct routes also from France (Toulon, Nice) and Spain (Barcelona) to Porto Torres. Ideal for bringing equipment.',
+    notes: 'Overnight ferries from Genova, Livorno, Civitavecchia, and Palermo dock at Olbia, Porto Torres or Cagliari. Direct routes also from France (Toulon, Nice) and Spain (Barcelona) to Porto Torres. Ideal for bringing equipment.',
   },
 ];
 
@@ -75,12 +75,12 @@ export const ferryRoutes = [
 export const accommodations = [
   {
     name: 'Recommended Hotels',
-    desc: 'Base One has long-standing relationships with the best places in Cala Gonone. We can put you in touch directly and help you book.',
-    examples: ['Marino Hotel', 'Nuovo Gabbiano', 'Piccolo Hotels'],
+    desc: 'Base One has long-standing relationships with the best structures in Cala Gonone. We can help you book.',
+    examples: ['Bue Marino Hotel', 'Hotel Nuovo Gabbiano', 'Piccolo Hotel'],
   },
   {
     name: 'Apartments — Local Knowledge',
-    desc: 'For longer stays or groups, apartments work best. Tell us your dates and group size and we will use our local network to find the right place near the port.',
+    desc: 'For bigger groups or family stays, apartments work best. Tell us your dates and group size and we will use our local network to find the right place for you.',
     examples: ['Groups & families', 'Long stays', 'Walk to base'],
   },
 ];

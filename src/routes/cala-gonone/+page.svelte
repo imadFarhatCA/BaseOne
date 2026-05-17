@@ -65,7 +65,7 @@
     <div class="section-header blur-reveal">
       <p class="section-label">Getting Here</p>
       <h2>How to Reach Cala Gonone</h2>
-      <p class="lead">A car is essential. Rent at the airport and enjoy the drive — the Supramonte scenery is part of the trip.</p>
+      <p class="lead">Car rental is not needed; book a shuttle transfer directly through us and enjoy the scenery — the Supramonte landscape and the scenic road through Barbagia is part of the trip. You will not need a car once you are in Cala Gonone.</p>
     </div>
     <div class="transport-grid">
       {#each gettingHere as g, i}
@@ -86,7 +86,7 @@
       <div class="ferry-routes-header blur-reveal">
         <p class="section-label">International Crossings</p>
         <h3>Direct Ferry Routes to Sardinia</h3>
-        <p class="ferry-routes-sub">Coming from France or Spain? Take the car ferry — bring your own equipment and skip the airport.</p>
+        <p class="ferry-routes-sub">Coming from France or Spain? Take the overnight ferry — save some time.</p>
       </div>
       <div class="ferry-routes-grid">
         {#each ferryRoutes as r, i}
@@ -112,7 +112,7 @@
     <div class="accom-layout">
       <div class="accom-intro reveal-left">
         <p class="section-label">Where to Stay</p>
-        <h2>We Mediate Your Stay</h2>
+        <h2>We Take Care Of Your Stay</h2>
         <p class="lead mt-sm">Most visiting divers stay in Cala Gonone within walking distance of the base. We work directly with the hotels we recommend, and use our local knowledge to find apartments that fit groups and longer stays.</p>
       </div>
       <div class="accom-right">
@@ -181,8 +181,8 @@
       <h2 class="reveal-up delay-1">More Than Just a Dive Trip</h2>
       <ul class="dot-list mt-md">
         <li class="reveal-up delay-1">Cave systems among the longest and most varied in Europe</li>
-        <li class="reveal-up delay-2">Protected coastline with some of the clearest water in the Mediterranean</li>
-        <li class="reveal-up delay-3">Warm, calm seas from May through October with minimal currents</li>
+        <li class="reveal-up delay-2">Protected coastline with some of the clearest water in the Mediterranean Sea</li>
+        <li class="reveal-up delay-3">Warm, turquoise, calm seas with minimal currents</li>
         <li class="reveal-up delay-4">A small town that has not been overrun by mass tourism</li>
         <li class="reveal-up delay-5">Year-round diving with most courses running April through November</li>
       </ul>
