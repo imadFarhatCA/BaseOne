@@ -56,20 +56,18 @@
   </div>
 </div>
 
-<!-- ── Quote ─────────────────────────────────────────────────── -->
-<div class="quote-divider blur-reveal"><p class="brand-line">Forty kilometres with no roads, no buildings, just sea and limestone.</p></div>
-
-<!-- ── Getting Here ───────────────────────────────────────────── -->
+<!-- ── Getting Here — Flights ─────────────────────────────────── -->
 <section class="section section-alt">
   <div class="container">
     <div class="section-header blur-reveal">
-      <p class="section-label">Getting Here</p>
+      <p class="section-label">Getting Here · Flights</p>
       <h2>How to Reach Cala Gonone</h2>
       <p class="lead">Car rental is not needed; book a shuttle transfer directly through us and enjoy the scenery — the Supramonte landscape and the scenic road through Barbagia is part of the trip. You will not need a car once you are in Cala Gonone.</p>
+      <a href="/plan#contact" class="btn btn-teal mt-md">Contact us for a shuttle transfer →</a>
     </div>
     <div class="transport-grid">
       {#each gettingHere as g, i}
-        <div class="transport-card reveal-up delay-{i + 1}" class:transport-ferry={g.icon === 'ferry'}>
+        <div class="transport-card reveal-up delay-{i + 1}">
           <div class="transport-icon-wrap">
             {@html transportIcons[g.icon]}
           </div>
@@ -81,27 +79,39 @@
         </div>
       {/each}
     </div>
+  </div>
+</section>
 
+<!-- ── Ferry Routes ──────────────────────────────────────────── -->
+<section class="section section-alt" style="padding-top: 0">
+  <div class="container">
     <div class="ferry-routes-section">
       <div class="ferry-routes-header blur-reveal">
-        <p class="section-label">International Crossings</p>
-        <h3>Direct Ferry Routes to Sardinia</h3>
-        <p class="ferry-routes-sub">Coming from France or Spain? Take the overnight ferry — save some time.</p>
+        <p class="section-label">Getting Here · Ferries</p>
+        <h3>Ferry Routes to Sardinia</h3>
+        <p class="ferry-routes-sub">Take the overnight ferry — ideal if you want to bring your own equipment or a car.</p>
       </div>
-      <div class="ferry-routes-grid">
-        {#each ferryRoutes as r, i}
-          <div class="ferry-route-card reveal-up delay-{(i % 3) + 1}">
-            <span class="ferry-flag">{r.flag}</span>
-            <div class="ferry-route-body">
-              <p class="ferry-route-from">{r.from}</p>
-              <div class="ferry-route-arrow" aria-hidden="true">
-                <svg width="18" height="10" viewBox="0 0 18 10" fill="none"><path d="M0 5h16M12 1l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      {#each [...new Set(ferryRoutes.map(r => r.region))] as region}
+        <p class="ferry-routes-region-label">{region}</p>
+        <div class="ferry-routes-grid">
+          {#each ferryRoutes.filter(r => r.region === region) as r, i}
+            <div class="ferry-route-card reveal-up delay-{(i % 3) + 1}">
+              <span class="ferry-flag">{r.flag}</span>
+              <div class="ferry-route-body">
+                <p class="ferry-route-from">{r.from}</p>
+                <div class="ferry-route-arrow" aria-hidden="true">
+                  <svg width="18" height="10" viewBox="0 0 18 10" fill="none"><path d="M0 5h16M12 1l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </div>
+                <p class="ferry-route-to">{r.to}{#if r.via}<span class="ferry-route-via">{r.via}</span>{/if}</p>
               </div>
-              <p class="ferry-route-to">{r.to}{#if r.via}<span class="ferry-route-via">{r.via}</span>{/if}</p>
             </div>
-          </div>
-        {/each}
-      </div>
+          {/each}
+        </div>
+      {/each}
+      <p class="ferry-routes-book">
+        Compare schedules and book at
+        <a href="https://www.traghettilines.it" target="_blank" rel="noopener">traghettilines.it</a>
+      </p>
     </div>
   </div>
 </section>
@@ -156,16 +166,21 @@
     </div>
     <div class="feature-cards">
       {#each activities as a, i}
-        <div class="feature-card reveal-up delay-{(i % 3) + 1}">
+        <svelte:element this={a.url ? 'a' : 'div'}
+          class="feature-card reveal-up delay-{(i % 3) + 1}"
+          class:feature-card-link={a.url}
+          href={a.url || undefined}
+          target={a.url ? '_blank' : undefined}
+          rel={a.url ? 'noopener' : undefined}>
           <div class="activity-icon">{@html icons[a.icon]}</div>
-          <h3>{a.title}</h3>
+          <h3>{a.title}{#if a.url}<span class="feature-card-arrow" aria-hidden="true"> →</span>{/if}</h3>
           <p>{a.desc}</p>
           <div class="area-tags">
             {#each a.tags as tag}
               <span class="area-tag">{tag}</span>
             {/each}
           </div>
-        </div>
+        </svelte:element>
       {/each}
     </div>
   </div>
@@ -268,12 +283,8 @@
   .transport-name { font-size: 1.1rem; font-weight: 700; margin: 0.2rem 0 0; color: var(--charcoal); }
   .transport-notes { font-size: 0.85rem; color: var(--text-muted); line-height: 1.65; margin: 0.4rem 0 0; }
 
-  /* ── International ferry routes ── */
-  .ferry-routes-section {
-    margin-top: 3.5rem;
-    padding-top: 3rem;
-    border-top: 1px solid var(--border);
-  }
+  /* ── Ferry routes ── */
+  .ferry-routes-section { margin-top: 0; padding-top: 0; }
   .ferry-routes-header { text-align: center; margin-bottom: 2rem; }
   .ferry-routes-header h3 {
     font-size: clamp(1.4rem, 2.4vw, 1.85rem);
@@ -288,11 +299,39 @@
     max-width: 540px;
     margin: 0 auto;
   }
+  .ferry-routes-region-label {
+    font-size: 0.72rem;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--teal);
+    margin: 1.75rem 0 0.75rem;
+  }
+  .ferry-routes-region-label:first-of-type { margin-top: 0.5rem; }
   .ferry-routes-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 1.25rem;
   }
+  .ferry-routes-book {
+    margin-top: 1.5rem;
+    text-align: center;
+    font-size: 0.92rem;
+    color: var(--text-muted);
+  }
+  .ferry-routes-book a {
+    color: var(--teal);
+    font-weight: 600;
+    text-decoration: underline;
+    text-decoration-thickness: 1px;
+    text-underline-offset: 3px;
+  }
+  .ferry-routes-book a:hover { color: var(--teal-light); }
+
+  /* Clickable activity card (DPV link) */
+  .feature-card-link { text-decoration: none; color: inherit; display: flex; flex-direction: column; }
+  .feature-card-link:hover { border-color: var(--teal); box-shadow: 0 8px 32px rgba(26,140,142,.1); transform: translateY(-3px); }
+  .feature-card-arrow { color: var(--teal); font-weight: 700; }
   .ferry-route-card {
     background: #fff;
     border: 1px solid var(--border);

@@ -2,6 +2,7 @@ export const activities = [
   {
     icon: 'boat',
     title: 'DPV Snorkel Experience',
+    url: 'https://sardiniasnorkeldpv.com/',
     desc: `This is snorkelling with a boost: you'll use easy-to-handle scooters to explore coastline and shallow-water scenery with a supervisor—at a pace that's fun, controlled, and beginner-friendly.`,
     tags: ['Cala Luna', 'Cala Mariolu', 'Cala Sisine'],
   },
@@ -56,20 +57,20 @@ export const gettingHere = [
     time: 'approx. 3 hours',
     notes: 'Good for low-cost European flights. Longer drive through the interior, but in a rewarding natural scenery.',
   },
-  {
-    icon: 'ferry',
-    from: 'Ferry — Olbia, Porto Torres or Cagliari',
-    time: 'varies by crossing',
-    notes: 'Overnight ferries from Genova, Livorno, Civitavecchia, and Palermo dock at Olbia, Porto Torres or Cagliari. Direct routes also from France (Toulon, Nice) and Spain (Barcelona) to Porto Torres. Ideal for bringing equipment.',
-  },
 ];
 
 export const ferryRoutes = [
-  { flag: '🇪🇸', from: 'Barcelona', to: 'Porto Torres' },
-  { flag: '🇫🇷', from: 'Toulon',    to: 'Porto Torres' },
-  { flag: '🇫🇷', from: 'Toulon',    to: 'Olbia', via: 'via Golfo Aranci' },
-  { flag: '🇫🇷', from: 'Nice',      to: 'Porto Torres' },
-  { flag: '🇫🇷', from: 'Nice',      to: 'Olbia', via: 'via Golfo Aranci' },
+  // From mainland Italy
+  { region: 'From Italy',             flag: '🇮🇹', from: 'Genova',        to: 'Olbia · Porto Torres' },
+  { region: 'From Italy',             flag: '🇮🇹', from: 'Livorno',       to: 'Olbia' },
+  { region: 'From Italy',             flag: '🇮🇹', from: 'Civitavecchia', to: 'Olbia · Cagliari · Arbatax' },
+  { region: 'From Italy',             flag: '🇮🇹', from: 'Palermo',       to: 'Cagliari' },
+  // From France & Spain
+  { region: 'From France & Spain',    flag: '🇪🇸', from: 'Barcelona',     to: 'Porto Torres' },
+  { region: 'From France & Spain',    flag: '🇫🇷', from: 'Toulon',        to: 'Porto Torres' },
+  { region: 'From France & Spain',    flag: '🇫🇷', from: 'Toulon',        to: 'Olbia', via: 'via Golfo Aranci' },
+  { region: 'From France & Spain',    flag: '🇫🇷', from: 'Nice',          to: 'Porto Torres' },
+  { region: 'From France & Spain',    flag: '🇫🇷', from: 'Nice',          to: 'Olbia', via: 'via Golfo Aranci' },
 ];
 
 export const accommodations = [
