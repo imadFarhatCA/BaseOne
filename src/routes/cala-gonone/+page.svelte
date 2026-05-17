@@ -108,10 +108,12 @@
           {/each}
         </div>
       {/each}
-      <p class="ferry-routes-book">
-        Compare schedules and book at
-        <a href="https://www.traghettilines.it" target="_blank" rel="noopener">traghettilines.it</a>
-      </p>
+      <div class="ferry-routes-book">
+        <p class="ferry-routes-book-text">Compare schedules and book your crossing at traghettilines.it</p>
+        <a href="https://www.traghettilines.it" target="_blank" rel="noopener" class="btn btn-teal">
+          Book a Ferry →
+        </a>
+      </div>
     </div>
   </div>
 </section>
@@ -314,19 +316,18 @@
     gap: 1.25rem;
   }
   .ferry-routes-book {
-    margin-top: 1.5rem;
-    text-align: center;
+    margin-top: 2.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+  .ferry-routes-book-text {
     font-size: 0.92rem;
     color: var(--text-muted);
+    margin: 0;
+    text-align: center;
   }
-  .ferry-routes-book a {
-    color: var(--teal);
-    font-weight: 600;
-    text-decoration: underline;
-    text-decoration-thickness: 1px;
-    text-underline-offset: 3px;
-  }
-  .ferry-routes-book a:hover { color: var(--teal-light); }
 
   /* Clickable activity card (DPV link) */
   .feature-card-link { text-decoration: none; color: inherit; display: flex; flex-direction: column; }
