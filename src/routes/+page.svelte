@@ -68,10 +68,10 @@
   {/if}
   <div class="hero-content">
     <div class="eyebrow stone">Cala Gonone, Sardinia</div>
-    <h1>Where Serious Divers<br>Come to Grow</h1>
-    <p class="hero-sub">Training, exploration, technology, and community — in one place.</p>
+    <h1>Serious Diving,<br>Properly Supported</h1>
+    <p class="hero-sub">Cave diving, training, DPV support, and expedition-level logistics from Cala Gonone, Sardinia.</p>
     <ul class="hero-highlights">
-      <li>GUE Training Hub</li><li>Cave &amp; Technical Diving</li><li>SUEX DPV Base</li><li>AION Group</li>
+      <li>Cave &amp; Technical Diving</li><li>GUE Training Hub</li><li>SUEX DPV Base</li><li>AION Group</li>
     </ul>
     <div class="hero-buttons">
       <a href="/plan" class="btn btn-teal btn-large">Plan Your Trip</a>
@@ -96,7 +96,7 @@
     </div>
     <div class="info-card reveal-right delay-3">
       <span class="info-card-icon">◉</span>
-      <span class="info-card-label">Standard</span>
+      <span class="info-card-label">Training Standard</span>
       <span class="info-card-value">GUE Training Center</span>
       <span class="info-card-sub">Fundamentals through Cave &amp; CCR</span>
     </div>
@@ -110,14 +110,14 @@
     <p class="lead mt-sm reveal-left delay-2">Base One is not a resort dive shop. It is a specialist operation — built around cave diving, technical training, underwater technology, and exploration in one of the Mediterranean's most significant cave systems.</p>
     <ul class="check-list mt-md">
       <li class="reveal-left delay-1">Cave systems of extraordinary variety, accessible by boat from the base</li>
-      <li class="reveal-right delay-2">GUE training from Fundamentals through advanced cave and CCR</li>
-      <li class="reveal-left delay-3">SUEX DPV operations and testing in real cave environments</li>
+      <li class="reveal-right delay-2">GUE training from Fundamentals through advanced Cave and CCR</li>
+      <li class="reveal-left delay-3">SUEX DPV rental, support and operational know-how</li>
       <li class="reveal-right delay-4">A community of instructors, explorers, and professionals who raise the bar</li>
     </ul>
   </div>
 </section>
 
-<div class="quote-divider"><p class="brand-line">For people who know that good diving is never accidental.</p></div>
+<div class="quote-divider"><p class="brand-line">For divers who know that good dives start before entering the water.</p></div>
 
 <PhotoGallery />
 
@@ -125,10 +125,10 @@
   <div class="container">
     <div class="section-header blur-reveal"><p class="section-label">Four Pillars</p><h2>Everything Base One Offers</h2></div>
     <div class="pillars">
-      <div class="pillar-card reveal-left delay-1"><ul class="tag-list"><li>Cave</li><li>Technical</li><li>Recreational</li></ul><h3>Diving</h3><p>Cave systems of the Gulf of Orosei — broad passages, halocline zones, speleothem galleries, and exploration frontiers.</p><a href="/diving" class="pillar-link">Explore the Diving →</a></div>
-      <div class="pillar-card reveal-right delay-2"><ul class="tag-list"><li>GUE</li><li>Cave</li><li>CCR</li><li>DPV</li></ul><h3>Training</h3><p>Real development in an environment shaped by real operations. GUE courses from Fundamentals through advanced cave and CCR.</p><a href="/training" class="pillar-link">View Training →</a></div>
-      <div class="pillar-card reveal-left delay-3"><ul class="tag-list"><li>Survey</li><li>Science</li><li>Projects</li></ul><h3>Exploration</h3><p>Active survey projects, citizen science through Phreatic, and support for demanding operations where discovery still happens.</p><a href="/exploration" class="pillar-link">See Projects →</a></div>
-      <div class="pillar-card reveal-right delay-4"><ul class="tag-list"><li>Trimix</li><li>DPV</li><li>CCR Support</li></ul><h3>Facility</h3><p>Gas fills, boats, classrooms, DPV charging, equipment hire. Infrastructure that removes friction from serious diving.</p><a href="/about#the-facility" class="pillar-link">View Facility →</a></div>
+      <div class="pillar-card reveal-left delay-1"><ul class="tag-list"><li>Cave</li><li>Wreck</li><li>Recreational</li></ul><h3>Diving</h3><p>Cave systems of the Gulf of Orosei — power caves, narrow passages, halocline zones, speleothem galleries, and exploration frontiers.</p><a href="/diving" class="pillar-link">Explore the Diving →</a></div>
+      <div class="pillar-card reveal-right delay-2"><ul class="tag-list"><li>GUE</li><li>TDI</li><li>Cave</li><li>CCR</li><li>DPV</li><li>Sidemount</li><li>Cave Explorers</li><li>Recreational</li></ul><h3>Training</h3><p>Real development in an environment shaped by real operations. GUE training from Fundamentals through advanced Cave and CCR, alongside TDI and explorer-led pathways — recreational, sidemount, and DPV included.</p><a href="/training" class="pillar-link">View Training →</a></div>
+      <div class="pillar-card reveal-left delay-3"><ul class="tag-list"><li>Survey</li><li>Science</li><li>Exploration</li></ul><h3>Projects</h3><p>Join selected exploration, survey, and citizen-science projects connected to the Phreatic ecosystem. Participation is project-based, and separate from normal booking.</p><a href="/exploration" class="pillar-link">See Active Projects →</a></div>
+      <div class="pillar-card reveal-right delay-4"><ul class="tag-list"><li>Trimix</li><li>DPV</li><li>CCR Support</li></ul><h3>Facility &amp; Logistics</h3><p>Gas fills, boats, classrooms, DPVs and equipment hire. Infrastructure that removes friction from serious diving.</p><a href="/about#the-facility" class="pillar-link">View Facility →</a></div>
     </div>
   </div>
 </section>
@@ -138,8 +138,8 @@
     <p class="section-label reveal-left">The Environment</p>
     <h2 class="reveal-left delay-1">A Place That Raises Your Game</h2>
     <ul class="dot-list mt-md">
-      <li class="reveal-left delay-1">Water so clear your buoyancy flaws are immediately visible</li>
-      <li class="reveal-right delay-2">Caves that reward patience, planning, and precise movement</li>
+      <li class="reveal-left delay-1">Crystal clear and warm water conditions</li>
+      <li class="reveal-right delay-2">Shallow and deeper caves ideal for training and long exposures</li>
       <li class="reveal-left delay-3">A community where standards are high because everyone holds them</li>
       <li class="reveal-right delay-4">Infrastructure that handles the logistics so you focus on the diving</li>
     </ul>
@@ -163,18 +163,18 @@
     </div>
     <div class="cta-final-stats">
       <div class="cta-stat">
-        <span class="cta-stat-num">12+</span>
-        <span class="cta-stat-label">Cave Systems</span>
+        <span class="cta-stat-num">100</span>
+        <span class="cta-stat-label">Kilometers of caves</span>
       </div>
       <div class="cta-stat-sep"></div>
       <div class="cta-stat">
         <span class="cta-stat-num">GUE</span>
-        <span class="cta-stat-label">Affiliated Center</span>
+        <span class="cta-stat-label">Premium Dive Center</span>
       </div>
       <div class="cta-stat-sep"></div>
       <div class="cta-stat">
-        <span class="cta-stat-num">365</span>
-        <span class="cta-stat-label">Days a Year</span>
+        <span class="cta-stat-num">Active</span>
+        <span class="cta-stat-label">As many days as we can</span>
       </div>
     </div>
   </div>
