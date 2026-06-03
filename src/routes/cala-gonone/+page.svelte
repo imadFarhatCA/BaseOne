@@ -2,7 +2,27 @@
   import PageHero from '$lib/components/PageHero.svelte';
   import CtaBlock from '$lib/components/CtaBlock.svelte';
   import Testimonials from '$lib/components/Testimonials.svelte';
+  import GalleryGrid from '$lib/components/GalleryGrid.svelte';
+  import Faq from '$lib/components/Faq.svelte';
   import { activities, gettingHere, accommodations, ferryRoutes } from '$lib/data/area.js';
+
+  // Activity photo exhibition — verified online placeholders, swap later.
+  const activityShots = [
+    { src: 'https://images.unsplash.com/photo-1604537466158-719b1972feb8?w=900&q=70&auto=format&fit=crop', alt: 'Kayaking on calm mountain water', caption: 'Sea & river kayaking' },
+    { src: 'https://images.unsplash.com/photo-1522163182402-834f871fd851?w=900&q=70&auto=format&fit=crop', alt: 'Rock climber on a limestone overhang above the sea', caption: 'Rock climbing' },
+    { src: 'https://images.unsplash.com/photo-1551632811-561732d1e306?w=900&q=70&auto=format&fit=crop', alt: 'Hikers walking toward a mountain', caption: 'Hiking & trekking' },
+    { src: 'https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?w=900&q=70&auto=format&fit=crop', alt: 'Mountain valley landscape', caption: 'Mountain trails' },
+    { src: 'https://images.unsplash.com/photo-1530549387789-4c1017266635?w=900&q=70&auto=format&fit=crop', alt: 'Snorkeller gliding through blue water', caption: 'DPV snorkeling' },
+    { src: 'https://images.unsplash.com/photo-1517176118179-65244903d13c?w=900&q=70&auto=format&fit=crop', alt: 'Paddleboarding on open water', caption: 'Paddleboarding' },
+  ];
+
+  const faqs = [
+    { q: 'When is the best time to visit Cala Gonone?', a: 'The season runs roughly April through November. Late spring and early autumn offer warm water, calm seas, and fewer crowds — ideal for diving and the outdoors.' },
+    { q: 'Do I need a car once I am there?', a: 'No. Cala Gonone is walkable, and we can arrange shuttle transfers from the airport. Most dive sites are reached by our boats, and activities are nearby.' },
+    { q: 'How do I get to Sardinia?', a: 'Fly into Olbia or Cagliari, or take an overnight ferry from the Italian mainland (handy if you want to bring a car or equipment). See the routes above.' },
+    { q: 'What is there to do besides diving?', a: 'Sea and river kayaking, rock climbing, hiking and trekking in the Supramonte, and DPV snorkeling. Contact us and we will tell you what is running during your stay.' },
+    { q: 'Can you help arrange accommodation?', a: 'Yes. We work directly with local hotels and apartments and can match options to your group size and length of stay — just get in touch.' },
+  ];
 
   const transportIcons = {
     plane: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M21 16v-2l-8-5V3.5c0-.83-.67-1.5-1.5-1.5S10 2.67 10 3.5V9l-8 5v2l8-2.5V19l-2 1.5V22l3.5-1 3.5 1v-1.5L13 19v-5.5l8 2.5z"/></svg>`,
@@ -109,10 +129,7 @@
         </div>
       {/each}
       <div class="ferry-routes-book">
-        <p class="ferry-routes-book-text">Compare schedules and book your crossing at traghettilines.it</p>
-        <a href="https://www.traghettilines.it" target="_blank" rel="noopener" class="btn btn-teal">
-          Book a Ferry →
-        </a>
+        <p class="ferry-routes-book-text">Compare schedules and book your crossing at <a href="https://www.traghettilines.it" target="_blank" rel="noopener" class="ferry-inline-link">traghettilines.it</a></p>
       </div>
     </div>
   </div>
@@ -185,6 +202,29 @@
         </svelte:element>
       {/each}
     </div>
+
+    <div class="activity-gallery mt-lg">
+      <GalleryGrid images={activityShots} columns={3} />
+    </div>
+
+    <div class="accom-cta reveal-up activity-cta">
+      <div class="accom-cta-body">
+        <p class="accom-cta-eyebrow">Want to add an activity?</p>
+        <p class="accom-cta-text">Availability changes through the season — contact us and we'll tell you what's running during your stay.</p>
+      </div>
+      <a href="/plan#contact" class="btn btn-teal accom-cta-btn">Contact Us</a>
+    </div>
+  </div>
+</section>
+
+<!-- ── FAQ ──────────────────────────────────────────────────── -->
+<section class="section section-alt">
+  <div class="container">
+    <div class="section-header blur-reveal">
+      <p class="section-label">Good to Know</p>
+      <h2>Frequently Asked Questions</h2>
+    </div>
+    <Faq items={faqs} />
   </div>
 </section>
 
@@ -328,6 +368,9 @@
     margin: 0;
     text-align: center;
   }
+  .ferry-inline-link { color: var(--teal); font-weight: 700; text-decoration: none; }
+  .ferry-inline-link:hover { text-decoration: underline; }
+  .activity-cta { margin-top: 2rem; }
 
   /* Clickable activity card (DPV link) */
   .feature-card-link { text-decoration: none; color: inherit; display: flex; flex-direction: column; }

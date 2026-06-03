@@ -3,13 +3,14 @@
   let open = false;
   let scrolled = false;
 
+  // Home removed from nav — reachable via the logo. Dropped items kept here, commented, for later cleanup.
   const links = [
-    { href: '/',            label: 'Home' },
     { href: '/diving',      label: 'Diving' },
     { href: '/training',    label: 'Training' },
-    { href: '/exploration', label: 'Exploration' },
-    { href: '/about',       label: 'The Facility' },
+    { href: '/about',       label: 'Facility' },
     { href: '/cala-gonone', label: 'Cala Gonone' },
+    { href: '/exploration', label: 'Exploration' },
+    // { href: '/',         label: 'Home' },   // hidden — logo links home
   ];
 
   function closeMenu() { open = false; }
@@ -29,7 +30,7 @@
         </li>
       {/each}
       <li>
-        <a href="/plan" class="nav-cta" class:active={$page.url.pathname === '/plan'}>Plan Your Trip</a>
+        <a href="/plan" class="nav-cta" class:active={$page.url.pathname === '/plan'}>Cost Estimates</a>
       </li>
     </ul>
 
@@ -52,7 +53,7 @@
       </li>
     {/each}
     <li>
-      <a href="/plan" class="overlay-cta" on:click={closeMenu}>Plan Your Trip</a>
+      <a href="/plan" class="overlay-cta" on:click={closeMenu}>Cost Estimates</a>
     </li>
   </ul>
 

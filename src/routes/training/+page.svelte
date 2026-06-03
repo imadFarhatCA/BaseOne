@@ -1,14 +1,26 @@
 <script>
   import PageHero from '$lib/components/PageHero.svelte';
   import CtaBlock from '$lib/components/CtaBlock.svelte';
+  import CourseCalendar from '$lib/components/CourseCalendar.svelte';
+  import { courses } from '$lib/data/courses.js';
+
+  const reasons = [
+    { t: 'Real caves as your classroom', d: 'Train in genuine Sardinian cave systems — not a pool or a simulated overhead.' },
+    { t: 'High standards, lived daily', d: 'You enter an operation where details matter and progression is earned, not handed over.' },
+    { t: 'Strong GUE presence', d: 'From Fundamentals through advanced Cave and CCR, taught by experienced instructors.' },
+    { t: 'Connected to real operations', d: 'Training tied to active exploration and projects — learning with consequence and context.' },
+    { t: 'Small groups', d: 'Limited numbers mean more water time, more feedback, and a pace that fits you.' },
+    { t: 'Full logistics on site', d: 'Gas fills, boats, classrooms and equipment — so you focus only on the diving.' },
+  ];
 </script>
 
 <svelte:head><title>Training — Base One</title>
   <meta property="og:title" content="Training — Base One">
-  <meta property="og:description" content="GUE training courses in Sardinia — Fundamentals through advanced cave and CCR. Taught by experienced instructors at Base One.">
-  <meta name="description" content="GUE training courses in Sardinia — Fundamentals through advanced cave and CCR. Taught by experienced instructors at Base One.">
+  <meta property="og:description" content="GUE and technical training courses in Sardinia — Fundamentals through advanced cave and CCR. Color-coded course calendar at Base One.">
+  <meta name="description" content="GUE and technical training courses in Sardinia — Fundamentals through advanced cave and CCR. Color-coded course calendar at Base One.">
 </svelte:head>
 
+<!-- ── Hero ─────────────────────────────────────────────────── -->
 <PageHero
   image="/images/hero-training.jpg"
   eyebrow="Training & Education"
@@ -16,51 +28,38 @@
   sub="Not just courses. Not just certifications. Real development in a place where high standards are lived every day."
 />
 
+<!-- ── Why Train Here ───────────────────────────────────────── -->
 <section class="section">
-  <div class="container-narrow">
-    <p class="section-label reveal-left">The Approach</p>
-    <h2 class="reveal-left delay-1">Training that changes how you carry yourself underwater.</h2>
-    <p class="lead mt-sm reveal-left delay-2">At Base One, learning happens in an environment shaped by real operations, real experience, and real consequence. You are entering a place where diving is taken seriously, where details matter, and where progression is something you earn.</p>
-    <ul class="check-list mt-md">
-      <li class="reveal-left delay-1">Strong GUE presence with courses from Fundamentals through advanced cave and CCR</li>
-      <li class="reveal-right delay-2">Real cave systems as your classroom — not a simulated environment</li>
-      <li class="reveal-left delay-3">Training connected to active exploration and operational projects</li>
-      <li class="reveal-right delay-4">High-quality instruction from across the diving community welcomed</li>
-    </ul>
+  <div class="container">
+    <div class="section-header blur-reveal">
+      <p class="section-label">The Approach</p>
+      <h2>Why Come Train Here</h2>
+      <p class="lead">Learning happens in an environment shaped by real operations, real experience, and real consequence.</p>
+    </div>
+    <div class="feature-cards">
+      {#each reasons as r, i}
+        <div class="feature-card reveal-up delay-{(i % 3) + 1}">
+          <h3>{r.t}</h3>
+          <p>{r.d}</p>
+        </div>
+      {/each}
+    </div>
   </div>
 </section>
 
 <div class="quote-divider"><p class="brand-line">For people who know that good diving is never accidental.</p></div>
 
+<!-- ── Course Calendar (color-coded, click for details + enquiry) ── -->
 <section class="section section-alt" id="schedule">
   <div class="container">
     <div class="section-header blur-reveal">
-      <p class="section-label">GUE Class Schedule</p>
+      <p class="section-label">Course Calendar</p>
       <h2>Upcoming at Base One</h2>
-      <p class="lead">Real classes, real instructors, real caves. Book directly through GUE.</p>
+      <p class="lead">Click any course for details. GUE courses book through GUE.com; other courses send straight to us.</p>
     </div>
-    <table class="schedule-table">
-      <thead>
-        <tr><th>Course</th><th>Date</th><th>Instructor</th><th>Category</th></tr>
-      </thead>
-      <tbody>
-        <tr><td><span class="schedule-course">CCR Technical Diver 2</span></td><td class="schedule-date">Apr 3, 2026</td><td class="schedule-instructor">Stefano Di Cosimo</td><td><span class="schedule-tag schedule-tag-tech">Tech</span></td></tr>
-        <tr><td><span class="schedule-course">DPV Cave</span></td><td class="schedule-date">Apr 19, 2026</td><td class="schedule-instructor">Zsolt Szilagyi</td><td><span class="schedule-tag schedule-tag-dpv">DPV</span></td></tr>
-        <tr><td><span class="schedule-course">Cave Sidemount</span></td><td class="schedule-date">Apr 28, 2026</td><td class="schedule-instructor">Zsolt Szilagyi</td><td><span class="schedule-tag schedule-tag-cave">Cave</span></td></tr>
-        <tr><td><span class="schedule-course">Cave Diver 1</span></td><td class="schedule-date">May 24, 2026</td><td class="schedule-instructor">Per Normark</td><td><span class="schedule-tag schedule-tag-cave">Cave</span></td></tr>
-        <tr><td><span class="schedule-course">Cave Diver 1</span></td><td class="schedule-date">May 24, 2026</td><td class="schedule-instructor">Sven Nelles</td><td><span class="schedule-tag schedule-tag-cave">Cave</span></td></tr>
-        <tr><td><span class="schedule-course">Cave Diver 1</span></td><td class="schedule-date">May 24, 2026</td><td class="schedule-instructor">Peter Gaertner</td><td><span class="schedule-tag schedule-tag-cave">Cave</span></td></tr>
-        <tr><td><span class="schedule-course">GUE Technical Fundamentals</span></td><td class="schedule-date">May 25, 2026</td><td class="schedule-instructor">Imad Farhat</td><td><span class="schedule-tag schedule-tag-fund">Fundamentals</span></td></tr>
-        <tr><td><span class="schedule-course">CCR Technical Diver 1</span></td><td class="schedule-date">Jun 8, 2026</td><td class="schedule-instructor">JP Bresser</td><td><span class="schedule-tag schedule-tag-tech">Tech</span></td></tr>
-        <tr><td><span class="schedule-course">DPV Cave</span></td><td class="schedule-date">Jun 8, 2026</td><td class="schedule-instructor">JP Bresser</td><td><span class="schedule-tag schedule-tag-dpv">DPV</span></td></tr>
-        <tr><td><span class="schedule-course">Cave Diver 1</span></td><td class="schedule-date">Jun 14, 2026</td><td class="schedule-instructor">Sven Nelles</td><td><span class="schedule-tag schedule-tag-cave">Cave</span></td></tr>
-        <tr><td><span class="schedule-course">CCR Technical Diver 2</span></td><td class="schedule-date">Jun 16, 2026</td><td class="schedule-instructor">JP Bresser</td><td><span class="schedule-tag schedule-tag-tech">Tech</span></td></tr>
-        <tr><td><span class="schedule-course">Advanced Open Water Diver</span></td><td class="schedule-date">Jun 6, 2026</td><td class="schedule-instructor">Gemma Thomas</td><td><span class="schedule-tag schedule-tag-fund">Fundamentals</span></td></tr>
-        <tr><td><span class="schedule-course">GUE Basic Fundamentals</span></td><td class="schedule-date">Jun 12, 2026</td><td class="schedule-instructor">Gemma Thomas</td><td><span class="schedule-tag schedule-tag-fund">Fundamentals</span></td></tr>
-      </tbody>
-    </table>
+    <CourseCalendar {courses} />
     <div class="text-center mt-lg scale-reveal">
-      <a href="https://www.gue.com/diver-training/gue-class-schedule" target="_blank" class="btn btn-outline btn-large">View Full Schedule on GUE.com →</a>
+      <a href="https://www.gue.com/diver-training/gue-class-schedule" target="_blank" class="btn btn-outline btn-large">View Full GUE Schedule →</a>
     </div>
   </div>
 </section>

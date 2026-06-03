@@ -24,9 +24,9 @@
   .nav.scrolled .nav-inner { height: 112px; }
 }
 .nav-logo { display: flex; align-items: center; }
-.nav-logo img { height: 82px; width: auto; display: block; }
+.nav-logo img { height: 66px; width: auto; display: block; } /* 20% smaller (was 82px) */
 @media (max-width: 768px) {
-  .nav-logo img { height: 52px; margin-top: 0; }
+  .nav-logo img { height: 42px; margin-top: 0; } /* 20% smaller (was 52px) */
 }
 
 .nav-links {

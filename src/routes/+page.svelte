@@ -1,8 +1,43 @@
 <script>
   import PhotoGallery from '$lib/components/PhotoGallery.svelte';
   import Testimonials from '$lib/components/Testimonials.svelte';
+  import GalleryGrid from '$lib/components/GalleryGrid.svelte';
+  import Faq from '$lib/components/Faq.svelte';
 
   import { onMount } from 'svelte';
+
+  // ── Phreatic — images from phreatic.org (saved locally), one CTA under each ──
+  const phreaticCards = [
+    { src: '/images/phreatic/exploration.jpg', alt: 'Diver silhouette in a glowing cave pool', label: 'Join a Project', href: 'https://www.phreatic.org/', external: true },
+    { src: '/images/phreatic/survey.jpg', alt: 'Survey gear and DPVs staged at a cave water edge', label: 'Help by Donating', href: 'https://www.phreatic.org/', external: true },
+    { src: '/images/phreatic/sediment.jpg', alt: 'Diver collecting a sediment sample', label: 'Download Annual Report ↓', href: 'https://www.phreatic.org/report/Phreatic-2024-Annual-Report.pdf', external: true },
+  ];
+
+  // ── Base One Experience — placeholder local photos; SWAP for real smiling-people shots ──
+  const experienceShots = [
+    { src: '/images/hero-about.jpg', alt: 'Divers preparing before a dive' },
+    { src: '/images/alt-facility-2.jpg', alt: 'Relaxing in the Base One common area' },
+    { src: '/images/divider-facility.jpg', alt: 'A day out on the Base One boats' },
+    { src: '/images/hero-training.jpg', alt: 'Open-water DPV training together' },
+    { src: '/images/alt-diving-1.jpg', alt: 'A team exploring a cave' },
+    { src: '/images/hero-cala-gonone.jpg', alt: 'Cala Gonone in the sunshine' },
+  ];
+
+  // ── Topside activities (for non-divers) — verified placeholders, swap later ──
+  const topsideShots = [
+    { src: 'https://images.unsplash.com/photo-1604537466158-719b1972feb8?w=900&q=70&auto=format&fit=crop', alt: 'Kayaking on calm water', caption: 'Kayaking' },
+    { src: 'https://images.unsplash.com/photo-1522163182402-834f871fd851?w=900&q=70&auto=format&fit=crop', alt: 'Rock climbing above the sea', caption: 'Rock climbing' },
+    { src: 'https://images.unsplash.com/photo-1551632811-561732d1e306?w=900&q=70&auto=format&fit=crop', alt: 'Hiking toward a mountain', caption: 'Hiking & trekking' },
+    { src: 'https://images.unsplash.com/photo-1530549387789-4c1017266635?w=900&q=70&auto=format&fit=crop', alt: 'Snorkelling in blue water', caption: 'DPV snorkeling' },
+  ];
+
+  const faqs = [
+    { q: 'Do I need to be a certified diver to come?', a: 'No. Base One is built for serious divers, but Cala Gonone is also a stunning place to visit — non-divers can snorkel, kayak, hike, climb, and explore while their group dives.' },
+    { q: 'What level of diver is Base One for?', a: 'Everyone from recreational divers through to advanced cave and CCR. We run GUE training from Fundamentals upward, plus guided cave, reef, and open-water dives.' },
+    { q: 'When is the diving season?', a: 'Most diving and courses run April through November, with warm, clear water and long bottom times. Off-season diving is possible on request.' },
+    { q: 'Can you help with accommodation and transfers?', a: 'Yes. We work with local hotels and apartments and can arrange airport shuttle transfers — you will not need a car in Cala Gonone.' },
+    { q: 'How do I get a price?', a: 'Use the Cost Estimates page to tell us what you want to do, and we will build a tailored plan for diving, training, and your stay.' },
+  ];
 
   let mx = 50, my = 50;
   let showGyroBtn = false;
@@ -133,6 +168,52 @@
   </div>
 </section>
 
+<!-- ── Phreatic ─────────────────────────────────────────────── -->
+<section class="section phreatic-section">
+  <div class="container">
+    <div class="section-header blur-reveal">
+      <p class="section-label">Citizen Science</p>
+      <h2>Phreatic</h2>
+      <p class="lead">Base One is the operational home of Phreatic — a non-profit exploring and protecting the flooded caves and groundwater of the Gulf of Orosei. Volunteer divers contribute to cave survey, 3D mapping, sediment and biology sampling, and conservation. Your dives can become real data.</p>
+    </div>
+    <div class="phreatic-cards">
+      {#each phreaticCards as c, i}
+        <div class="phreatic-card reveal-up delay-{i + 1}">
+          <div class="phreatic-card-img"><img src={c.src} alt={c.alt} loading="lazy" /></div>
+          <a href={c.href} target="_blank" rel="noopener" class="btn btn-teal phreatic-card-btn">{c.label}</a>
+        </div>
+      {/each}
+    </div>
+  </div>
+</section>
+
+<!-- ── The Base One Experience ──────────────────────────────── -->
+<section class="section section-alt">
+  <div class="container">
+    <div class="section-header blur-reveal">
+      <p class="section-label">More Than the Diving</p>
+      <h2>The Base One Experience</h2>
+      <p class="lead">Long days in the water, good people on the surface, and a place that stays with you. This is what it feels like to dive with Base One.</p>
+    </div>
+    <GalleryGrid images={experienceShots} columns={3} />
+  </div>
+</section>
+
+<!-- ── Not Diving? Topside activities ───────────────────────── -->
+<section class="section">
+  <div class="container">
+    <div class="section-header blur-reveal">
+      <p class="section-label">Not Diving?</p>
+      <h2>Plenty to Do Above the Surface</h2>
+      <p class="lead">Travelling with non-divers, or taking a day off? Cala Gonone is one of Italy's best outdoor playgrounds — kayaking, climbing, hiking, and snorkelling all on the doorstep.</p>
+    </div>
+    <GalleryGrid images={topsideShots} columns={4} />
+    <div class="text-center mt-lg scale-reveal">
+      <a href="/cala-gonone" class="btn btn-outline btn-large">Explore the Area →</a>
+    </div>
+  </div>
+</section>
+
 <section class="section section-dark">
   <div class="container-narrow">
     <p class="section-label reveal-left">The Environment</p>
@@ -146,9 +227,25 @@
   </div>
 </section>
 
-<div class="image-divider scale-reveal" style="background-image:url('/images/divider-cave.jpg')"></div>
+<!-- Full-bleed video divider (shows poster until a video file is added) -->
+<div class="video-divider scale-reveal">
+  <video class="video-divider-media" poster="/images/divider-cave.jpg" muted loop playsinline autoplay preload="none">
+    <!-- <source src="/videos/raises-your-game.mp4" type="video/mp4" /> -->
+  </video>
+</div>
 
 <Testimonials />
+
+<!-- ── FAQ ──────────────────────────────────────────────────── -->
+<section class="section section-alt">
+  <div class="container">
+    <div class="section-header blur-reveal">
+      <p class="section-label">Good to Know</p>
+      <h2>Frequently Asked Questions</h2>
+    </div>
+    <Faq items={faqs} />
+  </div>
+</section>
 
 <section class="cta-final">
   <div class="cta-final-inner scale-reveal">
@@ -157,7 +254,7 @@
       <h2>Where Will You<br>Dive Next?</h2>
       <p class="lead">Tell us what you are here to do — training, cave diving, exploration, or all three.</p>
       <div class="cta-buttons">
-        <a href="/plan" class="btn btn-teal btn-large">Plan Your Trip</a>
+        <a href="/plan" class="btn btn-teal btn-large">Cost Estimates</a>
         <a href="/plan#contact" class="btn btn-ghost btn-large">Get in Touch</a>
       </div>
     </div>
@@ -179,3 +276,36 @@
     </div>
   </div>
 </section>
+
+<style>
+  .phreatic-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+  }
+  .phreatic-card { display: flex; flex-direction: column; gap: 1rem; }
+  .phreatic-card-img {
+    height: clamp(220px, 26vw, 300px);
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+    box-shadow: 0 8px 28px rgba(0,0,0,.12);
+  }
+  .phreatic-card-img img { width: 100%; height: 100%; object-fit: cover; display: block; transition: transform .5s ease; }
+  .phreatic-card:hover .phreatic-card-img img { transform: scale(1.05); }
+  .phreatic-card-btn { width: 100%; text-align: center; }
+
+  /* Full-bleed video divider */
+  .video-divider {
+    width: 100vw;
+    margin-left: calc(50% - 50vw);
+    height: clamp(320px, 55vh, 600px);
+    overflow: hidden;
+    background: #04121b;
+  }
+  .video-divider-media { width: 100%; height: 100%; object-fit: cover; display: block; }
+
+  .mt-lg { margin-top: 2rem; }
+  @media (max-width: 760px) {
+    .phreatic-cards { grid-template-columns: 1fr; max-width: 420px; margin: 0 auto; }
+  }
+</style>

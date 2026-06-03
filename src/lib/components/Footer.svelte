@@ -5,22 +5,25 @@
       <p>A dive center in Cala Gonone, Sardinia — where exploration, training, technology, and community meet.</p>
       <p style="margin-top:1rem;">Part of <strong>AION Group</strong></p>
     </div>
-    <div>
+    <div class="footer-explore">
       <h4>Explore</h4>
-      <ul class="footer-links">
+      <ul class="footer-links footer-links-lg">
         <li><a href="/diving">Diving</a></li>
         <li><a href="/training">Training</a></li>
+        <li><a href="/about">Facility</a></li>
+        <li><a href="/cala-gonone">Cala Gonone</a></li>
         <li><a href="/exploration">Exploration</a></li>
-        <li><a href="/about">The Facility</a></li>
       </ul>
     </div>
     <div>
       <h4>Plan</h4>
       <ul class="footer-links">
-        <li><a href="/plan">Plan Your Trip</a></li>
+        <li><a href="/plan">Cost Estimate</a></li>
         <li><a href="/plan#contact">Contact</a></li>
+        <li><a href="/terms">Terms &amp; Conditions</a></li>
         <li><a href="https://wa.me/393403430380" target="_blank">WhatsApp</a></li>
       </ul>
+      <a href="/liability-release" class="footer-liability-cta">Liability Release →</a>
     </div>
     <div>
       <h4>Contact</h4>
@@ -40,3 +43,33 @@
     </div>
   </div>
 </footer>
+
+<style>
+  /* Emphasise the Explore column */
+  .footer-explore :global(h4) {
+    font-size: 1.05rem;
+    color: var(--teal-light, #4fd1c5);
+    letter-spacing: .02em;
+  }
+  .footer-links-lg :global(a) {
+    font-size: 1.05rem;
+    font-weight: 600;
+    line-height: 2.1;
+  }
+  .footer-links-lg :global(a:hover) { color: var(--teal-light, #4fd1c5); }
+
+  /* Liability Release CTA */
+  .footer-liability-cta {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: .55rem 1.1rem;
+    border: 1px solid rgba(255,255,255,.3);
+    border-radius: 999px;
+    font-size: .82rem;
+    font-weight: 700;
+    color: #fff;
+    text-decoration: none;
+    transition: background .2s, border-color .2s;
+  }
+  .footer-liability-cta:hover { background: var(--teal); border-color: var(--teal); }
+</style>
