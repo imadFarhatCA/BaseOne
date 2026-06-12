@@ -6,11 +6,11 @@
 
   const logisticsShots = [
     { src: '/images-facility/_DSC0017.jpg', alt: 'Base One dive boat at Cala Gonone marina', caption: 'Boat Fleet' },
-    { src: '/images-facility/_DSC0539.jpg', alt: 'Base One blue dive boat at harbour', caption: 'On the Water' },
+    { src: '/images-facility/_DSC0539.jpg', alt: 'Base One blue dive boat at harbour', caption: 'Big Boat' },
     { src: '/images-facility/_DSC0012.jpg', alt: 'Tank storage room with compressor and dive gear', caption: 'Equipment & Storage' },
     { src: '/images-facility/P1010163.jpg', alt: 'MPS gas blending system — oxygen and helium fills', caption: 'Gas Fills' },
     { src: '/images-facility/_DSC0568.jpg', alt: 'Classroom with tables, screen and whiteboard', caption: 'Classrooms' },
-    { src: '/images-facility/_DSC0579.jpg', alt: 'SUEX DPV storage and logistics warehouse', caption: 'DPV Storage' },
+    { src: '/images-facility/_DSC0579.jpg', alt: 'SUEX DPV storage and logistics warehouse', caption: 'Storage' },
   ];
 
   const eventsShots = [
