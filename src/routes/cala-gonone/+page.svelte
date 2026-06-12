@@ -15,6 +15,7 @@
     { src: '/images-calaGonone/174bfb6a4986352fb21a97c295242aa04fa9ffa75cee9583feec3bc1c4b64f8b.avif', alt: 'Show caves of Cala Gonone', caption: 'Show Caves' },
     { src: '/images-calaGonone/665730fa72a19d6414060d78b5d1f63cf3e6c1a24cbbc605650c33b7489742e2.avif', alt: 'Dry caves of the Supramonte', caption: 'Dry Caves' },
     { src: '/images-calaGonone/DJI_0590.jpg', alt: 'Rock climber on limestone cliff above the Gulf of Orosei', caption: 'Rock Climbing' },
+    { src: '/images-calaGonone/_V6A5839-gallery.jpg', alt: 'Snorkeler with underwater DPV scooter in the Gulf of Orosei', caption: 'DPV Snorkeling' },
   ];
 
   const faqs = [
