@@ -6,14 +6,14 @@
   import Faq from '$lib/components/Faq.svelte';
   import { activities, gettingHere, accommodations, ferryRoutes } from '$lib/data/area.js';
 
-  // Activity photo exhibition — verified online placeholders, swap later.
   const activityShots = [
-    { src: 'https://images.unsplash.com/photo-1604537466158-719b1972feb8?w=900&q=70&auto=format&fit=crop', alt: 'Kayaking on calm mountain water', caption: 'Sea & river kayaking' },
-    { src: 'https://images.unsplash.com/photo-1522163182402-834f871fd851?w=900&q=70&auto=format&fit=crop', alt: 'Rock climber on a limestone overhang above the sea', caption: 'Rock climbing' },
-    { src: 'https://images.unsplash.com/photo-1551632811-561732d1e306?w=900&q=70&auto=format&fit=crop', alt: 'Hikers walking toward a mountain', caption: 'Hiking & trekking' },
-    { src: 'https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?w=900&q=70&auto=format&fit=crop', alt: 'Mountain valley landscape', caption: 'Mountain trails' },
-    { src: 'https://images.unsplash.com/photo-1530549387789-4c1017266635?w=900&q=70&auto=format&fit=crop', alt: 'Snorkeller gliding through blue water', caption: 'DPV snorkeling' },
-    { src: 'https://images.unsplash.com/photo-1517176118179-65244903d13c?w=900&q=70&auto=format&fit=crop', alt: 'Paddleboarding on open water', caption: 'Paddleboarding' },
+    { src: '/images-calaGonone/643e520806694.webp', alt: 'Boat and kayak at cave entrance in the Gulf of Orosei', caption: 'Sea Kayaking' },
+    { src: '/images-calaGonone/0afeb458e8ba2b68b956ccd39b6971c433825af87d90fc538b95b1c5d7754018.webp', alt: 'RIB boat at a secluded turquoise cove', caption: 'Cala Exploration' },
+    { src: '/images-calaGonone/54e596e09b35fa9d2c13faefbecb2cf3b818dc375ffc7296e938fa9bcf204c54.webp', alt: 'Hikers on rocky terrain in the Supramonte canyon', caption: 'Hiking & Trekking' },
+    { src: '/images-calaGonone/ebcf565d435443cf88a5c3042c6f981e7288864edd7d24e060277d440509acd4.webp', alt: 'Horse riders with Sardinian coastline panorama', caption: 'Horse Riding' },
+    { src: '/images-calaGonone/4b542faea188925d1151524252372902985613dfbe805ed960d0676a47a11c9d.avif', alt: 'Gulf of Orosei coastline', caption: 'The Gulf' },
+    { src: '/images-calaGonone/174bfb6a4986352fb21a97c295242aa04fa9ffa75cee9583feec3bc1c4b64f8b.avif', alt: 'Cala Gonone landscape', caption: 'The Landscape' },
+    { src: '/images-calaGonone/665730fa72a19d6414060d78b5d1f63cf3e6c1a24cbbc605650c33b7489742e2.avif', alt: 'Sardinian coastline from the sea', caption: 'Wild Coast' },
   ];
 
   const faqs = [
@@ -66,13 +66,13 @@
 <!-- ── 3-image horizontal strip ──────────────────────────────── -->
 <div class="photo-strip">
   <div class="photo-strip-item scale-reveal">
-    <img src="/images/cala-luna-cavern.jpg" alt="Cala Luna beach, Gulf of Orosei" />
+    <img src="/images-calaGonone/6458cd8639bc7.webp" alt="Aerial view of cave beach in the Gulf of Orosei" />
   </div>
   <div class="photo-strip-item scale-reveal delay-1">
-    <img src="/images/divider-cala-gonone.jpg" alt="Cala Gonone beach and harbour" />
+    <img src="/images-calaGonone/f3dda76f07224a461a758a530aa28a1f4071b32c1fb03778877ffd985092251b.webp" alt="Brilliant blue sea along the Sardinian coastline" />
   </div>
   <div class="photo-strip-item scale-reveal delay-2">
-    <img src="/images/hero-cala-gonone.jpg" alt="Cala Gonone panorama from the Supramonte" />
+    <img src="/images-calaGonone/0897ba534113a960e638417095c0ea9169a0c937fbe9d82c5f17ecff8c080a71.webp" alt="Dramatic limestone cliffs of the Gulf of Orosei" />
   </div>
 </div>
 
