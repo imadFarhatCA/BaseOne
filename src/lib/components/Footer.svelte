@@ -2,7 +2,7 @@
   <div class="footer-inner">
     <div>
       <div class="footer-brand">BASE<span>ONE</span></div>
-      <p>A dive center in Cala Gonone, Sardinia — where exploration, training, technology, and community meet.</p>
+      <p>The dive center in Cala Gonone, Sardinia — where exploration, training, technology, and community meet.</p>
       <p style="margin-top:1rem;">Part of <strong>AION Group</strong></p>
     </div>
     <div class="footer-explore">

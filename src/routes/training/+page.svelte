@@ -2,7 +2,15 @@
   import PageHero from '$lib/components/PageHero.svelte';
   import CtaBlock from '$lib/components/CtaBlock.svelte';
   import CourseCalendar from '$lib/components/CourseCalendar.svelte';
+  import GalleryGrid from '$lib/components/GalleryGrid.svelte';
   import { courses } from '$lib/data/courses.js';
+
+  const trainingShots = [
+    { src: '/images-training/_DSC0006.jpg', alt: 'Instructor leading a theory session in the classroom', caption: 'Theory & Briefings' },
+    { src: '/images-training/_DSC0050.jpg', alt: 'Students on the dive boat heading to the site', caption: 'On the Water' },
+    { src: '/images-training/_DSC0063.jpg', alt: 'Divers at the surface near the Sardinian cliffs', caption: 'Open Water Sessions' },
+    { src: '/images-training/_DSC0074.jpg', alt: 'Dive team pre-dive briefing on the boat', caption: 'Boat Briefings' },
+  ];
 
   const reasons = [
     { t: 'Real caves as your classroom', d: 'Train in genuine Sardinian cave systems — not a pool or a simulated overhead.' },
@@ -49,6 +57,13 @@
 
 <div class="quote-divider"><p class="brand-line">For people who know that good diving is never accidental.</p></div>
 
+<!-- ── Training Gallery ─────────────────────────────────────── -->
+<section class="section">
+  <div class="container">
+    <GalleryGrid images={trainingShots} columns={4} />
+  </div>
+</section>
+
 <!-- ── Course Calendar (color-coded, click for details + enquiry) ── -->
 <section class="section section-alt" id="schedule">
   <div class="container">
@@ -68,7 +83,7 @@
 
 <CtaBlock
   heading="Begin Your Journey"
-  text="Whether it is your first cave course or your most advanced, the environment here will shape how you grow."
+  text="Whether it is your first serious training step or your most advanced Cave, CCR or technical program, the environment here will shape how you grow."
   primaryLabel="Ask About Training"
   secondaryLabel="Contact Us"
 />

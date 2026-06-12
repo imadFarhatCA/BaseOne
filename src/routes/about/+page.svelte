@@ -4,22 +4,20 @@
   import GalleryGrid from '$lib/components/GalleryGrid.svelte';
   // import { team } from '$lib/data/team.js';   // hidden — Alessandro & Andrea section dropped
 
-  // Logistics gallery — real Base One facility photos (local), plus one verified placeholder.
   const logisticsShots = [
-    { src: '/images/divider-facility.jpg', alt: 'Base One RIB fleet in Cala Gonone harbour', caption: 'Boat Fleet' },
-    { src: '/images/alt-facility-1.jpg', alt: 'SUEX equipment and servicing room', caption: 'Equipment & Servicing' },
-    { src: '/images/alt-facility-3.jpg', alt: 'SUEX DPV speed controls', caption: 'DPV & Filling Station' },
-    { src: '/images/alt-facility-2.jpg', alt: 'Common area and briefing lounge', caption: 'Classrooms & Common Areas' },
-    { src: '/images/hero-facility.jpg', alt: 'RIB dive boat deck rigged for diving', caption: 'On the Water' },
-    { src: 'https://images.unsplash.com/photo-1517048676732-d65bc937f952?w=900&q=70&auto=format&fit=crop', alt: 'Team briefing around a table', caption: 'Briefings & Planning' },
+    { src: '/images-facility/_DSC0017.jpg', alt: 'Base One dive boat at Cala Gonone marina', caption: 'Boat Fleet' },
+    { src: '/images-facility/_DSC0539.jpg', alt: 'Base One blue dive boat at harbour', caption: 'On the Water' },
+    { src: '/images-facility/_DSC0012.jpg', alt: 'Tank storage room with compressor and dive gear', caption: 'Equipment & Storage' },
+    { src: '/images-facility/P1010163.jpg', alt: 'MPS gas blending system — oxygen and helium fills', caption: 'Gas Fills' },
+    { src: '/images-facility/_DSC0568.jpg', alt: 'Classroom with tables, screen and whiteboard', caption: 'Classrooms' },
+    { src: '/images-facility/_DSC0579.jpg', alt: 'SUEX DPV storage and logistics warehouse', caption: 'DPV Storage' },
   ];
 
-  // Events support gallery — verified event shots + real Base One dive-team photos.
   const eventsShots = [
-    { src: 'https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=900&q=70&auto=format&fit=crop', alt: 'Conference audience', caption: 'Conferences & launches' },
-    { src: 'https://images.unsplash.com/photo-1517457373958-b7bdd4587205?w=900&q=70&auto=format&fit=crop', alt: 'Evening team gathering', caption: 'Team gatherings' },
-    { src: '/images/hero-about.jpg', alt: 'Divers preparing before a dive', caption: 'Professional dive teams' },
-    { src: '/images/divider-about.jpg', alt: 'Divers with torch beams in a cave', caption: 'Military & expedition support' },
+    { src: '/images-facility/_DSC0590.jpg', alt: 'Briefing room with cave-diving mural', caption: 'Briefings & Planning' },
+    { src: '/images-facility/_DSC0615.jpg', alt: 'Small meeting room with map and screen', caption: 'Team Meetings' },
+    { src: '/images-facility/_DSC0574.jpg', alt: 'Research bench with microscope and underwater robots', caption: 'Research & Tech' },
+    { src: '/images-facility/_DSC0010.jpg', alt: 'Base One support van', caption: 'Logistics & Transport' },
   ];
 </script>
 

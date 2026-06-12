@@ -30,7 +30,7 @@
         </li>
       {/each}
       <li>
-        <a href="/plan" class="nav-cta" class:active={$page.url.pathname === '/plan'}>Cost Estimates</a>
+        <a href="/plan" class="nav-cta" class:active={$page.url.pathname === '/plan'}>Plan your Trip</a>
       </li>
     </ul>
 
@@ -53,7 +53,7 @@
       </li>
     {/each}
     <li>
-      <a href="/plan" class="overlay-cta" on:click={closeMenu}>Cost Estimates</a>
+      <a href="/plan" class="overlay-cta" on:click={closeMenu}>Plan your Trip</a>
     </li>
   </ul>
 

@@ -53,7 +53,7 @@
     <div class="section-header blur-reveal">
       <p class="section-label">Beyond the Caves</p>
       <h2>Open Water &amp; Reefs</h2>
-      <p class="lead">Not every dive goes overhead. The Gulf of Orosei also offers bright reef walls, shallow sandy gardens, and abundant marine life — ideal for warm-up days, recreational divers, and building skills before the caves.</p>
+      <p class="lead">Not every dive goes overhead. The Gulf of Orosei also offers clear-water deep and shallow shipwrecks, wall dives, shallow coastal sites, caverns and sheltered areas ideal for warm-up dives, recreational divers and skills development before more advanced programs.</p>
     </div>
     <GalleryGrid images={openWater} columns={3} />
   </div>
