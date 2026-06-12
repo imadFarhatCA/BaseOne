@@ -12,8 +12,9 @@
     { src: '/images-calaGonone/54e596e09b35fa9d2c13faefbecb2cf3b818dc375ffc7296e938fa9bcf204c54.webp', alt: 'Hikers on rocky terrain in the Supramonte canyon', caption: 'Hiking & Trekking' },
     { src: '/images-calaGonone/ebcf565d435443cf88a5c3042c6f981e7288864edd7d24e060277d440509acd4.webp', alt: 'Horse riders with Sardinian coastline panorama', caption: 'Horse Riding' },
     { src: '/images-calaGonone/4b542faea188925d1151524252372902985613dfbe805ed960d0676a47a11c9d.avif', alt: 'Gulf of Orosei coastline', caption: 'The Gulf' },
-    { src: '/images-calaGonone/174bfb6a4986352fb21a97c295242aa04fa9ffa75cee9583feec3bc1c4b64f8b.avif', alt: 'Cala Gonone landscape', caption: 'The Landscape' },
-    { src: '/images-calaGonone/665730fa72a19d6414060d78b5d1f63cf3e6c1a24cbbc605650c33b7489742e2.avif', alt: 'Sardinian coastline from the sea', caption: 'Wild Coast' },
+    { src: '/images-calaGonone/174bfb6a4986352fb21a97c295242aa04fa9ffa75cee9583feec3bc1c4b64f8b.avif', alt: 'Show caves of Cala Gonone', caption: 'Show Caves' },
+    { src: '/images-calaGonone/665730fa72a19d6414060d78b5d1f63cf3e6c1a24cbbc605650c33b7489742e2.avif', alt: 'Dry caves of the Supramonte', caption: 'Dry Caves' },
+    { src: '/images-calaGonone/DJI_0590.jpg', alt: 'Rock climber on limestone cliff above the Gulf of Orosei', caption: 'Rock Climbing' },
   ];
 
   const faqs = [
