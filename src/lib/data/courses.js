@@ -8,9 +8,9 @@ export const courses = [
   { course: 'GUE DPV Cave',                date: 'Jun 8, 2026',  instructor: 'JP Bresser',      org: 'GUE', level: 'DPV',          gueUrl: 'https://www.gue.com/diver-training/gue-class-schedule', details: 'Scooter-assisted cave diving to extend range and access deeper systems safely.' },
   { course: 'GUE Cave Diver 2',            date: 'Jun 14, 2026', instructor: 'Sven Nelles',     org: 'GUE', level: 'Cave',         gueUrl: 'https://www.gue.com/diver-training/gue-class-schedule', details: 'Advanced cave skills — complex navigation, stage management, and longer penetrations.' },
 
-  // ── TDI sample courses (visual reference only) ──
-  { course: 'TDI Intro to Tech',           date: 'May 30, 2026', instructor: 'Dive Center Staff', org: 'TDI', level: 'Tech',       details: 'A bridge from recreational into technical diving — equipment configuration and skills.' },
-  { course: 'TDI Cavern Diver',            date: 'Jun 5, 2026',  instructor: 'Dive Center Staff', org: 'TDI', level: 'Cave',       details: 'Daylight-zone overhead diving — an accessible first step into cave country.' },
-  { course: 'TDI Advanced Nitrox',         date: 'Jun 18, 2026', instructor: 'Dive Center Staff', org: 'TDI', level: 'Nitrox',     details: 'Decompression procedures and accelerated deco with enriched-air mixes.' },
-  { course: 'TDI Trimix',                  date: 'Jun 26, 2026', instructor: 'Dive Center Staff', org: 'TDI', level: 'Tech',       details: 'Helium-based mixes for deeper technical dives with reduced narcosis.' },
+  // ── TDI / IANTD sample courses (visual reference only) ──
+  { course: 'TDI Intro to Tech',           date: 'May 30, 2026', instructor: 'Olivier Bertieaux', org: 'TDI', level: 'Tech',       details: 'A bridge from recreational into technical diving — equipment configuration and skills.' },
+  { course: 'TDI Cavern Diver',            date: 'Jun 5, 2026',  instructor: 'Mauro Bordignon',   org: 'TDI', level: 'Cave',       details: 'Daylight-zone overhead diving — an accessible first step into cave country.' },
+  { course: 'TDI Advanced Nitrox',         date: 'Jun 18, 2026', instructor: 'Olivier Bertieaux', org: 'TDI', level: 'Nitrox',     details: 'Decompression procedures and accelerated deco with enriched-air mixes.' },
+  { course: 'TDI Trimix',                  date: 'Jun 26, 2026', instructor: 'Mauro Bordignon',   org: 'TDI', level: 'Tech',       details: 'Helium-based mixes for deeper technical dives with reduced narcosis.' },
 ];
