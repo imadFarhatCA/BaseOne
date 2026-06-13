@@ -36,10 +36,11 @@
   <div class="container-narrow">
     <p class="section-label reveal-left">The Environment</p>
     <h2 class="reveal-left delay-1">One of the last wild coastlines in the Mediterranean.</h2>
-    <p class="lead mt-sm reveal-left delay-2">The Gulf of Orosei and its forty kilometres of coastline are one of the last areas of the Italian coast without buildings or roads. High white limestone cliffs drop into turquoise water, hiding hundreds of dry and flooded caves — some of the longest underwater cave systems in Europe.</p>
+    <p class="lead mt-sm reveal-left delay-2">The Gulf of Orosei is one of the last stretches of Italian coastline without buildings or coastal roads. Along forty kilometres of wild limestone coast, high white cliffs drop into turquoise water and hide hundreds of dry and flooded caves, including some of the longest underwater cave systems in Europe.</p>
     <details class="read-more reveal-left delay-3">
       <summary>Read more about the geology</summary>
-      <p class="mt-sm">These springs are freshwater rivers with saltwater intrusion from the sea. Multiple decorations and speleothems testify to varying water levels during different ice ages and prove such environments were once dry. Branching passages, sumps, and long shallow galleries make these caves the premier cave diving destination in Europe and a maze still being discovered. Average depth across most systems is extremely shallow — around nine metres — with water temperatures of 22°C in salt water and 15°C in fresh. These conditions allow long bottom times and very limited decompression. Other systems are deeper, requiring advanced planning, longer exposure, and decompression: ideal for rebreather cave dives.</p>
+      <p class="mt-sm">These freshwater springs are shaped by saltwater intrusion from the sea, creating layered cave environments with both fresh and marine water. Speleothems, decorations, and changing passage levels show that many of these caves were once dry during different ice-age sea-level periods. Branching passages, sumps, and long shallow galleries make the Gulf of Orosei one of Europe's premier cave diving destinations — and a vast maze still being explored.</p>
+      <p class="mt-sm">Most cave systems are remarkably shallow, with an average depth of around nine metres. Saltwater temperatures are usually above 22°C, while freshwater sections can be around 15°C. These conditions allow long bottom times and limited decompression. Other systems are deeper and more complex, requiring advanced planning, longer exposure, and staged decompression — ideal terrain for experienced rebreather cave divers.</p>
     </details>
   </div>
 </section>
@@ -53,7 +54,7 @@
     <div class="section-header blur-reveal">
       <p class="section-label">Beyond the Caves</p>
       <h2>Open Water &amp; Reefs</h2>
-      <p class="lead">Not every dive goes overhead. The Gulf of Orosei also offers clear-water deep and shallow shipwrecks, wall dives, shallow coastal sites, caverns and sheltered areas ideal for warm-up dives, recreational divers and skills development before more advanced programs.</p>
+      <p class="lead">Not every dive in the Gulf of Orosei goes overhead. Beyond its caves, the area offers clear-water wreck dives, wall dives, shallow coastal sites, caverns, and sheltered locations ideal for recreational divers, warm-up dives, and skills development before advanced cave, technical, or CCR training.</p>
     </div>
     <GalleryGrid images={openWater} columns={3} />
   </div>

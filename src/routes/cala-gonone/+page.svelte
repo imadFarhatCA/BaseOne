@@ -184,6 +184,7 @@
       <p class="section-label">While You're Here</p>
       <h2>Things to Do</h2>
       <p class="lead">Beyond the diving, Cala Gonone and the surrounding region offer some of the best outdoor experiences in Italy.</p>
+      <p class="lead mt-sm">Cala Gonone works well for mixed groups. Technical and cave divers can train or dive with Base One, certified recreational divers can join selected small-group dives, and non-divers can enjoy DPV snorkeling, kayaking, hiking and climbing.</p>
     </div>
     <div class="feature-cards">
       {#each activities as a, i}

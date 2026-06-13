@@ -2,8 +2,8 @@ export const caves = [
   {
     name: 'Grotta del Bue Marino',
     access: 'Boat access · All levels',
-    description: 'The most extensive system in the Gulf. Branching passages — Ramo Nord, Ramo Sud, and Ramo del Bue — span kilometres of mapped and unexplored development. Rich speleothems, a prominent halocline, and the long open galleries that made Orosei famous worldwide. Suitable for a wide range of experience levels.',
-    tags: ['Halocline', 'Speleothems', 'Multi-passage', 'All levels'],
+    description: 'The most extensive cave system in the Gulf of Orosei. Its branching passages — Ramo Nord, Ramo di Mezzo, and Ramo Sud — extend for kilometres through mapped tunnels and unexplored continuations. Rich speleothems, a prominent halocline, and long open galleries make this one of the cave systems that helped establish the Gulf of Orosei as a world-class cave diving destination. Suitable for a wide range of experience levels, from long shallow dives to multi-sump cave diving.',
+    tags: ['Halocline', 'Speleothems', 'Multiple sumps', 'All levels'],
     images: [
       '/images/caves/bue-marino-1.jpg',
       '/images/caves/bue-marino-2.jpg',
@@ -14,8 +14,8 @@ export const caves = [
   {
     name: 'Bel Torrente',
     access: 'Boat access · Intermediate',
-    description: 'A powerful freshwater spring with a wide, photogenic entrance. Strong current near the resurgence gives way to calmer phreatic galleries deeper inside. Excellent visibility and rich decoration throughout. The alternation of wide chambers and tighter passages rewards divers with good buoyancy control.',
-    tags: ['Strong current', 'Phreatic galleries', 'Intermediate'],
+    description: 'A powerful freshwater spring with a wide, photogenic entrance. Decorated air domes give way to massive phreatic galleries and sumps further inside. Excellent visibility, shallow depths, wide chambers, and occasional tighter passages make this one of the most visually rewarding cave dives in the area.',
+    tags: ['Cavern', 'Phreatic galleries', 'DPV'],
     images: [
       '/images/caves/bel-torrente-1.jpg',
       '/images/caves/bel-torrente-2.jpg',
@@ -25,7 +25,7 @@ export const caves = [
   {
     name: 'Risorgenza di Cala Luna',
     access: 'Boat access · Intermediate',
-    description: 'Accessed by boat into the bay of Cala Luna. Multiple sumps with vertical shafts and a striking halocline where fresh and salt water meet. Spectacular limestone formations and exceptional surroundings both above and below the surface. One of the most visually striking sites in the Gulf.',
+    description: 'Located directly beside Cala Luna beach and reached by boat along the Gulf of Orosei coastline, this cave system combines multiple sumps, vertical shafts, decorated passages, air spaces, and a clear halocline where fresh groundwater meets saltwater from the sea. Set below high limestone cliffs, Cala Luna is one of Sardinia\'s most visually striking cave diving sites, with mapped sections, ongoing observations, and unexplored leads still being investigated by Phreatic.',
     tags: ['Halocline', 'Vertical shafts', 'Multiple sumps'],
     images: [
       '/images/caves/cala-luna-1.jpg',
@@ -36,8 +36,8 @@ export const caves = [
   {
     name: 'Utopia / Euforia',
     access: 'Boat access · Advanced',
-    description: 'Twin adjacent systems offering varied morphology and the option of a combined dive profile. Both shallow and deeper sections are available, with well-decorated passages and excellent photographic potential. One of the most rewarding systems for divers looking to progress beyond standard cave environments.',
-    tags: ['Twin systems', 'Variable depth', 'Advanced'],
+    description: 'Utopia and Euforia are adjacent cave systems on the Gulf of Orosei coastline, known for large-scale morphology, depth, distance, and demanding dive planning. Utopia is one of the deepest cave systems in the Gulf, with powerful phreatic galleries, strong photographic potential, and profiles that may require DPV support, decompression strategy, and rebreather-level experience.',
+    tags: ['Complex navigation', 'Depth', 'Power cave'],
     images: [
       '/images/caves/utopia-1.jpg',
       '/images/caves/utopia-2.jpg',
@@ -47,8 +47,8 @@ export const caves = [
   {
     name: 'Grotta del Fico',
     access: 'Boat access · Technical',
-    description: 'A southern system with dramatic vertical shafts and exceptionally rich formations. Greater depth and complexity make it best suited to experienced technical and rebreather divers. Conditions here reward careful planning and extended bottom time. An additional site access fee applies.',
-    tags: ['Vertical shafts', 'Technical', 'Rebreather-friendly', 'Site fee'],
+    description: 'A visually striking cave system with crystal-clear visibility, white limestone walls, dark basaltic rocks, ancient floor deposits, and multiple vertical shafts. Its morphology combines sculpted limestone passages, vertical drops, decorated sections, and open phreatic volumes, creating strong contrasts in shape, colour, and scale. Suitable for qualified cave divers across a range of levels, it is especially rewarding for underwater photographers.',
+    tags: ['Vertical shafts', 'Speleothems', 'Navigation'],
     images: [
       '/images/caves/fico-1.jpg',
       '/images/caves/fico-2.jpg',
@@ -56,10 +56,10 @@ export const caves = [
     ],
   },
   {
-    name: 'Maseduoe',
+    name: 'Grotta Sifone',
     access: 'Boat access · Advanced',
-    description: 'A quieter and less-visited system that rewards divers who take the time to explore beyond the main passage. Tight sections alternate with decorated chambers. Excellent visibility typical of Orosei springs. A favourite among those who prefer caves without crowds.',
-    tags: ['Quiet', 'Decorated', 'Sidemount-friendly'],
+    description: 'A multi-sump cave system with a restricted entrance, an initial sump, a short dry section, and further sumps beyond. White limestone walls, tight passages, and changing morphology make it an excellent objective for qualified sidemount cave divers.',
+    tags: ['Challenging', 'Multiple sumps', 'Sidemount only'],
     images: [
       '/images/caves/maseduoe-1.jpg',
       '/images/caves/maseduoe-2.jpg',

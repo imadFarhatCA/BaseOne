@@ -106,7 +106,7 @@
     <h1>Serious Diving,<br>Properly Supported</h1>
     <p class="hero-sub">Cave diving, training, DPV support, and expedition-level logistics from Cala Gonone, Sardinia.</p>
     <ul class="hero-highlights">
-      <li>Cave &amp; Technical Diving</li><li>GUE Training Hub</li><li>SUEX DPV Base</li><li>AION Group</li>
+      <li>Cave &amp; CCR</li><li>GUE Training Hub</li><li>AION Group</li>
     </ul>
     <div class="hero-buttons">
       <a href="/plan" class="btn btn-teal btn-large">Book Training</a>
@@ -146,7 +146,7 @@
     <ul class="check-list mt-md">
       <li class="reveal-left delay-1">Cave systems of extraordinary variety, accessible by boat from the base</li>
       <li class="reveal-right delay-2">GUE training from Fundamentals through advanced Cave and CCR</li>
-      <li class="reveal-left delay-3">SUEX DPV rental, support and operational know-how</li>
+      <li class="reveal-left delay-3">SUEX DPV rental, support, test center and operational know-how</li>
       <li class="reveal-right delay-4">A community of selected GUE and non-GUE instructors, explorers, and professionals who raise the bar</li>
     </ul>
   </div>
@@ -160,10 +160,10 @@
   <div class="container">
     <div class="section-header blur-reveal"><p class="section-label">Four Pillars</p><h2>Everything Base One Offers</h2></div>
     <div class="pillars">
-      <div class="pillar-card reveal-left delay-1"><ul class="tag-list"><li>Cave</li><li>Wreck</li><li>Recreational Options</li></ul><h3>Diving</h3><p>Cave systems of the Gulf of Orosei — shallow passages, power caves, narrow tunnels, halocline zones,, speleothem galleries, and deep exploration frontiers.</p><a href="/diving" class="pillar-link">Explore the Diving →</a></div>
-      <div class="pillar-card reveal-right delay-2"><ul class="tag-list"><li>GUE</li><li>TDI</li><li>Cave</li><li>CCR</li><li>DPV</li><li>Sidemount</li><li>Instructor Development</li><li>Recreational</li></ul><h3>Training</h3><p>Real development in an environment shaped by real operations. GUE training from Fundamentals through advanced Cave and CCR, alongside TDI/IANTD and explorer-led pathways — cave, CCR, sidemount, and DPV included.</p><a href="/training" class="pillar-link">View Training →</a></div>
-      <div class="pillar-card reveal-left delay-3"><ul class="tag-list"><li>Survey</li><li>Science</li><li>Exploration</li></ul><h3>Projects</h3><p>Join selected exploration, survey, and citizen-science projects connected to the Phreatic ecosystem. Participation is project-based, and separate from normal booking.</p><a href="/exploration" class="pillar-link">See Active Projects →</a></div>
-      <div class="pillar-card reveal-right delay-4"><ul class="tag-list"><li>Trimix</li><li>DPV</li><li>CCR Support</li></ul><h3>Facility &amp; Logistics</h3><p>Gas fills, boats, classrooms, DPVs and equipment hire. Infrastructure that removes friction from serious diving.</p><a href="/about#the-facility" class="pillar-link">View Facility →</a></div>
+      <div class="pillar-card reveal-left delay-1"><ul class="tag-list"><li>Cave</li><li>Wreck</li><li>Recreational Options</li></ul><h3>Diving</h3><p>Cave systems of the Gulf of Orosei — shallow passages, power caves, narrow tunnels, halocline zones, speleothem galleries, and deep exploration frontiers.</p><a href="/diving" class="pillar-link">Explore the Diving →</a></div>
+      <div class="pillar-card reveal-right delay-2"><ul class="tag-list"><li>GUE</li><li>TDI</li><li>Cave</li><li>IANTD</li><li>Instructor Development</li><li>Recreational</li></ul><h3>Training</h3><p>Real development in an environment shaped by real operations. GUE training from Fundamentals through advanced Cave and CCR, alongside TDI/IANTD and explorer-led pathways — Cave, CCR, Sidemount, and DPV included.</p><a href="/training" class="pillar-link">Build your Training →</a></div>
+      <div class="pillar-card reveal-left delay-3"><ul class="tag-list"><li>Survey</li><li>Science</li><li>Exploration</li></ul><h3>Phreatic</h3><p>Join selected exploration, survey, and citizen-science projects connected to the Phreatic ecosystem. Participation is project-based, and separate from normal booking.</p><a href="/exploration" class="pillar-link">Join Active Projects →</a></div>
+      <div class="pillar-card reveal-right delay-4"><ul class="tag-list"><li>Certified gas fills</li><li>DPV</li><li>Fleet</li><li>SUEX DPV</li></ul><h3>Facility &amp; Logistics</h3><p>Gas fills, boats, classrooms, DPVs and equipment hire. Infrastructure that removes friction from serious diving.</p><a href="/about#the-facility" class="pillar-link">View Facility →</a></div>
     </div>
   </div>
 </section>
@@ -174,7 +174,7 @@
     <div class="section-header blur-reveal">
       <p class="section-label">Citizen Science</p>
       <h2>Phreatic</h2>
-      <p class="lead">Base One is the operational home of Phreatic — a non-profit exploring and protecting the flooded caves and groundwater of the Gulf of Orosei. Volunteer divers contribute to cave survey, 3D mapping, sediment and biology sampling, and conservation. Your dives can become real data.</p>
+      <p class="lead">Base One is the operational home of Phreatic — a non-profit organization exploring and protecting the flooded caves and groundwater of Sardinia. Volunteer divers contribute to cave survey, 3D mapping, sediment or biology sampling, and conservation. Your dives become real data.</p>
     </div>
     <div class="phreatic-cards">
       {#each phreaticCards as c, i}
@@ -205,7 +205,7 @@
     <div class="section-header blur-reveal">
       <p class="section-label">Not Diving?</p>
       <h2>Plenty to Do Above the Surface</h2>
-      <p class="lead">Travelling with non-divers, or taking a day off? Cala Gonone is one of Italy's best outdoor playgrounds — kayaking, climbing, hiking, and snorkelling all on the doorstep.</p>
+      <p class="lead">Travelling with non-divers, or taking a day off? Cala Gonone is one of Europe's great outdoor playgrounds, with kayaking, climbing, hiking, and snorkelling right on your doorstep.</p>
     </div>
     <GalleryGrid images={topsideShots} columns={4} />
     <div class="text-center mt-lg scale-reveal">
@@ -254,8 +254,9 @@
       <h2>Where Will You<br>Dive Next?</h2>
       <p class="lead">Tell us what you are here to do — training, cave diving, exploration, or all three.</p>
       <div class="cta-buttons">
-        <a href="/plan" class="btn btn-teal btn-large">Cost Estimates</a>
+        <a href="/training#schedule" class="btn btn-teal btn-large">Book Training</a>
         <a href="/plan#contact" class="btn btn-ghost btn-large">Get in Touch</a>
+        <a href="/exploration" class="btn btn-ghost btn-large">Join a Project</a>
       </div>
     </div>
     <div class="cta-final-stats">

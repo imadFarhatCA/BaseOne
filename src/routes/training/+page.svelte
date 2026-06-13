@@ -36,6 +36,13 @@
   sub="Not just courses. Not just certifications. Real development in a place where high standards are lived every day."
 />
 
+<!-- ── Training Philosophy ──────────────────────────────────── -->
+<section class="section section-alt">
+  <div class="container-narrow">
+    <p class="lead blur-reveal">Base One is not built around volume training. We support selected GUE, TDI, IANTD programs and instructors that match our standards for preparation, logistics, safety and progression.</p>
+  </div>
+</section>
+
 <!-- ── Why Train Here ───────────────────────────────────────── -->
 <section class="section">
   <div class="container">
