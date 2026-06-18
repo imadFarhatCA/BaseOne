@@ -16,6 +16,9 @@
     { src: '/images-calaGonone/665730fa72a19d6414060d78b5d1f63cf3e6c1a24cbbc605650c33b7489742e2.avif', alt: 'Dry caves of the Supramonte', caption: 'Dry Caves' },
     { src: '/images-calaGonone/DJI_0590.jpg', alt: 'Rock climber on limestone cliff above the Gulf of Orosei', caption: 'Rock Climbing' },
     { src: '/images-calaGonone/_V6A5839-gallery.jpg', alt: 'Snorkeler with underwater DPV scooter in the Gulf of Orosei', caption: 'DPV Snorkeling' },
+    { src: '/images-calaGonone/sup-paddling.webp', alt: 'Stand-up paddleboarder gliding over clear water', caption: 'SUP Paddling' },
+    { src: '/images-calaGonone/shepherd-hut.webp', alt: 'Traditional Sardinian shepherd hut in the Supramonte', caption: 'Shepherd Hut Experience' },
+    { src: '/images-calaGonone/scenic-views.webp', alt: 'Couple taking in a Sardinian coastal panorama', caption: 'Scenic Views Hunting' },
   ];
 
   const faqs = [
@@ -35,6 +38,8 @@
     boat: `<svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M2 20a2.4 2.4 0 0 0 2 1 2.4 2.4 0 0 0 2-1 2.4 2.4 0 0 1 2-1 2.4 2.4 0 0 1 2 1 2.4 2.4 0 0 0 2 1 2.4 2.4 0 0 0 2-1 2.4 2.4 0 0 1 2-1 2.4 2.4 0 0 1 2 1"/><path d="M4 18l-1-5h18l-2 5"/><path d="M12 2v8"/><path d="M6.8 15L12 2l5.2 13"/></svg>`,
     canyon: `<svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="m8 3 4 8 5-5 5 15H2L8 3z"/></svg>`,
     kayak: `<svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M2 12h20"/><path d="M12 2v4"/><path d="M12 18v4"/><path d="M4.93 4.93 7.76 7.76"/><path d="M16.24 16.24l2.83 2.83"/><path d="M19.07 4.93l-2.83 2.83"/><path d="M7.76 16.24 4.93 19.07"/><circle cx="12" cy="12" r="3"/></svg>`,
+    sup: `<svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="13" cy="3.5" r="1.5"/><path d="M13 5v6"/><path d="M13 11l-2 6"/><path d="M13 11l2 6"/><path d="M6 2.5l2 1"/><path d="M7 3l9 9"/><path d="M13 7l3 3"/><ellipse cx="12" cy="19.5" rx="8" ry="1.6"/></svg>`,
+    climbing: `<svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 3v18"/><circle cx="13" cy="5" r="1.6"/><path d="M13 6.6l1.2 4.4"/><path d="M13.2 7.5 9 6"/><path d="M14.2 11l-4.6 1.8"/><path d="M14.2 11l1.4 4.6"/><path d="M13.6 8l3.4-2"/></svg>`,
     hiking: `<svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M3 17l4-8 4 4 3-6 4 10"/><path d="M3 21h18"/></svg>`,
     ruins: `<svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21h18"/><path d="M5 21V7l7-4 7 4v14"/><path d="M9 21v-4a2 2 0 0 1 2-2h2a2 2 0 0 1 2 2v4"/><path d="M9 7h1"/><path d="M14 7h1"/><path d="M9 11h1"/><path d="M14 11h1"/></svg>`,
     murals: `<svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 19l7-7 3 3-7 7-3-3z"/><path d="M18 13l-1.5-7.5L2 2l3.5 14.5L13 18l5-5z"/><path d="M2 2l7.586 7.586"/><circle cx="11" cy="11" r="2"/></svg>`,
@@ -143,7 +148,7 @@
     <div class="accom-layout">
       <div class="accom-intro reveal-left">
         <p class="section-label">Where to Stay</p>
-        <h2>We Take Care Of Your Stay</h2>
+        <h2>We Take Care</h2>
         <p class="lead mt-sm">Most visiting divers stay in Cala Gonone within walking distance of the base. We work directly with the hotels we recommend, and use our local knowledge to find apartments that fit groups and longer stays.</p>
       </div>
       <div class="accom-right">
@@ -213,9 +218,9 @@
     <div class="accom-cta reveal-up activity-cta">
       <div class="accom-cta-body">
         <p class="accom-cta-eyebrow">Want to add an activity?</p>
-        <p class="accom-cta-text">Availability changes through the season — contact us and we'll tell you what's running during your stay.</p>
+        <p class="accom-cta-text">Availability changes with the season — tell us when you’re coming, and we’ll help you choose the best experiences running during your stay.</p>
       </div>
-      <a href="/plan#contact" class="btn btn-teal accom-cta-btn">Contact Us</a>
+      <a href="/plan#contact" class="btn btn-teal accom-cta-btn">Plan your Stay</a>
     </div>
   </div>
 </section>
@@ -240,7 +245,7 @@
       <p class="section-label reveal-up teal-light">Why Divers Choose Here</p>
       <h2 class="reveal-up delay-1">More Than Just a Dive Trip</h2>
       <ul class="dot-list mt-md">
-        <li class="reveal-up delay-1">Cave systems among the longest and most varied in Europe</li>
+        <li class="reveal-up delay-1">Access to some of Europe’s longest and most varied underwater cave systems</li>
         <li class="reveal-up delay-2">Protected coastline with some of the clearest water in the Mediterranean Sea</li>
         <li class="reveal-up delay-3">Warm, turquoise, calm seas with minimal currents</li>
         <li class="reveal-up delay-4">A small town that has not been overrun by mass tourism</li>
@@ -253,9 +258,9 @@
 <Testimonials />
 
 <CtaBlock
-  heading="Ready to Come?"
+  heading="Plan your Stay"
   text="Tell us what you want to do. We'll help you plan the right combination of diving, training, and time in the water."
-  primaryLabel="Plan Your Trip"
+  primaryLabel=""
   secondaryLabel="Get in Touch"
 />
 

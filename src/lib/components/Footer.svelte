@@ -18,10 +18,10 @@
     <div>
       <h4>Plan</h4>
       <ul class="footer-links">
-        <li><a href="/plan">Cost Estimate</a></li>
+        <li><a href="/plan">Plan your Trip</a></li>
         <li><a href="/plan#contact">Contact</a></li>
-        <li><a href="/terms">Terms &amp; Conditions</a></li>
         <li><a href="https://wa.me/393403430380" target="_blank">WhatsApp</a></li>
+        <li><a href="/terms">Terms &amp; Conditions</a></li>
       </ul>
       <a href="/liability-release" class="footer-liability-cta">Liability Release →</a>
     </div>

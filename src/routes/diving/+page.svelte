@@ -40,7 +40,8 @@
     <details class="read-more reveal-left delay-3">
       <summary>Read more about the geology</summary>
       <p class="mt-sm">These freshwater springs are shaped by saltwater intrusion from the sea, creating layered cave environments with both fresh and marine water. Speleothems, decorations, and changing passage levels show that many of these caves were once dry during different ice-age sea-level periods. Branching passages, sumps, and long shallow galleries make the Gulf of Orosei one of Europe's premier cave diving destinations — and a vast maze still being explored.</p>
-      <p class="mt-sm">Most cave systems are remarkably shallow, with an average depth of around nine metres. Saltwater temperatures are usually above 22°C, while freshwater sections can be around 15°C. These conditions allow long bottom times and limited decompression. Other systems are deeper and more complex, requiring advanced planning, longer exposure, and staged decompression — ideal terrain for experienced rebreather cave divers.</p>
+      <p class="mt-sm">Most shallow cave systems in the Gulf of Orosei have average depths between 6 and 12 metres. Saltwater temperatures are usually above 22°C, while freshwater sections can be around 15°C. These conditions allow long bottom times and minimum decompression.</p>
+      <p class="mt-sm">Other systems are deeper and more complex, requiring advanced planning, longer exposure, and staged decompression — ideal terrain for experienced rebreather cave divers.</p>
     </details>
   </div>
 </section>
@@ -64,7 +65,7 @@
 <BigCta
   heading="Ready to Get in the Water?"
   text="Cave, wreck, or open water — reserve your diving days with Base One."
-  label="Book Now"
+  label="Request Availability"
   href="/plan"
 />
 

@@ -14,7 +14,9 @@
       <p class="lead">{text}</p>
     {/if}
     <div class="cta-buttons">
-      <a href={primaryHref}   class="btn btn-teal btn-large">{primaryLabel}</a>
+      {#if primaryLabel}
+        <a href={primaryHref}   class="btn btn-teal btn-large">{primaryLabel}</a>
+      {/if}
       <a href={secondaryHref} class="btn btn-ghost btn-large">{secondaryLabel}</a>
     </div>
   </div>

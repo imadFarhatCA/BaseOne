@@ -39,7 +39,7 @@
 <!-- ── Training Philosophy ──────────────────────────────────── -->
 <section class="section section-alt">
   <div class="container-narrow">
-    <p class="lead blur-reveal">Base One is not built around volume training. We support selected GUE, TDI, IANTD programs and instructors that match our standards for preparation, logistics, safety and progression.</p>
+    <p class="lead blur-reveal">Base One is not built around volume training. We host selected GUE, TDI, and IANTD instructors who share our standards for preparation, logistics, safety, and meaningful student progression.</p>
   </div>
 </section>
 

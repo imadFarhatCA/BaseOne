@@ -11,6 +11,9 @@
     { src: '/images-facility/P1010163.jpg', alt: 'MPS gas blending system — oxygen and helium fills', caption: 'Gas Fills' },
     { src: '/images-facility/_DSC0568.jpg', alt: 'Classroom with tables, screen and whiteboard', caption: 'Classrooms' },
     { src: '/images-facility/_DSC0579.jpg', alt: 'SUEX DPV storage and logistics warehouse', caption: 'Storage' },
+    { src: '/images-facility/P1010183.jpg', alt: 'Rental dive cylinders lined up and ready', caption: 'Tank Rentals' },
+    { src: '/images-facility/P1010175.jpg', alt: 'Gas filling panel with cylinders connected', caption: 'Fills Made Easy' },
+    { src: '/images-facility/_DSC0531.jpg', alt: 'Base One large dive vessel at sea', caption: 'Big Boat' },
   ];
 
   const eventsShots = [
@@ -40,11 +43,11 @@
   <div class="container">
     <div class="section-header blur-reveal">
       <p class="section-label">The Group</p>
-      <h2>Part of AION Group</h2>
+      <img class="aion-logo" src="/images/logo-aion.png" alt="AION Group" />
       <p class="lead">Three brands, one vision — advancing what is possible underwater.</p>
     </div>
     <div class="feature-cards">
-      <div class="feature-card reveal-left delay-1"><div class="feature-logo"><img src="/images/logo.png" alt="Base One" /></div><h3>Base One</h3><p>The operational hub. A dive center in Sardinia built for cave diving, technical training, and exploration.</p></div>
+      <div class="feature-card reveal-left delay-1"><div class="feature-logo"><img src="/images/logo.png" alt="Base One" /></div><h3>Base One</h3><p>The operational hub in Sardinia for cave diving, technical training, and exploration.</p></div>
       <div class="feature-card reveal-up delay-2"><div class="feature-logo"><img src="/images/logo-suex.svg" alt="SUEX" /></div><h3>SUEX</h3><p>Underwater propulsion vehicles engineered for performance. DPVs built for cave, technical, and professional diving.</p></div>
       <div class="feature-card reveal-right delay-3"><div class="feature-logo"><img src="/images/logo-blueprint.png" alt="Blueprint Subsea" /></div><h3>Blueprint Subsea</h3><p>Subsea technology and survey solutions. Precision tools for underwater mapping and data collection.</p></div>
     </div>
@@ -62,12 +65,12 @@
       <p class="lead">Everything you need on site. Nothing that gets in the way.</p>
     </div>
     <div class="feature-cards">
-      <div class="feature-card reveal-left delay-1"><div class="feature-icon"><img src="/images/icons/double-tanks.svg" alt="" /></div><h3>Gas Fills</h3><p>Air, Nitrox, Trimix, and custom blends. High-pressure fills for backmount, sidemount, and stage cylinders.</p></div>
-      <div class="feature-card reveal-right delay-2"><div class="feature-icon"><img src="/images/icons/rib-boat.svg" alt="" /></div><h3>Boat Fleet</h3><p>RIBs and a larger vessel for reaching cave entrances accessible only from the sea. Reliable, maintained, skippered.</p></div>
-      <div class="feature-card reveal-left delay-3"><div class="feature-icon"><img src="/images/icons/classroom.svg" alt="" /></div><h3>Classrooms</h3><p>Dedicated spaces for briefings, debriefs, theory sessions, and course work — with projection and whiteboards.</p></div>
-      <div class="feature-card reveal-right delay-1"><div class="feature-icon"><img src="/images/icons/gauge.svg" alt="" /></div><h3>Filling Station</h3><p>DPV charging, light charging, camera battery management — keep equipment powered and ready between dives.</p></div>
-      <div class="feature-card reveal-left delay-2"><div class="feature-icon"><img src="/images/icons/mask.svg" alt="" /></div><h3>Equipment Hire</h3><p>Backmount and sidemount rigs, lights, reels, DPVs, and accessories. Well-maintained and regularly inspected.</p></div>
-      <div class="feature-card reveal-right delay-3"><div class="feature-icon"><img src="/images/icons/storage-box.svg" alt="" /></div><h3>Storage &amp; Security</h3><p>Secure storage between dive days. Rinse tanks, drying areas, and protected overnight storage.</p></div>
+      <div class="feature-card reveal-left delay-1"><div class="feature-icon"><img src="/images/icons/gauge.svg" alt="" /></div><h3>Gas Fills</h3><p>Air, Nitrox, Trimix, and custom gas blends from a TÜV-certified gas station equipped with BAUER compressors and MPS oxygen boosters.</p></div>
+      <div class="feature-card reveal-right delay-2"><div class="feature-icon"><img src="/images/icons/rib-boat.svg" alt="" /></div><h3>Boat Fleet</h3><p>Purpose-built dive RHIBs and larger vessel designed as professional working platforms, with stainless-steel diver structures, comfortable ladders, VHF communication, Garmin inReach, and experienced skippers for reliable access to sea-entry cave sites.</p></div>
+      <div class="feature-card reveal-left delay-3"><div class="feature-icon"><img src="/images/icons/classroom.svg" alt="" /></div><h3>Classrooms</h3><p>Dedicated spaces for briefings, debriefs, theory sessions, and course work — with projection, whiteboards, high-speed internet, and air conditioning.</p></div>
+      <div class="feature-card reveal-right delay-1"><div class="feature-icon"><img src="/images/icons/charging.png" alt="" /></div><h3>Charging Stations</h3><p>DPV charging, light charging, camera battery management — keep equipment powered and ready between dives.</p></div>
+      <div class="feature-card reveal-left delay-2"><div class="feature-icon"><img src="/images/icons/mask.svg" alt="" /></div><h3>Equipment Hire</h3><p>Halcyon rental equipment for backmount and sidemount diving, including rigs, lights, reels, DPVs, and accessories, plus JJ-CCR stands and frames. Well-maintained and regularly inspected.</p></div>
+      <div class="feature-card reveal-right delay-3"><div class="feature-icon"><img src="/images/icons/storage-box.svg" alt="" /></div><h3>Storage &amp; Security</h3><p>Secure storage between dive days, with rinse tanks, protected overnight storage, and a dedicated drying room with dehumidifier for wetsuits, drysuits, and undersuits.</p></div>
     </div>
     <div class="mt-lg">
       <GalleryGrid images={logisticsShots} columns={3} />
@@ -81,11 +84,11 @@
     <div class="section-header blur-reveal">
       <p class="section-label">Events Support</p>
       <h2>A Base for Serious Gatherings</h2>
-      <p class="lead">Base One regularly hosts companies, agencies, and expedition teams — from SUEX military and professional diving programmes to product testing, training weeks, and corporate events. We provide the water access, logistics, boats, gas, and local know-how to make ambitious events run smoothly.</p>
+      <p class="lead">Base One hosts companies, agencies, manufacturers, specialist organisations, professional teams, and premium groups in one of Sardinia’s most spectacular coastal locations. From product testing and training weeks to partner events, expedition support, and tailored group experiences, we provide the boats, gas, water access, equipment support, logistics, and local know-how to make complex projects run smoothly.</p>
     </div>
     <GalleryGrid images={eventsShots} columns={4} />
     <div class="text-center mt-lg scale-reveal">
-      <a href="/plan#contact" class="btn btn-teal btn-large">Talk to Us About Your Event →</a>
+      <a href="/plan#contact" class="btn btn-teal btn-large">Plan Your Event →</a>
     </div>
   </div>
 </section>
@@ -130,10 +133,11 @@
 <CtaBlock
   heading="Come Be Part of It"
   text="Whether you are here to teach, learn, explore, test, or simply dive well — you are welcome."
-  primaryLabel="Cost Estimates"
+  primaryLabel="Plan your Trip"
   secondaryLabel="Get in Touch"
 />
 
 <style>
   .mt-lg { margin-top: 2.5rem; }
+  .aion-logo { display: block; height: 64px; width: auto; margin: 0 auto .5rem; }
 </style>

@@ -4,7 +4,7 @@ export const activities = [
     title: 'DPV Snorkel Experience',
     url: 'https://sardiniasnorkeldpv.com/',
     desc: `This is snorkelling with a boost: you'll use easy-to-handle scooters to explore coastline and shallow-water scenery with a supervisor—at a pace that's fun, controlled, and beginner-friendly.`,
-    tags: ['Cala Luna', 'Cala Mariolu', 'Cala Sisine'],
+    tags: ['Cala Luna', 'Grottacce'],
   },
   {
     icon: 'canyon',
@@ -13,16 +13,28 @@ export const activities = [
     tags: ['Trekking', 'Gorropu', 'Supramonte'],
   },
   {
-    icon: 'kayak',
-    title: 'Sea Kayaking',
-    desc: "Paddle the coastline at your own pace. Launch from Cala Gonone and explore sea caves, arches, and quiet coves that motor boats can't reach. Early morning is best.",
+    icon: 'sup',
+    title: 'Paddle the Coastline',
+    desc: 'Explore the Cala Gonone coastline by SUP. Paddle through clear-water shallows, quiet coves, limestone cliffs, and sea caves at a relaxed pace. Early morning is best.',
     tags: ['Kayak', 'Sea Caves', 'Coastline'],
   },
   {
     icon: 'hiking',
     title: 'Supramonte Hiking',
-    desc: 'Wild limestone plateau rising above the gulf. Trails through ancient oak and holm oak forests lead to panoramic ridges, nuragic ruins, and shepherd tracks unchanged for centuries.',
+    desc: 'Discover Cala Luna on a guided hike through the wild limestone landscapes of the Supramonte. Walk ancient shepherd tracks, visit Todeitto’s hidden cave and a traditional shepherd hut, then reach Cala Luna for a swim before returning to Cala Gonone on foot or by boat.',
     tags: ['Hiking', 'Wilderness', 'Plateau'],
+  },
+  {
+    icon: 'climbing',
+    title: 'Rock Climbing',
+    desc: 'Cala Gonone is one of the Mediterranean’s premier sport-climbing destinations. Hundreds of bolted limestone routes overlook the sea, from gentle beginner crags to overhanging test-pieces, all minutes from the village.',
+    tags: ['Climbing', 'Limestone', 'Sea Views'],
+  },
+  {
+    icon: 'kayak',
+    title: 'Sea Kayaking',
+    desc: 'Explore the Gulf of Orosei’s hidden coves, arches, and sea caves by kayak. Guided coastal paddles reach beaches unreachable by road, with swimming and snorkelling stops in turquoise water along the way.',
+    tags: ['Kayak', 'Sea Caves', 'Coastline'],
   },
   {
     icon: 'ruins',

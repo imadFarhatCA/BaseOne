@@ -142,11 +142,11 @@
   <div class="container-narrow">
     <p class="section-label reveal-left">The Place</p>
     <h2 class="reveal-left delay-1">A base built for people who take diving seriously.</h2>
-    <p class="lead mt-sm reveal-left delay-2">Base One is not a resort dive shop. It is a specialist operation — built around cave diving, technical training, underwater technology, and exploration in one of the Mediterranean's most significant cave systems.</p>
+    <p class="lead mt-sm reveal-left delay-2">Base One is not a resort dive shop. It is a specialist operation built around cave diving, technical training, underwater technology, and exploration in Cala Gonone, one of the Mediterranean’s most striking coastal wilderness areas — a place where world-class diving meets dramatic limestone landscapes, clear blue water, and one of Sardinia’s most beautiful tourism destinations.</p>
     <ul class="check-list mt-md">
-      <li class="reveal-left delay-1">Cave systems of extraordinary variety, accessible by boat from the base</li>
-      <li class="reveal-right delay-2">GUE training from Fundamentals through advanced Cave and CCR</li>
-      <li class="reveal-left delay-3">SUEX DPV rental, support, test center and operational know-how</li>
+      <li class="reveal-left delay-1">Extraordinary cave-diving sites of remarkable variety, accessible by boat directly from Base One in Cala Gonone</li>
+      <li class="reveal-right delay-2">GUE diving courses from Fundamentals to advanced cave, technical, and CCR training, including instructor development.</li>
+      <li class="reveal-left delay-3">SUEX DPV rental, support, test center, and field-proven operational know-how</li>
       <li class="reveal-right delay-4">A community of selected GUE and non-GUE instructors, explorers, and professionals who raise the bar</li>
     </ul>
   </div>
@@ -161,9 +161,9 @@
     <div class="section-header blur-reveal"><p class="section-label">Four Pillars</p><h2>Everything Base One Offers</h2></div>
     <div class="pillars">
       <div class="pillar-card reveal-left delay-1"><ul class="tag-list"><li>Cave</li><li>Wreck</li><li>Recreational Options</li></ul><h3>Diving</h3><p>Cave systems of the Gulf of Orosei — shallow passages, power caves, narrow tunnels, halocline zones, speleothem galleries, and deep exploration frontiers.</p><a href="/diving" class="pillar-link">Explore the Diving →</a></div>
-      <div class="pillar-card reveal-right delay-2"><ul class="tag-list"><li>GUE</li><li>TDI</li><li>Cave</li><li>IANTD</li><li>Instructor Development</li><li>Recreational</li></ul><h3>Training</h3><p>Real development in an environment shaped by real operations. GUE training from Fundamentals through advanced Cave and CCR, alongside TDI/IANTD and explorer-led pathways — Cave, CCR, Sidemount, and DPV included.</p><a href="/training" class="pillar-link">Build your Training →</a></div>
+      <div class="pillar-card reveal-right delay-2"><ul class="tag-list"><li>GUE</li><li>TDI</li><li>IANTD</li></ul><h3>Training</h3><p>Real development in an environment shaped by real operations. GUE training from Fundamentals through advanced Cave and CCR, alongside TDI/IANTD and explorer-led pathways — Cave, CCR, Sidemount, and DPV included.</p><a href="/training" class="pillar-link">Build your Training →</a></div>
       <div class="pillar-card reveal-left delay-3"><ul class="tag-list"><li>Survey</li><li>Science</li><li>Exploration</li></ul><h3>Phreatic</h3><p>Join selected exploration, survey, and citizen-science projects connected to the Phreatic ecosystem. Participation is project-based, and separate from normal booking.</p><a href="/exploration" class="pillar-link">Join Active Projects →</a></div>
-      <div class="pillar-card reveal-right delay-4"><ul class="tag-list"><li>Certified gas fills</li><li>DPV</li><li>Fleet</li><li>SUEX DPV</li></ul><h3>Facility &amp; Logistics</h3><p>Gas fills, boats, classrooms, DPVs and equipment hire. Infrastructure that removes friction from serious diving.</p><a href="/about#the-facility" class="pillar-link">View Facility →</a></div>
+      <div class="pillar-card reveal-right delay-4"><ul class="tag-list"><li>TÜV-Certified Gas Station</li><li>Boat &amp; Rhib Support</li><li>SUEX DPV Center</li></ul><h3>Facility &amp; Logistics</h3><p>Gas fills, boats, classrooms, DPVs and equipment hire. Infrastructure that removes friction from serious diving.</p><a href="/about#the-facility" class="pillar-link">View Facility →</a></div>
     </div>
   </div>
 </section>
@@ -172,7 +172,7 @@
 <section class="section phreatic-section">
   <div class="container">
     <div class="section-header blur-reveal">
-      <p class="section-label">Citizen Science</p>
+      <p class="section-label">Citizen Science &amp; Community</p>
       <h2>Phreatic</h2>
       <p class="lead">Base One is the operational home of Phreatic — a non-profit organization exploring and protecting the flooded caves and groundwater of Sardinia. Volunteer divers contribute to cave survey, 3D mapping, sediment or biology sampling, and conservation. Your dives become real data.</p>
     </div>

@@ -22,7 +22,7 @@
   <div class="cave-selector-header container">
     <p class="section-label">The Systems</p>
     <h2>Six Coastal Caves</h2>
-    <p class="lead">Each system is remarkably different from the others. Most feature halocline, hydrogen sulphide layers, speleothems, and varying morphology throughout.</p>
+    <p class="lead">Each cave system is remarkably different from the next, shaped by its own combination of haloclines, hydrogen sulphide layers, speleothems, changing passage levels, and varied limestone morphology.</p>
   </div>
 
   <div class="cave-timeline-wrap" bind:this={timelineWrap} on:scroll={onTimelineScroll}>
