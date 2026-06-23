@@ -3,7 +3,7 @@
 export const DIVE_TYPES = [
   { id: 'single',    label: 'Single Tank',  sub: '12L' },
   { id: 'doubles',   label: 'Doubles',      sub: '2×12L' },
-  { id: 'sidemount', label: 'Sidemount',    sub: '2×12L side' },
+  { id: 'sidemount', label: 'Sidemount',    sub: '2×11L side' },
   { id: 'ccr',       label: 'CCR',          sub: 'Closed Circuit' },
 ];
 
@@ -12,7 +12,7 @@ export const DIVE_TYPES = [
 export const CYLINDERS = [
   { id: 'doubles_2x12',    label: 'Doubles 2×12',         groups: ['doubles'],            pricePerRental: 20, volumeL: 24  },
   { id: 'single_12_steel', label: 'Single 12L Steel',     groups: ['single','sidemount'], pricePerRental: 10, volumeL: 12  },
-  { id: 'single_12_alu',   label: 'Single 12L Aluminum',  groups: ['single','sidemount'], pricePerRental: 10, volumeL: 12  },
+  { id: 'single_12_alu',   label: 'Single 11L Aluminum',  groups: ['single','sidemount'], pricePerRental: 10, volumeL: 12  },
   { id: 'ccr_3l_o2',       label: 'CCR 3L Oxygen',        groups: ['ccr'],                pricePerRental: 10, volumeL: 3   },
   { id: 'ccr_3l_dil',      label: 'CCR 3L Diluent',       groups: ['ccr'],                pricePerRental: 10, volumeL: 3   },
   { id: 'ccr_2x7l',        label: 'CCR 2×7L (Lola D7)',   groups: ['ccr'],                pricePerRental: 20, volumeL: 14  },

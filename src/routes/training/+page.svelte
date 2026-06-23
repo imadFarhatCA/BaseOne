@@ -13,7 +13,7 @@
   ];
 
   const reasons = [
-    { t: 'Real caves as your classroom', d: 'Train in genuine Sardinian cave systems — not a pool or a simulated overhead.' },
+    { t: 'Exceptional European cave environments', d: 'Base One gives access to some of Europe’s most distinctive cave-diving systems, with clear water, varied passages, stable conditions, and the right level of complexity for high-quality training.' },
     { t: 'High standards, lived daily', d: 'You enter an operation where details matter and progression is earned, not handed over.' },
     { t: 'Strong GUE presence', d: 'From Fundamentals through advanced Cave and CCR, taught by experienced instructors.' },
     { t: 'Connected to real operations', d: 'Training tied to active exploration and projects — learning with consequence and context.' },
@@ -39,7 +39,7 @@
 <!-- ── Training Philosophy ──────────────────────────────────── -->
 <section class="section section-alt">
   <div class="container-narrow">
-    <p class="lead blur-reveal">Base One is not built around volume training. We host selected GUE, TDI, and IANTD instructors who share our standards for preparation, logistics, safety, and meaningful student progression.</p>
+    <p class="lead blur-reveal">Base One is not built around volume training. We operate primarily as a GUE-oriented hub, while welcoming selected high-level instructors from other agencies who share our standards for preparation, logistics, safety, and meaningful student progression.</p>
   </div>
 </section>
 
@@ -77,7 +77,7 @@
     <div class="section-header blur-reveal">
       <p class="section-label">Course Calendar</p>
       <h2>Upcoming at Base One</h2>
-      <p class="lead">Click any course for details. GUE courses book through GUE.com; other courses send straight to us.</p>
+      <p class="lead">GUE courses are booked through GUE.com; other training options can be arranged directly with Base One.</p>
     </div>
     <CourseCalendar {courses} />
     <div class="text-center mt-lg scale-reveal">

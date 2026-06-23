@@ -2,19 +2,9 @@
   import PageHero from '$lib/components/PageHero.svelte';
   import CtaBlock from '$lib/components/CtaBlock.svelte';
   import CaveTimeline from '$lib/components/CaveTimeline.svelte';
-  import GalleryGrid from '$lib/components/GalleryGrid.svelte';
   import BigCta from '$lib/components/BigCta.svelte';
   import VideoSection from '$lib/components/VideoSection.svelte';
-
-  // Open-water & reef images — verified online placeholders, swap for real Base One photos later.
-  const openWater = [
-    { src: 'https://images.unsplash.com/photo-1544551763-46a013bb70d5?w=900&q=70&auto=format&fit=crop', alt: 'Scuba diver beside a school of fish on a reef', caption: 'Reef & wall dives' },
-    { src: 'https://images.unsplash.com/photo-1551244072-5d12893278ab?w=900&q=70&auto=format&fit=crop', alt: 'Coral reef lit by sun rays', caption: 'Open water' },
-    { src: 'https://images.unsplash.com/photo-1583212292454-1fe6229603b7?w=900&q=70&auto=format&fit=crop', alt: 'Colourful coral garden with fish', caption: 'Coral gardens' },
-    { src: 'https://images.unsplash.com/photo-1518467166778-b88f373ffec7?w=900&q=70&auto=format&fit=crop', alt: 'Sea turtle in turquoise water', caption: 'Marine life' },
-    { src: 'https://images.unsplash.com/photo-1437622368342-7a3d73a34c8f?w=900&q=70&auto=format&fit=crop', alt: 'Green sea turtle swimming', caption: 'Encounters' },
-    { src: 'https://images.unsplash.com/photo-1559825481-12a05cc00344?w=900&q=70&auto=format&fit=crop', alt: 'Sunlight over a sandy shallow seabed', caption: 'Sandy shallows' },
-  ];
+  import { openWater } from '$lib/data/openWater.js';
 </script>
 
 <svelte:head><title>Diving — Base One</title>
@@ -50,16 +40,12 @@
 <CaveTimeline />
 
 <!-- ── Open Water & Wrecks ──────────────────────────────────── -->
-<section class="section section-alt">
-  <div class="container">
-    <div class="section-header blur-reveal">
-      <p class="section-label">Beyond the Caves</p>
-      <h2>Open Water &amp; Reefs</h2>
-      <p class="lead">Not every dive in the Gulf of Orosei goes overhead. Beyond its caves, the area offers clear-water wreck dives, wall dives, shallow coastal sites, caverns, and sheltered locations ideal for recreational divers, warm-up dives, and skills development before advanced cave, technical, or CCR training.</p>
-    </div>
-    <GalleryGrid images={openWater} columns={3} />
-  </div>
-</section>
+<CaveTimeline
+  items={openWater}
+  label="Beyond the Caves"
+  heading="Open Water &amp; Wrecks"
+  lead="Not every dive in the Gulf of Orosei goes overhead. Beyond its caves, the area offers clear-water wreck dives, wall dives, shallow coastal sites, caverns, and sheltered locations ideal for recreational divers, warm-up dives, and skills development before advanced cave, technical, or CCR training."
+/>
 
 <!-- ── Book Now ─────────────────────────────────────────────── -->
 <BigCta

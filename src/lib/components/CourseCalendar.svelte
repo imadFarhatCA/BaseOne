@@ -18,7 +18,7 @@
 
 <div class="cal-legend">
   <span class="cal-key"><i class="dot dot-gue"></i> GUE — book on GUE.com</span>
-  <span class="cal-key"><i class="dot dot-tdi"></i> TDI &amp; others — enquire with us</span>
+  <span class="cal-key"><i class="dot dot-tdi"></i> Non-GUE — enquire with us</span>
 </div>
 
 <div class="cal-list">

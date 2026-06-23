@@ -3,7 +3,7 @@ export const caves = [
     name: 'Grotta del Bue Marino',
     access: 'Boat access · All levels',
     description: 'The most extensive cave system in the Gulf of Orosei. Its branching passages — Ramo Nord, Ramo di Mezzo, and Ramo Sud — extend for kilometres through mapped tunnels and unexplored continuations. Rich speleothems, a prominent halocline, and long open galleries make this one of the cave systems that helped establish the Gulf of Orosei as a world-class cave diving destination. Suitable for a wide range of experience levels, from long shallow dives to multi-sump cave diving.',
-    tags: ['Halocline', 'Speleothems', 'Multiple sumps', 'All levels'],
+    tags: ['Halocline', 'Speleothems', 'Multiple sumps', 'Distance'],
     images: [
       '/images/caves/bue-marino-1.jpg',
       '/images/caves/bue-marino-2.jpg',
@@ -35,7 +35,7 @@ export const caves = [
   },
   {
     name: 'Utopia / Euforia',
-    access: 'Boat access · Advanced',
+    access: 'Boat access · Depth',
     description: 'Utopia and Euforia are adjacent cave systems on the Gulf of Orosei coastline, known for large-scale morphology, depth, distance, and demanding dive planning. Utopia is one of the deepest cave systems in the Gulf, with powerful phreatic galleries, strong photographic potential, and profiles that may require DPV support, decompression strategy, and rebreather-level experience.',
     tags: ['Complex navigation', 'Depth', 'Power cave'],
     images: [
@@ -57,7 +57,7 @@ export const caves = [
   },
   {
     name: 'Grotta Sifone',
-    access: 'Boat access · Advanced',
+    access: 'Boat access · Restricted',
     description: 'A multi-sump cave system with a restricted entrance, an initial sump, a short dry section, and further sumps beyond. White limestone walls, tight passages, and changing morphology make it an excellent objective for qualified sidemount cave divers.',
     tags: ['Challenging', 'Multiple sumps', 'Sidemount only'],
     images: [
