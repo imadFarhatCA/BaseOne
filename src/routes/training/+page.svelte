@@ -49,7 +49,7 @@
     <div class="section-header blur-reveal">
       <p class="section-label">The Approach</p>
       <h2>Why Come Train Here</h2>
-      <p class="lead">Learning happens in an environment shaped by real operations, real experience, and real consequence.</p>
+      <p class="lead">Learning happens in an environment shaped by real operations, deep experience, and high standards.</p>
     </div>
     <div class="feature-cards">
       {#each reasons as r, i}
@@ -76,7 +76,7 @@
   <div class="container">
     <div class="section-header blur-reveal">
       <p class="section-label">Course Calendar</p>
-      <h2>Upcoming at Base One</h2>
+      <h2>Scheduled Courses at Base One</h2>
       <p class="lead">GUE courses are booked through GUE.com; other training options can be arranged directly with Base One.</p>
     </div>
     <CourseCalendar {courses} />

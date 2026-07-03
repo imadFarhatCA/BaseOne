@@ -1,6 +1,5 @@
 <script>
   import PhotoGallery from '$lib/components/PhotoGallery.svelte';
-  import Testimonials from '$lib/components/Testimonials.svelte';
   import GalleryGrid from '$lib/components/GalleryGrid.svelte';
   import Faq from '$lib/components/Faq.svelte';
 
@@ -146,7 +145,7 @@
     <ul class="check-list mt-md">
       <li class="reveal-left delay-1">Extraordinary cave-diving sites of remarkable variety, accessible by boat directly from Base One in Cala Gonone</li>
       <li class="reveal-right delay-2">GUE diving courses from Fundamentals to advanced cave, technical, and CCR training, including instructor development.</li>
-      <li class="reveal-left delay-3">SUEX DPV rental, support, test center, and field-proven operational know-how</li>
+      <li class="reveal-left delay-3">SUEX DPV rental, support, test centre, and field-proven operational know-how</li>
       <li class="reveal-right delay-4">A community of selected GUE and non-GUE instructors, explorers, and professionals who raise the bar</li>
     </ul>
   </div>
@@ -163,7 +162,7 @@
       <div class="pillar-card reveal-left delay-1"><ul class="tag-list"><li>Cave</li><li>Wreck</li><li>Recreational Options</li></ul><h3>Diving</h3><p>Cave systems of the Gulf of Orosei — shallow passages, power caves, narrow tunnels, halocline zones, speleothem galleries, and deep exploration frontiers.</p><a href="/diving" class="pillar-link">Explore the Diving →</a></div>
       <div class="pillar-card reveal-right delay-2"><ul class="tag-list"><li>GUE</li><li>TDI</li><li>IANTD</li></ul><h3>Training</h3><p>Real development in an environment shaped by active operations. GUE training from Fundamentals through advanced Cave and CCR, alongside selected TDI and IANTD instructors and training pathways.</p><a href="/training" class="pillar-link">Build your Training →</a></div>
       <div class="pillar-card reveal-left delay-3"><ul class="tag-list"><li>Survey</li><li>Science</li><li>Exploration</li></ul><h3>Phreatic</h3><p>Join selected exploration, survey, and citizen-science projects connected to the Phreatic ecosystem. Participation is project-based, and separate from normal booking.</p><a href="/exploration" class="pillar-link">Join Active Projects →</a></div>
-      <div class="pillar-card reveal-right delay-4"><ul class="tag-list"><li>TÜV-Certified Gas Station</li><li>Boat &amp; Rhib Support</li><li>SUEX Center</li></ul><h3>Facility &amp; Logistics</h3><p>Gas fills, boats, classrooms, DPVs and equipment hire. Infrastructure that removes friction from serious diving.</p><a href="/about#the-facility" class="pillar-link">View Facility →</a></div>
+      <div class="pillar-card reveal-right delay-4"><ul class="tag-list"><li>TÜV-Certified Gas Station</li><li>Boat &amp; Rhib Support</li><li>SUEX Centre</li></ul><h3>Facility &amp; Logistics</h3><p>Gas fills, boats, classrooms, DPVs and equipment hire. Infrastructure that removes friction from serious diving.</p><a href="/about#the-facility" class="pillar-link">View Facility →</a></div>
     </div>
   </div>
 </section>
@@ -233,8 +232,6 @@
     <!-- <source src="/videos/raises-your-game.mp4" type="video/mp4" /> -->
   </video>
 </div>
-
-<Testimonials />
 
 <!-- ── FAQ ──────────────────────────────────────────────────── -->
 <section class="section section-alt">

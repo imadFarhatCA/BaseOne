@@ -42,19 +42,19 @@
 <section class="section section-alt">
   <div class="container">
     <div class="section-header blur-reveal">
-      <p class="section-label">The Group</p>
+      <p class="section-label">Part of</p>
       <img class="aion-logo" src="/images/logo-aion.png" alt="AION Group" />
       <p class="lead">Three brands, one vision — advancing what is possible underwater.</p>
     </div>
     <div class="feature-cards">
-      <div class="feature-card reveal-left delay-1"><div class="feature-logo"><img src="/images/logo.png" alt="Base One" /></div><h3>Base One</h3><p>The operational hub in Sardinia for cave diving, technical training, and exploration.</p></div>
+      <div class="feature-card reveal-left delay-1"><div class="feature-logo"><img src="/images/logo.png" alt="Base One" /></div><h3>Base One</h3><p>AION’s Mediterranean Operational, Training and Customer Experience Hub.</p></div>
       <div class="feature-card reveal-up delay-2"><div class="feature-logo"><img src="/images/logo-suex.svg" alt="SUEX" /></div><h3>SUEX</h3><p>Underwater propulsion vehicles engineered for performance. DPVs built for cave, technical, and professional diving.</p></div>
       <div class="feature-card reveal-right delay-3"><div class="feature-logo"><img src="/images/logo-blueprint.png" alt="Blueprint Subsea" /></div><h3>Blueprint Subsea</h3><p>Subsea technology and survey solutions. Precision tools for underwater mapping and data collection.</p></div>
     </div>
   </div>
 </section>
 
-<div class="quote-divider blur-reveal"><p class="brand-line">Precision on the surface. Possibility below.</p></div>
+<div class="quote-divider blur-reveal"><p class="brand-line">Precision on the surface. Capability below.</p></div>
 
 <!-- ── Logistics: Built for Serious Operations + gallery ─────── -->
 <section class="section" id="the-facility">
@@ -66,11 +66,11 @@
     </div>
     <div class="feature-cards">
       <div class="feature-card reveal-left delay-1"><div class="feature-icon"><img src="/images/icons/gauge.svg" alt="" /></div><h3>Gas Fills</h3><p>Air, Nitrox, Trimix, and custom gas blends from a TÜV-certified gas station equipped with BAUER compressors and MPS oxygen boosters.</p></div>
-      <div class="feature-card reveal-right delay-2"><div class="feature-icon"><img src="/images/icons/rib-boat.svg" alt="" /></div><h3>Boat Fleet</h3><p>Purpose-built dive RHIBs and larger vessel designed as professional working platforms, with stainless-steel diver structures, comfortable ladders, VHF communication, Garmin inReach, and experienced skippers for reliable access to sea-entry cave sites.</p></div>
+      <div class="feature-card reveal-right delay-2"><div class="feature-icon"><img src="/images/icons/rib-boat.svg" alt="" /></div><h3>Boat Fleet</h3><p>Purpose-built dive RHIBs and a larger vessel designed as professional working platforms, with stainless-steel diver structures, comfortable ladders, VHF communication, Garmin inReach, and experienced skippers supporting reliable access to sea-entry cave sites, offshore dive locations, and long-range open-water navigation operations.</p></div>
       <div class="feature-card reveal-left delay-3"><div class="feature-icon"><img src="/images/icons/classroom.svg" alt="" /></div><h3>Classrooms</h3><p>Dedicated spaces for briefings, debriefs, theory sessions, and course work — with monitors, whiteboards, high-speed internet, and air conditioning.</p></div>
-      <div class="feature-card reveal-right delay-1"><div class="feature-icon"><img src="/images/icons/charging.png" alt="" /></div><h3>Charging Stations</h3><p>DPV charging, light charging, camera battery management — keep equipment powered and ready between dives.</p></div>
-      <div class="feature-card reveal-left delay-2"><div class="feature-icon"><img src="/images/icons/mask.svg" alt="" /></div><h3>Equipment Hire</h3><p>Halcyon rental equipment is available for backmount and sidemount diving, including complete systems, lights, reels, DPVs, accessories, and JJ-CCR stands and frames. All equipment is carefully maintained and regularly inspected.</p></div>
-      <div class="feature-card reveal-right delay-3"><div class="feature-icon"><img src="/images/icons/storage-box.svg" alt="" /></div><h3>Storage &amp; Security</h3><p>Secure storage between dive days, with rinse tanks, protected overnight storage, and a dedicated drying room with dehumidifier for wetsuits, drysuits, and undersuits.</p></div>
+      <div class="feature-card reveal-right delay-1"><div class="feature-icon"><img src="/images/icons/charging.png" alt="" /></div><h3>Charging Stations</h3><p>Dedicated charging and battery-management areas for DPVs, lights, cameras, and mission equipment, keeping every system organised and ready between operations.</p></div>
+      <div class="feature-card reveal-left delay-2"><div class="feature-icon"><img src="/images/icons/mask.svg" alt="" /></div><h3>Equipment Hire</h3><p>Selected Halcyon backmount and sidemount systems, SUEX DPVs, primary lights, reels, cylinders, accessories, and JJ-CCR frames are available for hire. Equipment is professionally maintained, inspected, and prepared before use.</p></div>
+      <div class="feature-card reveal-right delay-3"><div class="feature-icon"><img src="/images/icons/storage-box.svg" alt="" /></div><h3>Storage &amp; Security</h3><p>Secure overnight equipment storage, dedicated rinse tanks, and a climate-controlled drying room with dehumidification for wetsuits, drysuits, undersuits, and technical diving equipment.</p></div>
     </div>
     <div class="mt-lg">
       <GalleryGrid images={logisticsShots} columns={3} />

@@ -1,6 +1,15 @@
 <script>
   import PageHero from '$lib/components/PageHero.svelte';
   import TripSimulator from '$lib/components/TripSimulator.svelte';
+  import Faq from '$lib/components/Faq.svelte';
+
+  const faqs = [
+    { q: 'What certification and experience do I need?', a: 'The required certification depends on the planned activity. Cave, technical, wreck, CCR, and DPV dives are organised according to certification, recent experience, team capability, and current conditions. Certification alone does not automatically determine site suitability.' },
+    { q: 'Can I come without an established team?', a: 'Yes. Divers arriving without a buddy or complete team should contact us in advance so we can assess suitable options. Depending on certification, experience, objectives, dates, and availability, Base One may coordinate an appropriate team arrangement or provide guided diving on request.' },
+    { q: 'How are dive sites and daily plans selected?', a: 'Dive sites are confirmed by the Base One team according to sea state, cave conditions, diver qualifications, recent experience, planned runtime, and team objectives. We always aim to accommodate individual preferences, but plans may be adjusted when environmental or operational conditions require it.' },
+    { q: 'How far in advance should I book?', a: 'Advance booking is recommended, particularly for cave diving, guided support, DPV rental, helium, special gas blends, and private team logistics. Availability depends on dates, vessel requirements, equipment, and the level of operational support required.' },
+    { q: 'How do I receive an estimate or quotation?', a: 'Standard diving arrangements can be explored through Plan Your Trip for an initial estimate. Cave programmes, training, private teams, professional operations, and manufacturer projects are reviewed and quoted individually.' },
+  ];
 </script>
 
 <svelte:head><title>Plan Your Trip — Base One</title>
@@ -20,7 +29,8 @@
   <div class="container-narrow">
     <p class="section-label reveal-left">The Conversation</p>
     <h2 class="reveal-left delay-1">Not with a generic package. With a question: what are you here to build?</h2>
-    <p class="lead mt-sm reveal-left delay-2">No two divers arrive with the same goal. Some are coming for their first serious step into cave training. Some are returning to continue a journey started years ago. Some are organizing a team, an event, or a test program.</p>
+    <p class="lead mt-sm reveal-left delay-2">No two divers arrive with the same goal. Some come for cave training, others to continue their progression, organise a team, or support a product test.</p>
+    <p class="lead mt-sm reveal-left delay-3">Standard diving arrangements can be explored through Plan Your Trip for an initial estimate, while team, training, professional, and manufacturer programmes are quoted individually.</p>
   </div>
 </section>
 
@@ -39,8 +49,8 @@
   <div class="container" style="max-width:720px;">
     <div class="section-header reveal">
       <div class="eyebrow">Get in Touch</div>
-      <h2>Send Your Inquiry</h2>
-      <p class="lead">Tell us about your plans and we will get back to you within 24 hours.</p>
+      <h2>Discuss Your Plans</h2>
+      <p class="lead">Tell us about your team, experience, objectives, and preferred dates. We normally respond within 24 hours with the most appropriate options.</p>
     </div>
 
     <a href="https://wa.me/393403430380" target="_blank" rel="noopener" class="wa-cta reveal">
@@ -91,7 +101,7 @@
           <input type="text" id="dates" name="dates" placeholder="e.g. June 15–22, 2026">
         </div>
         <div class="form-field full">
-          <label for="message">Tell Us About Your Plans</label>
+          <label for="message">Discuss Your Plans</label>
           <textarea id="message" name="message" placeholder="What are you here to build?" required></textarea>
         </div>
         <div class="form-field full">
@@ -104,6 +114,17 @@
   </div>
 </section>
 
+
+<!-- ── FAQ ──────────────────────────────────────────────────── -->
+<section class="section">
+  <div class="container">
+    <div class="section-header blur-reveal">
+      <p class="section-label">Good to Know</p>
+      <h2>Frequently Asked Questions</h2>
+    </div>
+    <Faq items={faqs} />
+  </div>
+</section>
 
 <section class="section section-dark cta-block">
   <div class="container reveal">

@@ -1,7 +1,6 @@
 <script>
   import PageHero from '$lib/components/PageHero.svelte';
   import CtaBlock from '$lib/components/CtaBlock.svelte';
-  import Testimonials from '$lib/components/Testimonials.svelte';
   import GalleryGrid from '$lib/components/GalleryGrid.svelte';
   import Faq from '$lib/components/Faq.svelte';
   import { activities, gettingHere, accommodations, ferryRoutes } from '$lib/data/area.js';
@@ -248,14 +247,12 @@
         <li class="reveal-up delay-1">Access to some of Europe’s longest and most varied underwater cave systems</li>
         <li class="reveal-up delay-2">Protected coastline with some of the clearest water in the Mediterranean Sea</li>
         <li class="reveal-up delay-3">Warm, turquoise, calm seas with minimal currents</li>
-        <li class="reveal-up delay-4">A small town that has not been overrun by mass tourism</li>
+        <li class="reveal-up delay-4">An authentic coastal town that retains a strong local character and has not been overrun by mass tourism</li>
         <li class="reveal-up delay-5">Year-round diving with most courses running April through November</li>
       </ul>
     </div>
   </div>
 </section>
-
-<Testimonials />
 
 <CtaBlock
   heading="Plan your Stay"
