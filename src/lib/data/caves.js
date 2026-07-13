@@ -9,6 +9,10 @@ export const caves = [
       '/images/caves/bue-marino-2.jpg',
       '/images/caves/bue-marino-3.jpg',
       '/images/caves/bue-marino-4.jpg',
+      '/images/caves/bue-marino-5.jpg',
+      '/images/caves/bue-marino-6.jpg',
+      '/images/caves/bue-marino-7.jpg',
+      '/images/caves/bue-marino-8.jpg',
     ],
   },
   {
@@ -53,6 +57,10 @@ export const caves = [
       '/images/caves/fico-1.jpg',
       '/images/caves/fico-2.jpg',
       '/images/caves/fico-3.jpg',
+      '/images/caves/fico-4.jpg',
+      '/images/caves/fico-5.jpg',
+      '/images/caves/fico-6.jpg',
+      '/images/caves/fico-7.jpg',
     ],
   },
   {
