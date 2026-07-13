@@ -6,6 +6,7 @@
   import { courses } from '$lib/data/courses.js';
 
   const trainingShots = [
+    { src: '/images-training/P1010113.jpg', alt: 'Base One training' },
     { src: '/images-training/_DSC0006.jpg', alt: 'Instructor leading a theory session in the classroom', caption: 'Theory & Briefings' },
     { src: '/images-training/_DSC0050.jpg', alt: 'Students on the dive boat heading to the site', caption: 'Boat Experience' },
     { src: '/images-training/_DSC0063.jpg', alt: 'Divers at the surface near the Sardinian cliffs', caption: 'Surface Briefs' },
