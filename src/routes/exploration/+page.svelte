@@ -1,6 +1,25 @@
 <script>
   import PageHero from '$lib/components/PageHero.svelte';
   import CtaBlock from '$lib/components/CtaBlock.svelte';
+  import GalleryGrid from '$lib/components/GalleryGrid.svelte';
+
+  const bueMarinoDryShots = [
+    { src: '/images/exploration/bue-marino-dry-1.jpg', alt: 'Bue Marino dry section' },
+    { src: '/images/exploration/bue-marino-dry-2.jpg', alt: 'Bue Marino dry section' },
+    { src: '/images/exploration/bue-marino-dry-3.jpg', alt: 'Bue Marino dry section' },
+    { src: '/images/exploration/bue-marino-dry-4.jpg', alt: 'Bue Marino dry section' },
+    { src: '/images/exploration/bue-marino-dry-5.jpg', alt: 'Bue Marino dry section' },
+    { src: '/images/exploration/bue-marino-dry-6.jpg', alt: 'Bue Marino dry section' },
+    { src: '/images/exploration/bue-marino-dry-7.jpg', alt: 'Bue Marino dry section' },
+  ];
+
+  const utopiaShots = [
+    { src: '/images/exploration/utopia-1.jpg', alt: 'Utopia cave system' },
+    { src: '/images/exploration/utopia-2.jpg', alt: 'Utopia cave system' },
+    { src: '/images/exploration/utopia-3.jpg', alt: 'Utopia cave system' },
+    { src: '/images/exploration/utopia-4.jpg', alt: 'Utopia cave system' },
+    { src: '/images/exploration/utopia-5.jpg', alt: 'Utopia cave system' },
+  ];
 </script>
 
 <svelte:head><title>Exploration — Base One</title>
@@ -55,6 +74,26 @@
         <p>Combining SUEX DPVs with advanced acoustic navigation, underwater positioning, and environmental sensing to extend exploration range and operate safely in long, complex cave systems.</p>
       </div>
     </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="section-header blur-reveal">
+      <p class="section-label">Gallery</p>
+      <h2>Bue Marino — Dry Section</h2>
+    </div>
+    <GalleryGrid images={bueMarinoDryShots} columns={3} />
+  </div>
+</section>
+
+<section class="section section-alt">
+  <div class="container">
+    <div class="section-header blur-reveal">
+      <p class="section-label">Gallery</p>
+      <h2>Utopia</h2>
+    </div>
+    <GalleryGrid images={utopiaShots} columns={3} />
   </div>
 </section>
 
