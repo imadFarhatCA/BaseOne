@@ -1,5 +1,6 @@
 <script>
   import PhotoGallery from '$lib/components/PhotoGallery.svelte';
+  import VideoReel from '$lib/components/VideoReel.svelte';
   import GalleryGrid from '$lib/components/GalleryGrid.svelte';
   import Faq from '$lib/components/Faq.svelte';
 
@@ -154,6 +155,8 @@
 <div class="quote-divider"><p class="brand-line">For divers who know that good dives start before entering the water.</p></div>
 
 <PhotoGallery />
+
+<VideoReel eyebrow="In the Water" heading="Moments from Below" />
 
 <section class="section section-alt">
   <div class="container">
