@@ -5,22 +5,25 @@
   // import { team } from '$lib/data/team.js';   // hidden — Alessandro & Andrea section dropped
 
   const logisticsShots = [
-    { src: '/images-facility/_DSC0017.jpg', alt: 'Base One dive boat at Cala Gonone marina', caption: 'Boat Fleet' },
-    { src: '/images-facility/_DSC0539.jpg', alt: 'Base One blue dive boat at harbour', caption: 'Big Boat' },
-    { src: '/images-facility/_DSC0012.jpg', alt: 'Tank storage room with compressor and dive gear', caption: 'Equipment & Storage' },
-    { src: '/images-facility/P1010163.jpg', alt: 'MPS gas blending system — oxygen and helium fills', caption: 'Gas Fills' },
-    { src: '/images-facility/_DSC0568.jpg', alt: 'Classroom with tables, screen and whiteboard', caption: 'Classrooms' },
-    { src: '/images-facility/_DSC0579.jpg', alt: 'SUEX DPV storage and logistics warehouse', caption: 'Storage' },
-    { src: '/images-facility/P1010183.jpg', alt: 'Rental dive cylinders lined up and ready', caption: 'Tank Rentals' },
-    { src: '/images-facility/P1010175.jpg', alt: 'Gas filling panel with cylinders connected', caption: 'Fills Made Easy' },
-    { src: '/images-facility/_DSC0531.jpg', alt: 'Base One large dive vessel at sea', caption: 'Big Boat' },
+    { src: '/images-facility/_DSC0505.jpg', alt: 'Base One facility' },
+    { src: '/images-facility/IMG_3732.jpg', alt: 'Base One facility' },
+    { src: '/images-facility/P1010160.jpg', alt: 'Base One facility' },
+    { src: '/images-facility/_DSC0017.jpg', alt: 'Base One dive boat at Cala Gonone marina' },
+    { src: '/images-facility/_DSC0539.jpg', alt: 'Base One blue dive boat at harbour' },
+    { src: '/images-facility/_DSC0012.jpg', alt: 'Tank storage room with compressor and dive gear' },
+    { src: '/images-facility/P1010163.jpg', alt: 'MPS gas blending system — oxygen and helium fills' },
+    { src: '/images-facility/_DSC0568.jpg', alt: 'Classroom with tables, screen and whiteboard' },
+    { src: '/images-facility/_DSC0579.jpg', alt: 'SUEX DPV storage and logistics warehouse' },
+    { src: '/images-facility/P1010183.jpg', alt: 'Rental dive cylinders lined up and ready' },
+    { src: '/images-facility/P1010175.jpg', alt: 'Gas filling panel with cylinders connected' },
+    { src: '/images-facility/_DSC0531.jpg', alt: 'Base One large dive vessel at sea' },
   ];
 
   const eventsShots = [
-    { src: '/images-facility/_DSC0590.jpg', alt: 'Briefing room with cave-diving mural', caption: 'Briefings & Planning' },
-    { src: '/images-facility/_DSC0615.jpg', alt: 'Small meeting room with map and screen', caption: 'Team Meetings' },
-    { src: '/images-facility/_DSC0574.jpg', alt: 'Research bench with microscope and underwater robots', caption: 'Research & Tech' },
-    { src: '/images-facility/_DSC0010.jpg', alt: 'Base One support van', caption: 'Logistics & Transport' },
+    { src: '/images-facility/_DSC0590.jpg', alt: 'Briefing room with cave-diving mural' },
+    { src: '/images-facility/_DSC0615.jpg', alt: 'Small meeting room with map and screen' },
+    { src: '/images-facility/_DSC0574.jpg', alt: 'Research bench with microscope and underwater robots' },
+    { src: '/images-facility/_DSC0010.jpg', alt: 'Base One support van' },
   ];
 </script>
 
