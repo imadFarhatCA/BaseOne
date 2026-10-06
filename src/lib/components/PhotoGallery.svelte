@@ -6,14 +6,14 @@
   let atEnd = false;
 
   const images = [
-    { src: '/images/hero-cave.jpg',         alt: 'Cave entrance, divers at the surface' },
-    { src: '/images/hero-diving.jpg',        alt: 'Two divers in a wide teal cave passage' },
-    { src: '/images/divider-diving.jpg',     alt: 'Three divers exploring a cave with sand floor' },
-    { src: '/images/hero-exploration.jpg',   alt: 'Diver looking up through dramatic cave ceiling' },
-    { src: '/images/divider-exploration.jpg',alt: 'Solo diver with light shaft from above' },
-    { src: '/images/divider-training.jpg',   alt: 'Three divers training in cave with stalactites' },
-    { src: '/images/divider-about.jpg',      alt: 'Two divers with torch beams in a cave passage' },
-    { src: '/images/divider-cave.jpg',       alt: 'Atmospheric cave arch with blue glow' },
+    { src: '/images/hero-cave.jpg',         alt: 'Cave entrance, divers at the surface', credit: 'Imad Farhat' },
+    { src: '/images/hero-diving.jpg',        alt: 'Two divers in a wide teal cave passage', credit: 'JP Bresser' },
+    { src: '/images/divider-diving.jpg',     alt: 'Three divers exploring a cave with sand floor', credit: 'JP Bresser' },
+    { src: '/images/hero-exploration.jpg',   alt: 'Diver looking up through dramatic cave ceiling', credit: 'Imad Farhat' },
+    { src: '/images/divider-exploration.jpg',alt: 'Solo diver with light shaft from above', credit: 'SJ Bennett' },
+    { src: '/images/divider-training.jpg',   alt: 'Three divers training in cave with stalactites', credit: 'Imad Farhat' },
+    { src: '/images/divider-about.jpg',      alt: 'Two divers with torch beams in a cave passage', credit: 'Olga Martinelli' },
+    { src: '/images/divider-cave.jpg',       alt: 'Atmospheric cave arch with blue glow', credit: 'Alex Dawson' },
     // Hidden for now (images 9-13):
     /*
     { src: '/images/hero-facility.jpg',      alt: 'Diver setting up heavy gear at Base One' },

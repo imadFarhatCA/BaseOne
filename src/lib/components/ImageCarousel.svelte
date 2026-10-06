@@ -40,6 +40,7 @@
       {#each images as img, i}
         <div class="gallery-card">
           <img src={typeof img === 'string' ? img : img.src} alt={typeof img === 'string' ? `${alt} — photo ${i + 1}` : img.alt} loading="lazy" />
+          {#if img.credit}<span class="gallery-credit">© {img.credit}</span>{/if}
         </div>
       {/each}
     </div>
@@ -48,6 +49,14 @@
 
 <style>
   .image-carousel { position: relative; }
+  :global(.gallery-card) { position: relative; }
+  .gallery-credit {
+    position: absolute; left: 0; right: 0; bottom: 0;
+    padding: 1.4rem .9rem .6rem;
+    font-size: .72rem; letter-spacing: .03em; color: rgba(255,255,255,.9);
+    background: linear-gradient(to top, rgba(0,0,0,.6), transparent);
+    pointer-events: none;
+  }
   .image-carousel-nav {
     display: flex; justify-content: flex-end; gap: 0.5rem;
     max-width: var(--container);

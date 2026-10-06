@@ -1,5 +1,5 @@
 <script>
-  // items: [{ q, a }]
+  // items: [{ q, a, href?, linkLabel? }]
   export let items = [];
   let openIdx = 0;
   const toggle = (i) => openIdx = openIdx === i ? -1 : i;
@@ -13,7 +13,7 @@
         <span class="faq-icon" aria-hidden="true">{openIdx === i ? '–' : '+'}</span>
       </button>
       {#if openIdx === i}
-        <div class="faq-a"><p>{item.a}</p></div>
+        <div class="faq-a"><p>{item.a}{#if item.href} <a href={item.href} class="faq-link">{item.linkLabel || 'Learn more'} →</a>{/if}</p></div>
       {/if}
     </div>
   {/each}
@@ -31,4 +31,6 @@
   .faq-icon { color: var(--teal); font-size: 1.5rem; flex-shrink: 0; line-height: 1; }
   .faq-a { padding: 0 .25rem 1.3rem; }
   .faq-a p { margin: 0; color: var(--text-muted); line-height: 1.7; }
+  .faq-link { font-weight: 700; color: var(--teal); white-space: nowrap; }
+  .faq-link:hover { text-decoration: underline; }
 </style>

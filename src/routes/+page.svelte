@@ -31,6 +31,7 @@
     { q: 'When is the diving season?', a: 'Most diving and courses run April through November, with warm, clear water and long bottom times. Off-season diving is possible on request.' },
     { q: 'Can you help with accommodation and transfers?', a: 'Yes. We work with local hotels and apartments and can arrange airport shuttle transfers — you will not need a car in Cala Gonone.' },
     { q: 'How do I get a price?', a: 'Use the Plan your Trip page to tell us what you want to do, and we will build a tailored plan for diving, training, and your stay.' },
+    { q: 'How do I get here?', a: 'Fly into Olbia or Cagliari, or take a ferry from the Italian mainland, then continue to Cala Gonone by road. We can arrange transfers.', href: '/cala-gonone', linkLabel: 'See how to get to Cala Gonone' },
   ];
 
   let mx = 50, my = 50;
@@ -98,13 +99,14 @@
   <div class="hero-content">
     <div class="eyebrow stone">Cala Gonone, Sardinia</div>
     <h1>Serious Diving,<br>Properly Supported</h1>
-    <p class="hero-sub">Cave diving, training, DPV support, and expedition-level logistics from Cala Gonone, Sardinia.</p>
+    <p class="hero-sub">Cave diving, training, projects, and expedition-level logistics from Cala Gonone, Sardinia.</p>
     <ul class="hero-highlights">
       <li>Cave &amp; CCR</li><li>GUE Training Hub</li><li>AION Group</li>
     </ul>
     <div class="hero-buttons">
       <a href="/plan" class="btn btn-teal btn-large">Make a Booking</a>
       <a href="/diving" class="btn btn-ghost btn-large">Explore the Diving</a>
+      <a href="/diving" class="btn btn-ghost btn-large">Tech &amp; Open Water</a>
     </div>
   </div>
 </section>
