@@ -109,18 +109,6 @@
   </div>
 </section>
 
-<section class="section section-alt">
-  <div class="container">
-    <div class="section-header blur-reveal"><p class="section-label">Four Pillars</p><h2>Everything Base One Offers</h2></div>
-    <div class="pillars">
-      <div class="pillar-card reveal-left delay-1"><ul class="tag-list"><li>Cave</li><li>Wreck</li><li>Recreational Options</li></ul><h3>Diving</h3><p>Cave systems of the Gulf of Orosei — shallow passages, power caves, narrow tunnels, halocline zones, speleothem galleries, and deep exploration frontiers.</p><a href="/diving" class="pillar-link">Explore the Diving →</a></div>
-      <div class="pillar-card reveal-right delay-2"><ul class="tag-list"><li>GUE</li><li>TDI</li><li>IANTD</li></ul><h3>Training</h3><p>Real development in an environment shaped by active operations. GUE training from Fundamentals through advanced Cave and CCR, alongside selected TDI and IANTD instructors and training pathways.</p><a href="/training" class="pillar-link">Build your Training →</a></div>
-      <div class="pillar-card reveal-left delay-3"><ul class="tag-list"><li>Survey</li><li>Science</li><li>Exploration</li></ul><h3>Phreatic</h3><p>Join selected exploration, survey, and citizen-science projects connected to the Phreatic ecosystem. Participation is project-based, and separate from normal booking.</p><a href="/exploration" class="pillar-link">Join Active Projects →</a></div>
-      <div class="pillar-card reveal-right delay-4"><ul class="tag-list"><li>TÜV-Certified Gas Station</li><li>Boat &amp; Rhib Support</li><li>SUEX Centre</li></ul><h3>Facility &amp; Logistics</h3><p>Gas fills, boats, classrooms, DPVs and equipment hire. Infrastructure that removes friction from serious diving.</p><a href="/about#the-facility" class="pillar-link">View Facility →</a></div>
-    </div>
-  </div>
-</section>
-
 <!-- Hidden: info cards
 <div class="info-cards-wrap">
   <div class="info-cards">
@@ -162,6 +150,18 @@
   </div>
 </section>
 
+<section class="section section-alt">
+  <div class="container">
+    <div class="section-header blur-reveal"><p class="section-label">Four Pillars</p><h2>Everything Base One Offers</h2></div>
+    <div class="pillars">
+      <div class="pillar-card reveal-left delay-1"><ul class="tag-list"><li>Cave</li><li>Wreck</li><li>Recreational Options</li></ul><h3>Diving</h3><p>Cave systems of the Gulf of Orosei — shallow passages, power caves, narrow tunnels, halocline zones, speleothem galleries, and deep exploration frontiers.</p><a href="/diving" class="pillar-link">Explore the Diving →</a></div>
+      <div class="pillar-card reveal-right delay-2"><ul class="tag-list"><li>GUE</li><li>TDI</li><li>IANTD</li></ul><h3>Training</h3><p>Real development in an environment shaped by active operations. GUE training from Fundamentals through advanced Cave and CCR, alongside selected TDI and IANTD instructors and training pathways.</p><a href="/training" class="pillar-link">Build your Training →</a></div>
+      <div class="pillar-card reveal-left delay-3"><ul class="tag-list"><li>Survey</li><li>Science</li><li>Exploration</li></ul><h3>Phreatic</h3><p>Join selected exploration, survey, and citizen-science projects connected to the Phreatic ecosystem. Participation is project-based, and separate from normal booking.</p><a href="/exploration" class="pillar-link">Join Active Projects →</a></div>
+      <div class="pillar-card reveal-right delay-4"><ul class="tag-list"><li>TÜV-Certified Gas Station</li><li>Boat &amp; Rhib Support</li><li>SUEX Centre</li></ul><h3>Facility &amp; Logistics</h3><p>Gas fills, boats, classrooms, DPVs and equipment hire. Infrastructure that removes friction from serious diving.</p><a href="/about#the-facility" class="pillar-link">View Facility →</a></div>
+    </div>
+  </div>
+</section>
+
 <!-- Hidden: <div class="quote-divider"><p class="brand-line">For divers who know that good dives start before entering the water.</p></div> -->
 
 <PhotoGallery />
@@ -181,6 +181,7 @@
 </section>
 
 <!-- ── Not Diving? Topside activities ───────────────────────── -->
+<!-- Hidden: Not Diving section
 <section class="section">
   <div class="container">
     <div class="section-header blur-reveal">
@@ -194,7 +195,9 @@
     </div>
   </div>
 </section>
+-->
 
+<!-- Hidden: The Environment section
 <section class="section section-dark">
   <div class="container-narrow">
     <p class="section-label reveal-left">The Environment</p>
@@ -207,6 +210,7 @@
     </ul>
   </div>
 </section>
+-->
 
 <!-- Full-bleed video divider (shows poster until a video file is added) -->
 <div class="video-divider scale-reveal">
@@ -238,6 +242,7 @@
         <a href="/exploration" class="btn btn-ghost btn-large">Join a Project</a>
       </div>
     </div>
+    <!-- Hidden: stats
     <div class="cta-final-stats">
       <div class="cta-stat">
         <span class="cta-stat-num">100</span>
@@ -254,6 +259,7 @@
         <span class="cta-stat-label">Active by conditions and demand</span>
       </div>
     </div>
+    -->
   </div>
 </section>
 
