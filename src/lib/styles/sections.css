@@ -131,7 +131,7 @@
 .footer p  { font-size: 0.9rem; line-height: 1.7; }
 .footer h4 { color: #fff; font-size: 0.72rem; text-transform: uppercase; letter-spacing: 0.1em; margin-bottom: 1rem; }
 .footer-links { list-style: none; }
-.footer-links li { margin-bottom: 0.5rem; }
+.footer-links li { margin-bottom: 0.5rem; font-size: 0.9rem; color: rgba(255,255,255,.6); }
 .footer-links a { font-size: 0.9rem; color: rgba(255,255,255,.6); transition: color .2s; }
 .footer-links a:hover { color: #fff; }
 .footer-bottom {

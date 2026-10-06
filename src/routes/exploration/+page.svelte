@@ -20,6 +20,13 @@
     { src: '/images/exploration/utopia-4.jpg', alt: 'Utopia cave system' },
     { src: '/images/exploration/utopia-5.jpg', alt: 'Utopia cave system' },
   ];
+
+  // ── Phreatic — images from phreatic.org (saved locally), one CTA under each ──
+  const phreaticCards = [
+    { src: '/images/phreatic/exploration.jpg', alt: 'Diver silhouette in a glowing cave pool', label: 'Join a Project', href: 'https://www.phreatic.org/', external: true },
+    { src: '/images/phreatic/survey.jpg', alt: 'Survey gear and DPVs staged at a cave water edge', label: 'Help by Donating', href: 'https://www.phreatic.org/', external: true },
+    { src: '/images/phreatic/sediment.jpg', alt: 'Diver collecting a sediment sample', label: 'Download Annual Report ↓', href: 'https://www.phreatic.org/report/Phreatic-2024-Annual-Report.pdf', external: true },
+  ];
 </script>
 
 <svelte:head><title>Exploration — Base One</title>
@@ -77,6 +84,25 @@
   </div>
 </section>
 
+<!-- ── Phreatic ─────────────────────────────────────────────── -->
+<section class="section phreatic-section">
+  <div class="container">
+    <div class="section-header blur-reveal">
+      <p class="section-label">Citizen Science &amp; Community</p>
+      <h2>Phreatic</h2>
+      <p class="lead">Base One is the operational home of Phreatic — a non-profit organization exploring and protecting the flooded caves and groundwater of Sardinia. Volunteer divers contribute to cave survey, 3D mapping, sediment or biology sampling, and conservation. Your dives become real data.</p>
+    </div>
+    <div class="phreatic-cards">
+      {#each phreaticCards as c, i}
+        <div class="phreatic-card reveal-up delay-{i + 1}">
+          <div class="phreatic-card-img"><img src={c.src} alt={c.alt} loading="lazy" /></div>
+          <a href={c.href} target="_blank" rel="noopener" class="btn btn-teal phreatic-card-btn">{c.label}</a>
+        </div>
+      {/each}
+    </div>
+  </div>
+</section>
+
 <section class="section">
   <div class="container">
     <div class="section-header blur-reveal">
@@ -105,3 +131,24 @@
   primaryLabel="Join a Project"
   secondaryLabel="Learn More"
 />
+
+<style>
+  .phreatic-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+  }
+  .phreatic-card { display: flex; flex-direction: column; gap: 1rem; }
+  .phreatic-card-img {
+    height: clamp(220px, 26vw, 300px);
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+    box-shadow: 0 8px 28px rgba(0,0,0,.12);
+  }
+  .phreatic-card-img img { width: 100%; height: 100%; object-fit: cover; display: block; transition: transform .5s ease; }
+  .phreatic-card:hover .phreatic-card-img img { transform: scale(1.05); }
+  .phreatic-card-btn { width: 100%; text-align: center; }
+  @media (max-width: 760px) {
+    .phreatic-cards { grid-template-columns: 1fr; max-width: 420px; margin: 0 auto; }
+  }
+</style>

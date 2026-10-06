@@ -5,9 +5,9 @@
       <p>The dive center in Cala Gonone, Sardinia — where exploration, training, technology, and community meet.</p>
       <p style="margin-top:1rem;">Part of <strong>AION Group</strong></p>
     </div>
-    <div class="footer-explore">
+    <div>
       <h4>Explore</h4>
-      <ul class="footer-links footer-links-lg">
+      <ul class="footer-links">
         <li><a href="/diving">Diving</a></li>
         <li><a href="/training">Training</a></li>
         <li><a href="/about">Facility</a></li>
@@ -45,19 +45,6 @@
 </footer>
 
 <style>
-  /* Emphasise the Explore column */
-  .footer-explore :global(h4) {
-    font-size: 1.05rem;
-    color: var(--teal-light, #4fd1c5);
-    letter-spacing: .02em;
-  }
-  .footer-links-lg :global(a) {
-    font-size: 1.05rem;
-    font-weight: 600;
-    line-height: 2.1;
-  }
-  .footer-links-lg :global(a:hover) { color: var(--teal-light, #4fd1c5); }
-
   /* Liability Release CTA */
   .footer-liability-cta {
     display: inline-block;

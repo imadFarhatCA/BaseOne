@@ -6,12 +6,6 @@
 
   import { onMount } from 'svelte';
 
-  // ── Phreatic — images from phreatic.org (saved locally), one CTA under each ──
-  const phreaticCards = [
-    { src: '/images/phreatic/exploration.jpg', alt: 'Diver silhouette in a glowing cave pool', label: 'Join a Project', href: 'https://www.phreatic.org/', external: true },
-    { src: '/images/phreatic/survey.jpg', alt: 'Survey gear and DPVs staged at a cave water edge', label: 'Help by Donating', href: 'https://www.phreatic.org/', external: true },
-    { src: '/images/phreatic/sediment.jpg', alt: 'Diver collecting a sediment sample', label: 'Download Annual Report ↓', href: 'https://www.phreatic.org/report/Phreatic-2024-Annual-Report.pdf', external: true },
-  ];
 
   // ── Base One Experience — placeholder local photos; SWAP for real smiling-people shots ──
   const experienceShots = [
@@ -115,6 +109,18 @@
   </div>
 </section>
 
+<section class="section section-alt">
+  <div class="container">
+    <div class="section-header blur-reveal"><p class="section-label">Four Pillars</p><h2>Everything Base One Offers</h2></div>
+    <div class="pillars">
+      <div class="pillar-card reveal-left delay-1"><ul class="tag-list"><li>Cave</li><li>Wreck</li><li>Recreational Options</li></ul><h3>Diving</h3><p>Cave systems of the Gulf of Orosei — shallow passages, power caves, narrow tunnels, halocline zones, speleothem galleries, and deep exploration frontiers.</p><a href="/diving" class="pillar-link">Explore the Diving →</a></div>
+      <div class="pillar-card reveal-right delay-2"><ul class="tag-list"><li>GUE</li><li>TDI</li><li>IANTD</li></ul><h3>Training</h3><p>Real development in an environment shaped by active operations. GUE training from Fundamentals through advanced Cave and CCR, alongside selected TDI and IANTD instructors and training pathways.</p><a href="/training" class="pillar-link">Build your Training →</a></div>
+      <div class="pillar-card reveal-left delay-3"><ul class="tag-list"><li>Survey</li><li>Science</li><li>Exploration</li></ul><h3>Phreatic</h3><p>Join selected exploration, survey, and citizen-science projects connected to the Phreatic ecosystem. Participation is project-based, and separate from normal booking.</p><a href="/exploration" class="pillar-link">Join Active Projects →</a></div>
+      <div class="pillar-card reveal-right delay-4"><ul class="tag-list"><li>TÜV-Certified Gas Station</li><li>Boat &amp; Rhib Support</li><li>SUEX Centre</li></ul><h3>Facility &amp; Logistics</h3><p>Gas fills, boats, classrooms, DPVs and equipment hire. Infrastructure that removes friction from serious diving.</p><a href="/about#the-facility" class="pillar-link">View Facility →</a></div>
+    </div>
+  </div>
+</section>
+
 <!-- Hidden: info cards
 <div class="info-cards-wrap">
   <div class="info-cards">
@@ -145,51 +151,22 @@
     <p class="section-label reveal-left">The Place</p>
     <h2 class="reveal-left delay-1">A base built for people who take diving seriously.</h2>
     <p class="lead mt-sm reveal-left delay-2">Base One is not a resort dive shop. It is a specialist operation built around cave diving, technical training, underwater technology, and exploration in Cala Gonone, one of the Mediterranean’s most striking coastal wilderness areas — a place where world-class diving meets dramatic limestone landscapes, clear blue water, and one of Sardinia’s most beautiful tourism destinations.</p>
+    <!-- Hidden: bullets
     <ul class="check-list mt-md">
       <li class="reveal-left delay-1">Extraordinary cave-diving sites of remarkable variety, accessible by boat directly from Base One in Cala Gonone</li>
       <li class="reveal-right delay-2">GUE diving courses from Fundamentals to advanced cave, technical, and CCR training, including instructor development.</li>
       <li class="reveal-left delay-3">SUEX DPV rental, support, test centre, and field-proven operational know-how</li>
       <li class="reveal-right delay-4">A community of selected GUE and non-GUE instructors, explorers, and professionals who raise the bar</li>
     </ul>
+    -->
   </div>
 </section>
 
-<div class="quote-divider"><p class="brand-line">For divers who know that good dives start before entering the water.</p></div>
+<!-- Hidden: <div class="quote-divider"><p class="brand-line">For divers who know that good dives start before entering the water.</p></div> -->
 
 <PhotoGallery />
 
 <VideoReel eyebrow="In the Water" heading="Moments from Below" />
-
-<section class="section section-alt">
-  <div class="container">
-    <div class="section-header blur-reveal"><p class="section-label">Four Pillars</p><h2>Everything Base One Offers</h2></div>
-    <div class="pillars">
-      <div class="pillar-card reveal-left delay-1"><ul class="tag-list"><li>Cave</li><li>Wreck</li><li>Recreational Options</li></ul><h3>Diving</h3><p>Cave systems of the Gulf of Orosei — shallow passages, power caves, narrow tunnels, halocline zones, speleothem galleries, and deep exploration frontiers.</p><a href="/diving" class="pillar-link">Explore the Diving →</a></div>
-      <div class="pillar-card reveal-right delay-2"><ul class="tag-list"><li>GUE</li><li>TDI</li><li>IANTD</li></ul><h3>Training</h3><p>Real development in an environment shaped by active operations. GUE training from Fundamentals through advanced Cave and CCR, alongside selected TDI and IANTD instructors and training pathways.</p><a href="/training" class="pillar-link">Build your Training →</a></div>
-      <div class="pillar-card reveal-left delay-3"><ul class="tag-list"><li>Survey</li><li>Science</li><li>Exploration</li></ul><h3>Phreatic</h3><p>Join selected exploration, survey, and citizen-science projects connected to the Phreatic ecosystem. Participation is project-based, and separate from normal booking.</p><a href="/exploration" class="pillar-link">Join Active Projects →</a></div>
-      <div class="pillar-card reveal-right delay-4"><ul class="tag-list"><li>TÜV-Certified Gas Station</li><li>Boat &amp; Rhib Support</li><li>SUEX Centre</li></ul><h3>Facility &amp; Logistics</h3><p>Gas fills, boats, classrooms, DPVs and equipment hire. Infrastructure that removes friction from serious diving.</p><a href="/about#the-facility" class="pillar-link">View Facility →</a></div>
-    </div>
-  </div>
-</section>
-
-<!-- ── Phreatic ─────────────────────────────────────────────── -->
-<section class="section phreatic-section">
-  <div class="container">
-    <div class="section-header blur-reveal">
-      <p class="section-label">Citizen Science &amp; Community</p>
-      <h2>Phreatic</h2>
-      <p class="lead">Base One is the operational home of Phreatic — a non-profit organization exploring and protecting the flooded caves and groundwater of Sardinia. Volunteer divers contribute to cave survey, 3D mapping, sediment or biology sampling, and conservation. Your dives become real data.</p>
-    </div>
-    <div class="phreatic-cards">
-      {#each phreaticCards as c, i}
-        <div class="phreatic-card reveal-up delay-{i + 1}">
-          <div class="phreatic-card-img"><img src={c.src} alt={c.alt} loading="lazy" /></div>
-          <a href={c.href} target="_blank" rel="noopener" class="btn btn-teal phreatic-card-btn">{c.label}</a>
-        </div>
-      {/each}
-    </div>
-  </div>
-</section>
 
 <!-- ── The Base One Experience ──────────────────────────────── -->
 <section class="section section-alt">
@@ -281,22 +258,6 @@
 </section>
 
 <style>
-  .phreatic-cards {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 1.5rem;
-  }
-  .phreatic-card { display: flex; flex-direction: column; gap: 1rem; }
-  .phreatic-card-img {
-    height: clamp(220px, 26vw, 300px);
-    border-radius: var(--radius-lg);
-    overflow: hidden;
-    box-shadow: 0 8px 28px rgba(0,0,0,.12);
-  }
-  .phreatic-card-img img { width: 100%; height: 100%; object-fit: cover; display: block; transition: transform .5s ease; }
-  .phreatic-card:hover .phreatic-card-img img { transform: scale(1.05); }
-  .phreatic-card-btn { width: 100%; text-align: center; }
-
   /* Full-bleed video divider */
   .video-divider {
     width: 100vw;
@@ -308,7 +269,4 @@
   .video-divider-media { width: 100%; height: 100%; object-fit: cover; display: block; }
 
   .mt-lg { margin-top: 2rem; }
-  @media (max-width: 760px) {
-    .phreatic-cards { grid-template-columns: 1fr; max-width: 420px; margin: 0 auto; }
-  }
 </style>
