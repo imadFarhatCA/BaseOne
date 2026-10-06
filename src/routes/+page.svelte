@@ -236,7 +236,7 @@
     <div class="cta-final-text">
       <p class="eyebrow teal-light">Start Planning</p>
       <h2>What Do You Want<br>To Do Next?</h2>
-      <p class="lead">Tell us what you are here to do — training, cave diving, exploration, or all three.</p>
+      <p class="lead">Tell us what you are here to do — training, cave diving, exploration or all of it.</p>
       <div class="cta-buttons">
         <a href="/training#schedule" class="btn btn-teal btn-large">Make a Booking</a>
         <a href="/plan#contact" class="btn btn-ghost btn-large">Get in Touch</a>
