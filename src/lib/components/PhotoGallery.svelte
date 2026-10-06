@@ -14,11 +14,14 @@
     { src: '/images/divider-training.jpg',   alt: 'Three divers training in cave with stalactites' },
     { src: '/images/divider-about.jpg',      alt: 'Two divers with torch beams in a cave passage' },
     { src: '/images/divider-cave.jpg',       alt: 'Atmospheric cave arch with blue glow' },
+    // Hidden for now (images 9-13):
+    /*
     { src: '/images/hero-facility.jpg',      alt: 'Diver setting up heavy gear at Base One' },
     { src: '/images/hero-about.jpg',         alt: 'Divers preparing before a dive' },
     { src: '/images/hero-training.jpg',      alt: 'DPV training in open water' },
     { src: '/images/divider-facility.jpg',   alt: 'Dive RIB on the water' },
     { src: '/images/hero-plan.jpg',          alt: 'Cave passage with blue tones' },
+    */
   ];
 </script>
 

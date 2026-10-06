@@ -212,12 +212,14 @@
 </section>
 -->
 
+<!-- Hidden: video divider
 <!-- Full-bleed video divider (shows poster until a video file is added) -->
 <div class="video-divider scale-reveal">
   <video class="video-divider-media" poster="/images/divider-cave.jpg" muted loop playsinline autoplay preload="none">
     <!-- <source src="/videos/raises-your-game.mp4" type="video/mp4" /> -->
   </video>
 </div>
+-->
 
 <!-- ── FAQ ──────────────────────────────────────────────────── -->
 <section class="section section-alt">
