@@ -115,6 +115,7 @@
   </div>
 </section>
 
+<!-- Hidden: info cards
 <div class="info-cards-wrap">
   <div class="info-cards">
     <div class="info-card reveal-left delay-1">
@@ -137,6 +138,7 @@
     </div>
   </div>
 </div>
+-->
 
 <section class="section">
   <div class="container-narrow">
