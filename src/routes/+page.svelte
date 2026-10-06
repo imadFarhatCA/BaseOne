@@ -101,12 +101,11 @@
     <h1>Serious Diving,<br>Properly Supported</h1>
     <p class="hero-sub">Cave diving, training, projects, and expedition-level logistics from Cala Gonone, Sardinia.</p>
     <ul class="hero-highlights">
-      <li>Cave &amp; CCR</li><li>GUE Training Hub</li><li>AION Group</li>
+      <li>Cave &amp; CCR</li><li>Tech &amp; Open Water</li><li>GUE Training Hub</li><li>AION Group</li>
     </ul>
     <div class="hero-buttons">
       <a href="/plan" class="btn btn-teal btn-large">Make a Booking</a>
       <a href="/diving" class="btn btn-ghost btn-large">Explore the Diving</a>
-      <a href="/diving" class="btn btn-ghost btn-large">Tech &amp; Open Water</a>
     </div>
   </div>
 </section>
