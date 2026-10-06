@@ -63,7 +63,7 @@
 <section class="section">
   <div class="container-narrow">
     <p class="section-label reveal-left">The Place</p>
-    <h2 class="reveal-left delay-1">Remote, wild, and extraordinarily beautiful.</h2>
+    <h2 class="reveal-left delay-1">Remote, wild and extraordinarily beautiful.</h2>
     <p class="lead mt-sm reveal-left delay-2">Cala Gonone sits at the foot of the Supramonte limestone plateau, opening onto the Gulf of Orosei. The forty kilometres of coastline to the south have no roads or buildings — only white pebble coves reachable by boat or on foot through the mountains.</p>
     <p class="mt-sm reveal-left delay-3">It is not a resort. It is a base — for people who want to be close to something genuinely wild.</p>
   </div>
