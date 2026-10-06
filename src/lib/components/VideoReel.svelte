@@ -5,8 +5,8 @@
   const reels = [
     { src: '/videos/reel-1.mp4', poster: '/videos/reel-1.jpg' },
     { src: '/videos/reel-2.mp4', poster: '/videos/reel-2.jpg' },
-    { src: '/videos/reel-3.mp4', poster: '/videos/reel-3.jpg' },
     { src: '/videos/reel-4.mp4', poster: '/videos/reel-4.jpg' },
+    { src: '/videos/reel-3.mp4', poster: '/videos/reel-3.jpg' },
   ];
 </script>
 
