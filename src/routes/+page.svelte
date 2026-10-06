@@ -103,7 +103,7 @@
       <li>Cave &amp; CCR</li><li>GUE Training Hub</li><li>AION Group</li>
     </ul>
     <div class="hero-buttons">
-      <a href="/plan" class="btn btn-teal btn-large">Book Training</a>
+      <a href="/plan" class="btn btn-teal btn-large">Make a Booking</a>
       <a href="/diving" class="btn btn-ghost btn-large">Explore the Diving</a>
     </div>
   </div>
@@ -165,7 +165,7 @@
 <!-- Hidden: <div class="quote-divider"><p class="brand-line">For divers who know that good dives start before entering the water.</p></div> -->
 
 <!-- ── The Base One Experience ──────────────────────────────── -->
-<section class="section section-alt">
+<section class="section">
   <div class="container">
     <div class="section-header blur-reveal">
       <p class="section-label">More Than the Diving</p>
@@ -237,7 +237,7 @@
       <h2>Where Will You<br>Dive Next?</h2>
       <p class="lead">Tell us what you are here to do — training, cave diving, exploration, or all three.</p>
       <div class="cta-buttons">
-        <a href="/training#schedule" class="btn btn-teal btn-large">Book Training</a>
+        <a href="/training#schedule" class="btn btn-teal btn-large">Make a Booking</a>
         <a href="/plan#contact" class="btn btn-ghost btn-large">Get in Touch</a>
         <a href="/exploration" class="btn btn-ghost btn-large">Join a Project</a>
       </div>

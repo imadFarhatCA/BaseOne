@@ -4,10 +4,11 @@
   export let images = [];
   export let alt = '';
   export let theme = 'light'; // 'light' or 'dark'
+  export let hideNav = false; // parent renders its own arrows
+  export let atStart = true;
+  export let atEnd = false;
 
   let slider;
-  let atStart = true;
-  let atEnd = false;
 
   onMount(() => { updateBounds(); });
 
@@ -21,14 +22,14 @@
 
   function onScroll() { updateBounds(); }
 
-  function scroll(dir) {
+  export function scroll(dir) {
     if (!slider) return;
     slider.scrollBy({ left: dir * slider.clientWidth, behavior: 'smooth' });
   }
 </script>
 
 <div class="image-carousel" class:dark={theme === 'dark'}>
-  {#if showArrows}
+  {#if showArrows && !hideNav}
     <div class="image-carousel-nav">
       <button class="gallery-arrow" type="button" on:click={() => scroll(-1)} aria-label="Previous" disabled={atStart}>←</button>
       <button class="gallery-arrow" type="button" on:click={() => scroll(1)} aria-label="Next" disabled={atEnd}>→</button>

@@ -1,6 +1,10 @@
 <script>
   import ImageCarousel from './ImageCarousel.svelte';
 
+  let carousel;
+  let atStart = true;
+  let atEnd = false;
+
   const images = [
     { src: '/images/hero-cave.jpg',         alt: 'Cave entrance, divers at the surface' },
     { src: '/images/hero-diving.jpg',        alt: 'Two divers in a wide teal cave passage' },
@@ -26,7 +30,11 @@
         <h2>See It for Yourself</h2>
         <p class="lead mt-sm">A place unlike any other — from the caves below to the people who dive them.</p>
       </div>
+      <div class="gallery-nav">
+        <button class="gallery-arrow" type="button" on:click={() => carousel.scroll(-1)} aria-label="Previous" disabled={atStart}>←</button>
+        <button class="gallery-arrow" type="button" on:click={() => carousel.scroll(1)} aria-label="Next" disabled={atEnd}>→</button>
+      </div>
     </div>
   </div>
-  <ImageCarousel {images} alt="Base One" />
+  <ImageCarousel {images} alt="Base One" hideNav bind:this={carousel} bind:atStart bind:atEnd />
 </section>
