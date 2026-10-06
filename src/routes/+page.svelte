@@ -164,10 +164,6 @@
 
 <!-- Hidden: <div class="quote-divider"><p class="brand-line">For divers who know that good dives start before entering the water.</p></div> -->
 
-<PhotoGallery />
-
-<VideoReel eyebrow="In the Water" heading="Moments from Below" />
-
 <!-- ── The Base One Experience ──────────────────────────────── -->
 <section class="section section-alt">
   <div class="container">
@@ -179,6 +175,10 @@
     <GalleryGrid images={experienceShots} columns={3} />
   </div>
 </section>
+
+<PhotoGallery />
+
+<VideoReel eyebrow="In the Water" heading="Moments from Below" />
 
 <!-- ── Not Diving? Topside activities ───────────────────────── -->
 <!-- Hidden: Not Diving section
