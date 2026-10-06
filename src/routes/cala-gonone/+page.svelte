@@ -236,6 +236,7 @@
 </section>
 
 <!-- ── Why Divers — dark with aerial image background ────────── -->
+<!-- Hidden: More Than Just a Dive Trip
 <section class="section section-dark why-section">
   <div class="why-bg scale-reveal" style="background-image:url('/images/divider-cala-gonone.jpg')"></div>
   <div class="why-overlay"></div>
@@ -253,6 +254,7 @@
     </div>
   </div>
 </section>
+-->
 
 <CtaBlock
   heading="Plan your Stay"
@@ -262,6 +264,9 @@
 />
 
 <style>
+  /* Space between CTA text and button */
+  :global(.cta-block .cta-buttons) { margin-top: 2.25rem; }
+
   /* Darker hero overlay */
   :global(.hero-page .hero-bg::after) {
     background: rgba(4,10,18,.52) !important;
