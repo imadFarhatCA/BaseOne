@@ -18,7 +18,7 @@
     { src: '/images-facility/P1010175.jpg', alt: 'Gas filling panel with cylinders connected' },
     { src: '/images-facility/P1010160.jpg', alt: 'Base One facility' },
 
-    { src: '/images-facility/P1010163.jpg', alt: 'MPS gas blending system - oxygen and helium fills' },
+    { src: '/images-facility/_DSC0015.jpg', alt: 'Gas station with compressors, oxygen-clean kit and cylinders' },
   ];
 
   const eventsShots = [
