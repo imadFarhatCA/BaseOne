@@ -22,7 +22,7 @@
   ];
 
   const eventsShots = [
-    { src: '/images-facility/_DSC0590.jpg', alt: 'Briefing room with cave-diving mural' },
+    { src: '/images-facility/_DSC0606.jpg', alt: 'Classroom with tables, SUEX rug, screen and whiteboard' },
     { src: '/images-facility/_DSC0615.jpg', alt: 'Small meeting room with map and screen' },
     { src: '/images-facility/_DSC0574.jpg', alt: 'Research bench with microscope and underwater robots' },
     { src: '/images-facility/_DSC0010.jpg', alt: 'Base One support van' },
