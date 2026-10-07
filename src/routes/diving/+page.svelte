@@ -65,7 +65,7 @@
     </div>
     <div class="steps">
       <div class="step reveal-left delay-1"><div class="step-num">01</div><h3>Prepare</h3><p>Prepare your equipment, check the gas, load the boat. Everything is charged and ready.</p></div>
-      <div class="step reveal-right delay-2"><div class="step-num">02</div><h3>Brief</h3><p>Review. Discuss. Confirm. Go over the plan, assess the conditions, and make sure every team member knows their role.</p></div>
+      <div class="step reveal-right delay-2"><div class="step-num">02</div><h3>Brief</h3><p>Review. Discuss. Confirm. Go over the plan, assess the conditions, and make sure everyone knows their role.</p></div>
       <div class="step reveal-left delay-3"><div class="step-num">03</div><h3>Dive</h3><p>Ride out with the boat. Gear up. Dive with confidence, and don't forget to have fun.</p></div>
       <div class="step reveal-right delay-4"><div class="step-num">04</div><h3>Return</h3><p>Rinse the gear, upload the data, debrief the dive: what worked, and what needs refining.</p></div>
       <div class="step reveal-left delay-5"><div class="step-num">05</div><h3>Recharge</h3><p>Plug in. Top off. Plan ahead. DPVs and lights charging, cylinders filled, tomorrow's dive mapped out.</p></div>
@@ -78,7 +78,7 @@
 <VideoSection
   eyebrow="See It in Motion"
   heading="A Glimpse Beneath the Surface"
-  text="A short film from the caves and waters of the Gulf of Orosei. Video to be supplied."
+  text="A short film from the caves and waters of the Gulf of Orosei."
 />
 
 <!-- ── HIDDEN (dropped for now - kept for later cleanup) ──────
