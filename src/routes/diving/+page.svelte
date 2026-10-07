@@ -7,8 +7,8 @@
   import { openWater } from '$lib/data/openWater.js';
 </script>
 
-<svelte:head><title>Diving — Base One</title>
-  <meta property="og:title" content="Diving — Base One">
+<svelte:head><title>Diving - Base One</title>
+  <meta property="og:title" content="Diving - Base One">
   <meta property="og:description" content="Cave, wreck and open-water diving in the Gulf of Orosei, Sardinia. One of Europe's finest cave diving destinations, guided and supported by Base One.">
   <meta name="description" content="Cave, wreck and open-water diving in the Gulf of Orosei, Sardinia. One of Europe's finest cave diving destinations, guided and supported by Base One.">
 </svelte:head>
@@ -18,7 +18,7 @@
   image="/images/hero-diving.jpg"
   eyebrow="Cave Diving Sardinia"
   heading="Dive a Place That<br>Still Feels Wild"
-  sub="Cave systems of extraordinary beauty, variety, and potential — supported by logistics built for serious diving."
+  sub="Cave systems of extraordinary beauty, variety, and potential - supported by logistics built for serious diving."
 />
 
 <!-- ── Intro (condensed: lead visible, long copy in Read more for SEO) ── -->
@@ -29,9 +29,9 @@
     <p class="lead mt-sm reveal-left delay-2">The Gulf of Orosei is one of the last stretches of Italian coastline without buildings or coastal roads. Along forty kilometres of wild limestone coast, high white cliffs drop into turquoise water and hide hundreds of dry and flooded caves, including some of the longest underwater cave systems in Europe.</p>
     <details class="read-more reveal-left delay-3">
       <summary>Read more about the geology</summary>
-      <p class="mt-sm">These freshwater springs are shaped by saltwater intrusion from the sea, creating layered cave environments with both fresh and marine water. Speleothems, decorations, and changing passage levels show that many of these caves were once dry during different ice-age sea-level periods. Branching passages, sumps, and long shallow galleries make the Gulf of Orosei one of Europe's premier cave diving destinations — and a vast maze still being explored.</p>
+      <p class="mt-sm">These freshwater springs are shaped by saltwater intrusion from the sea, creating layered cave environments with both fresh and marine water. Speleothems, decorations, and changing passage levels show that many of these caves were once dry during different ice-age sea-level periods. Branching passages, sumps, and long shallow galleries make the Gulf of Orosei one of Europe's premier cave diving destinations - and a vast maze still being explored.</p>
       <p class="mt-sm">Most shallow cave systems in the Gulf of Orosei have average depths between 6 and 12 metres. Saltwater temperatures are usually above 22°C, while freshwater sections can be around 15°C. These conditions allow long bottom times and minimum decompression.</p>
-      <p class="mt-sm">Other systems are deeper and more complex, requiring advanced planning, longer exposure, and staged decompression — ideal terrain for experienced rebreather cave divers.</p>
+      <p class="mt-sm">Other systems are deeper and more complex, requiring advanced planning, longer exposure, and staged decompression - ideal terrain for experienced rebreather cave divers.</p>
     </details>
   </div>
 </section>
@@ -50,7 +50,7 @@
 <!-- ── Book Now ─────────────────────────────────────────────── -->
 <BigCta
   heading="Ready to Get in the Water?"
-  text="Cave, wreck, or open water — reserve your diving days with Base One."
+  text="Cave, wreck, or open water - reserve your diving days with Base One."
   label="Request Availability"
   href="/plan"
 />
@@ -79,7 +79,7 @@
   text="A short film from the caves and waters of the Gulf of Orosei. Video to be supplied."
 />
 
-<!-- ── HIDDEN (dropped for now — kept for later cleanup) ──────
+<!-- ── HIDDEN (dropped for now - kept for later cleanup) ──────
 <section class="section">
   <div class="container">
     <div class="grid-2">

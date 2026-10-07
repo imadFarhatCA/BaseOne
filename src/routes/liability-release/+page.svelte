@@ -147,7 +147,7 @@
     const field = (label, value) => {
       checkY(8); doc.setFont('helvetica', 'bold'); doc.setFontSize(8); doc.setTextColor(100, 100, 100); doc.text(label + ':', M, y);
       doc.setFont('helvetica', 'normal'); doc.setTextColor(30, 30, 30);
-      const lines = doc.splitTextToSize(value || '—', CW - 52); doc.text(lines, M + 52, y); y += Math.max(lines.length * 4.5, 6);
+      const lines = doc.splitTextToSize(value || '-', CW - 52); doc.text(lines, M + 52, y); y += Math.max(lines.length * 4.5, 6);
     };
     const checkedItem = (t) => {
       checkY(9); doc.setFillColor(26, 140, 142); doc.rect(M, y - 2.6, 3, 3, 'F');
@@ -163,13 +163,13 @@
     y = 34;
 
     doc.setFont('helvetica', 'bold'); doc.setFontSize(11); doc.setTextColor(17, 17, 17);
-    const titleLines = doc.splitTextToSize('ACKNOWLEDGEMENT OF TRAINING, EXPERIENCE AND FITNESS FOR SCUBA DIVING ACTIVITIES — DECLARATION OF RISK AWARENESS AND ASSUMPTION OF OBLIGATIONS', CW);
+    const titleLines = doc.splitTextToSize('ACKNOWLEDGEMENT OF TRAINING, EXPERIENCE AND FITNESS FOR SCUBA DIVING ACTIVITIES - DECLARATION OF RISK AWARENESS AND ASSUMPTION OF OBLIGATIONS', CW);
     doc.text(titleLines, PW / 2, y, { align: 'center' }); y += titleLines.length * 6 + 4;
 
     txt('I, the undersigned, intend to use the facilities and services offered by Base1 Sardinia (the “Diving Centre”) to perform scuba diving activities. By signing this document I acknowledge and accept the importance and consequences of the statements made and the obligations assumed. In accordance with Articles 46 and 47, D.P.R. n. 445/2000, I assume all responsibility in case of false or inaccurate statements.', M, CW, 4.5, false, 8.5, 70, 70, 70);
     gap(6);
 
-    sectionHead('SECTION A — PERSONAL INFORMATION');
+    sectionHead('SECTION A - PERSONAL INFORMATION');
     field('Full Name', f.name);
     field('Resident of', f.residentOf);
     field('Country', f.country);
@@ -181,7 +181,7 @@
     field('Fiscal Code', f.fiscalCode);
     gap(4);
 
-    sectionHead('SECTION B — CERTIFICATION & EXPERIENCE');
+    sectionHead('SECTION B - CERTIFICATION & EXPERIENCE');
     field('Issued by', f.issuedBy);
     field('Certification Level', f.level);
     field('Certification Number', f.certNumber);
@@ -190,11 +190,11 @@
     field('Specialties / environments', f.specialties);
     gap(4);
 
-    sectionHead('SECTION C — I DECLARE THAT');
+    sectionHead('SECTION C - I DECLARE THAT');
     declarations.forEach(checkedItem);
     gap(4);
 
-    sectionHead('SECTION D — I DECLARE AND AGREE TO THE FOLLOWING');
+    sectionHead('SECTION D - I DECLARE AND AGREE TO THE FOLLOWING');
     agreements.forEach(checkedItem);
     gap(4);
 
@@ -204,15 +204,15 @@
     txt('Code of Conduct & Environmental Protection: All divers must respect the marine environment and the fragile cave systems. Any diver found deliberately damaging the environment, disturbing formations, or violating conservation rules will be immediately excluded from further diving activities, without refund.', M, CW, 4.3, false, 8, 90, 90, 90);
     gap(6);
 
-    sectionHead('SECTION E — SIGNATURE');
+    sectionHead('SECTION E - SIGNATURE');
     checkY(42); doc.addImage(sigImg, 'JPEG', M, y, 80, 30);
     doc.setDrawColor(200, 200, 200); doc.setLineWidth(0.25); doc.line(M, y + 30, M + 80, y + 30); y += 35;
     field('Print Name', f.name);
-    field('Place and Date', `${f.place || '—'}  ·  ${f.date}`);
+    field('Place and Date', `${f.place || '-'}  ·  ${f.date}`);
     gap(4);
 
     if (isMinor) {
-      sectionHead('SECTION F — PARENT / LEGAL GUARDIAN CONSENT');
+      sectionHead('SECTION F - PARENT / LEGAL GUARDIAN CONSENT');
       txt('I sign as the parent or legal guardian of the minor participant named above, confirm all information is accurate, and accept responsibility for their participation.', M, CW, 4.5, false, 8.5, 80, 80, 80);
       gap(3);
       if (guardianImg) {
@@ -220,7 +220,7 @@
         doc.setDrawColor(200, 200, 200); doc.setLineWidth(0.25); doc.line(M, y + 30, M + 80, y + 30); y += 35;
       }
       field('Guardian Print Name', guardian.name);
-      field('Place and Date', `${guardian.place || '—'}  ·  ${guardian.date}`);
+      field('Place and Date', `${guardian.place || '-'}  ·  ${guardian.date}`);
     }
 
     checkY(12); doc.setDrawColor(210, 210, 210); doc.line(M, y, PW - M, y); y += 5;
@@ -232,7 +232,7 @@
   }
 </script>
 
-<svelte:head><title>Liability Release — Base One</title>
+<svelte:head><title>Liability Release - Base One</title>
   <meta name="description" content="Complete and sign the Base One Sardinia scuba diving liability release online, then save it as a PDF.">
   <meta name="robots" content="noindex">
 </svelte:head>
@@ -258,7 +258,7 @@
     {:else}
       <form class="lr-form" on:submit={submit} novalidate>
 
-        <!-- A — Personal -->
+        <!-- A - Personal -->
         <div class="lr-section">
           <h2><span class="lr-num">A</span> Personal Information</h2>
           <div class="lr-grid">
@@ -274,7 +274,7 @@
           </div>
         </div>
 
-        <!-- B — Certification -->
+        <!-- B - Certification -->
         <div class="lr-section">
           <h2><span class="lr-num">B</span> Certification &amp; Experience</h2>
           <div class="lr-grid">
@@ -287,7 +287,7 @@
           </div>
         </div>
 
-        <!-- C — Declarations -->
+        <!-- C - Declarations -->
         <div class="lr-section">
           <h2><span class="lr-num">C</span> I Declare That</h2>
           <ul class="lr-checklist">
@@ -297,7 +297,7 @@
           </ul>
         </div>
 
-        <!-- D — Agreements -->
+        <!-- D - Agreements -->
         <div class="lr-section">
           <h2><span class="lr-num">D</span> I Declare and Agree to the Following</h2>
           <ul class="lr-checklist">
@@ -320,7 +320,7 @@
           <label class="lr-minor-toggle"><input type="checkbox" bind:checked={isMinor} /><span>I am signing on behalf of a minor (parental or legal guardian consent required)</span></label>
         </div>
 
-        <!-- E — Signature -->
+        <!-- E - Signature -->
         <div class="lr-section">
           <h2><span class="lr-num">E</span> Signature</h2>
           <div class="lr-grid">
@@ -332,7 +332,7 @@
           <button type="button" class="lr-clear" on:click={clearSig}>Clear signature</button>
         </div>
 
-        <!-- F — Guardian -->
+        <!-- F - Guardian -->
         {#if isMinor}
           <div class="lr-section">
             <h2><span class="lr-num">F</span> Parent / Legal Guardian</h2>

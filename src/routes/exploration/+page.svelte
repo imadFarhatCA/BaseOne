@@ -21,7 +21,7 @@
     { src: '/images/exploration/utopia-5.jpg', alt: 'Utopia cave system' },
   ];
 
-  // ── Phreatic — images from phreatic.org (saved locally), one CTA under each ──
+  // ── Phreatic - images from phreatic.org (saved locally), one CTA under each ──
   const phreaticCards = [
     { src: '/images/phreatic/exploration.jpg', alt: 'Diver silhouette in a glowing cave pool', label: 'Join a Project', href: 'https://www.phreatic.org/', external: true },
     { src: '/images/phreatic/survey.jpg', alt: 'Survey gear and DPVs staged at a cave water edge', label: 'Help by Donating', href: 'https://www.phreatic.org/', external: true },
@@ -29,8 +29,8 @@
   ];
 </script>
 
-<svelte:head><title>Exploration — Base One</title>
-  <meta property="og:title" content="Exploration — Base One">
+<svelte:head><title>Exploration - Base One</title>
+  <meta property="og:title" content="Exploration - Base One">
   <meta property="og:description" content="Cave survey, DPV operations, and the Phreatic citizen-science programme. Pushing the boundaries of what is known beneath Sardinia.">
   <meta name="description" content="Cave survey, DPV operations, and the Phreatic citizen-science programme. Pushing the boundaries of what is known beneath Sardinia.">
 </svelte:head>
@@ -68,7 +68,7 @@
       <div class="feature-card reveal-left delay-1">
         <div class="feature-icon"><img src="/images/icons/compass.svg" alt="" /></div>
         <h3>Cave Mapping &amp; GIS</h3>
-        <p>Systematic mapping of cave passages using line surveys and 3D scanning — expanding the known extent of Gulf of Orosei systems.</p>
+        <p>Systematic mapping of cave passages using line surveys and 3D scanning - expanding the known extent of Gulf of Orosei systems.</p>
       </div>
       <div class="feature-card reveal-right delay-2">
         <div class="feature-icon"><img src="/images/icons/phreatic.png" alt="" /></div>
@@ -90,7 +90,7 @@
     <div class="section-header blur-reveal">
       <p class="section-label">Citizen Science &amp; Community</p>
       <h2>Phreatic</h2>
-      <p class="lead">Base One is the operational home of Phreatic — a non-profit organization exploring and protecting the flooded caves and groundwater of Sardinia. Volunteer divers contribute to cave survey, 3D mapping, sediment or biology sampling, and conservation. Your dives become real data.</p>
+      <p class="lead">Base One is the operational home of Phreatic - a non-profit organization exploring and protecting the flooded caves and groundwater of Sardinia. Volunteer divers contribute to cave survey, 3D mapping, sediment or biology sampling, and conservation. Your dives become real data.</p>
     </div>
     <div class="phreatic-cards">
       {#each phreaticCards as c, i}
@@ -107,7 +107,7 @@
   <div class="container">
     <div class="section-header blur-reveal">
       <p class="section-label">Gallery</p>
-      <h2>Bue Marino — Dry Section</h2>
+      <h2>Bue Marino - Dry Section</h2>
     </div>
     <GalleryGrid images={bueMarinoDryShots} columns={3} />
   </div>

@@ -17,8 +17,8 @@
 </script>
 
 <div class="cal-legend">
-  <span class="cal-key"><i class="dot dot-gue"></i> GUE — book on GUE.com</span>
-  <span class="cal-key"><i class="dot dot-tdi"></i> Non-GUE — enquire with us</span>
+  <span class="cal-key"><i class="dot dot-gue"></i> GUE - book on GUE.com</span>
+  <span class="cal-key"><i class="dot dot-tdi"></i> Non-GUE - enquire with us</span>
 </div>
 
 <div class="cal-list">
@@ -50,7 +50,7 @@
         <a href={selected.gueUrl} target="_blank" rel="noopener" class="btn btn-teal btn-large course-go">Book on GUE.com →</a>
         <p class="course-note">GUE courses are booked directly through the GUE class schedule.</p>
       {:else if sent}
-        <p class="course-sent">Thanks — we'll be in touch about <strong>{selected.course}</strong> shortly.</p>
+        <p class="course-sent">Thanks - we'll be in touch about <strong>{selected.course}</strong> shortly.</p>
       {:else}
         <form class="course-form" on:submit={submit}>
           <label for="course-email">Leave your email and we'll contact you about this course:</label>

@@ -3,14 +3,14 @@
   let open = false;
   let scrolled = false;
 
-  // Home removed from nav — reachable via the logo. Dropped items kept here, commented, for later cleanup.
+  // Home removed from nav - reachable via the logo. Dropped items kept here, commented, for later cleanup.
   const links = [
     { href: '/diving',      label: 'Diving' },
     { href: '/training',    label: 'Training' },
     { href: '/about',       label: 'Facility' },
     { href: '/cala-gonone', label: 'Cala Gonone' },
     { href: '/exploration', label: 'Exploration' },
-    // { href: '/',         label: 'Home' },   // hidden — logo links home
+    // { href: '/',         label: 'Home' },   // hidden - logo links home
   ];
 
   function closeMenu() { open = false; }

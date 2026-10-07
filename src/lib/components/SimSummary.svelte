@@ -31,7 +31,7 @@
       </div>
       <div class="sim-summary-row">
         <span>Configuration</span>
-        <span>{DIVE_TYPES.find(d => d.id === diveType)?.label || '—'}</span>
+        <span>{DIVE_TYPES.find(d => d.id === diveType)?.label || '-'}</span>
       </div>
     </div>
 
@@ -69,7 +69,7 @@
           {#each Object.entries(gases) as [gasId, qty]}
             {@const gas = FILL_GASES.find(g => g.id === gasId)}
             <div class="sim-summary-row">
-              <span>{cyl?.label} — {gas?.label} × {qty}</span>
+              <span>{cyl?.label} - {gas?.label} × {qty}</span>
               <span>€{fillPrice(cylId, gasId) * qty}</span>
             </div>
           {/each}

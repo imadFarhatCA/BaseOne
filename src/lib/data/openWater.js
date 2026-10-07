@@ -1,4 +1,4 @@
-// Open-water & wreck sites — shown in the same card format as the caves.
+// Open-water & wreck sites - shown in the same card format as the caves.
 // Images are verified online placeholders; swap for real Base One photos later.
 export const openWater = [
   {

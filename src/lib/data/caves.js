@@ -2,7 +2,7 @@ export const caves = [
   {
     name: 'Grotta del Bue Marino',
     access: 'Boat access · All levels',
-    description: 'The most extensive cave system in the Gulf of Orosei. Its branching passages — Ramo Nord, Ramo di Mezzo, and Ramo Sud — extend for kilometres through mapped tunnels and unexplored continuations. Rich speleothems, a prominent halocline, and long open galleries make this one of the cave systems that helped establish the Gulf of Orosei as a world-class cave diving destination. Suitable for a wide range of experience levels, from long shallow dives to multi-sump cave diving.',
+    description: 'The most extensive cave system in the Gulf of Orosei. Its branching passages - Ramo Nord, Ramo di Mezzo, and Ramo Sud - extend for kilometres through mapped tunnels and unexplored continuations. Rich speleothems, a prominent halocline, and long open galleries make this one of the cave systems that helped establish the Gulf of Orosei as a world-class cave diving destination. Suitable for a wide range of experience levels, from long shallow dives to multi-sump cave diving.',
     tags: ['Halocline', 'Speleothems', 'Multiple sumps', 'Distance'],
     images: [
       '/images/caves/bue-marino-5.jpg',

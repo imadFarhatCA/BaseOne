@@ -39,7 +39,7 @@
     <div class="gallery-slider" bind:this={slider} on:scroll={onScroll}>
       {#each images as img, i}
         <div class="gallery-card">
-          <img src={typeof img === 'string' ? img : img.src} alt={typeof img === 'string' ? `${alt} — photo ${i + 1}` : img.alt} loading="lazy" />
+          <img src={typeof img === 'string' ? img : img.src} alt={typeof img === 'string' ? `${alt} - photo ${i + 1}` : img.alt} loading="lazy" />
           {#if img.credit}<span class="gallery-credit">© {img.credit}</span>{/if}
         </div>
       {/each}

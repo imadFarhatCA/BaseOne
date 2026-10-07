@@ -17,16 +17,16 @@
     { t: 'Exceptional European cave environments', d: 'Base One gives access to some of Europe’s most distinctive cave-diving systems, with clear water, varied passages, stable conditions, and the right level of complexity for high-quality training.' },
     { t: 'High standards, lived daily', d: 'You enter an operation where details matter and progression is earned, not handed over.' },
     { t: 'Strong GUE presence', d: 'From Fundamentals through advanced Cave and CCR, taught by experienced instructors.' },
-    { t: 'Connected to real operations', d: 'Training tied to active exploration and projects — learning with consequence and context.' },
+    { t: 'Connected to real operations', d: 'Training tied to active exploration and projects - learning with consequence and context.' },
     { t: 'Small groups', d: 'Limited numbers mean more water time, more feedback, and a pace that fits you.' },
-    { t: 'Full logistics on site', d: 'Gas fills, boats, classrooms and equipment — so you focus only on the diving.' },
+    { t: 'Full logistics on site', d: 'Gas fills, boats, classrooms and equipment - so you focus only on the diving.' },
   ];
 </script>
 
-<svelte:head><title>Training — Base One</title>
-  <meta property="og:title" content="Training — Base One">
-  <meta property="og:description" content="GUE and technical training courses in Sardinia — Fundamentals through advanced cave and CCR. Color-coded course calendar at Base One.">
-  <meta name="description" content="GUE and technical training courses in Sardinia — Fundamentals through advanced cave and CCR. Color-coded course calendar at Base One.">
+<svelte:head><title>Training - Base One</title>
+  <meta property="og:title" content="Training - Base One">
+  <meta property="og:description" content="GUE and technical training courses in Sardinia - Fundamentals through advanced cave and CCR. Color-coded course calendar at Base One.">
+  <meta name="description" content="GUE and technical training courses in Sardinia - Fundamentals through advanced cave and CCR. Color-coded course calendar at Base One.">
 </svelte:head>
 
 <!-- ── Hero ─────────────────────────────────────────────────── -->

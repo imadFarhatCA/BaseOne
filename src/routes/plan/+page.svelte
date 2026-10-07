@@ -14,8 +14,8 @@
   ];
 </script>
 
-<svelte:head><title>Plan Your Trip — Base One</title>
-  <meta property="og:title" content="Plan Your Trip — Base One">
+<svelte:head><title>Plan Your Trip - Base One</title>
+  <meta property="og:title" content="Plan Your Trip - Base One">
   <meta property="og:description" content="Plan your cave diving trip to Cala Gonone, Sardinia. Contact Base One for dive planning, accommodation advice, and course bookings.">
   <meta name="description" content="Plan your cave diving trip to Cala Gonone, Sardinia. Contact Base One for dive planning, accommodation advice, and course bookings.">
 </svelte:head>
@@ -24,7 +24,7 @@
   image="/images/alt-diving-1.jpg"
   eyebrow="Plan Your Trip"
   heading="Start With the Idea.<br>We'll Help Build the Experience."
-  sub="Training, cave diving, projects, logistics, testing, events — tell us where you want to go."
+  sub="Training, cave diving, projects, logistics, testing, events - tell us where you want to go."
 />
 
 <section class="section">

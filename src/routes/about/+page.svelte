@@ -2,7 +2,7 @@
   import PageHero from '$lib/components/PageHero.svelte';
   import CtaBlock from '$lib/components/CtaBlock.svelte';
   import GalleryGrid from '$lib/components/GalleryGrid.svelte';
-  // import { team } from '$lib/data/team.js';   // hidden — Alessandro & Andrea section dropped
+  // import { team } from '$lib/data/team.js';   // hidden - Alessandro & Andrea section dropped
 
   const logisticsShots = [
     // hidden: { src: '/images-facility/_DSC0505.jpg', alt: 'Base One facility' },
@@ -11,7 +11,7 @@
     { src: '/images-facility/_DSC0017.jpg', alt: 'Base One dive boat at Cala Gonone marina' },
     // hidden: { src: '/images-facility/_DSC0539.jpg', alt: 'Base One blue dive boat at harbour' },
     // hidden: { src: '/images-facility/_DSC0012.jpg', alt: 'Tank storage room with compressor and dive gear' },
-    { src: '/images-facility/P1010163.jpg', alt: 'MPS gas blending system — oxygen and helium fills' },
+    { src: '/images-facility/P1010163.jpg', alt: 'MPS gas blending system - oxygen and helium fills' },
     { src: '/images-facility/_DSC0568.jpg', alt: 'Classroom with tables, screen and whiteboard' },
     // hidden: { src: '/images-facility/_DSC0579.jpg', alt: 'SUEX DPV storage and logistics warehouse' },
     { src: '/images-facility/P1010183.jpg', alt: 'Rental dive cylinders lined up and ready' },
@@ -29,10 +29,10 @@
   ];
 </script>
 
-<svelte:head><title>Facility — Base One</title>
-  <meta property="og:title" content="Facility — Base One">
-  <meta property="og:description" content="Base One is part of AION Group, alongside SUEX and Blueprint Subsea. Full technical diving support in Cala Gonone — gas fills, filling station, boat fleet, classrooms, storage, and event support.">
-  <meta name="description" content="Base One is part of AION Group, alongside SUEX and Blueprint Subsea. Full technical diving support in Cala Gonone — gas fills, filling station, boat fleet, classrooms, storage, and event support.">
+<svelte:head><title>Facility - Base One</title>
+  <meta property="og:title" content="Facility - Base One">
+  <meta property="og:description" content="Base One is part of AION Group, alongside SUEX and Blueprint Subsea. Full technical diving support in Cala Gonone - gas fills, filling station, boat fleet, classrooms, storage, and event support.">
+  <meta name="description" content="Base One is part of AION Group, alongside SUEX and Blueprint Subsea. Full technical diving support in Cala Gonone - gas fills, filling station, boat fleet, classrooms, storage, and event support.">
 </svelte:head>
 
 <!-- ── Hero ─────────────────────────────────────────────────── -->
@@ -40,7 +40,7 @@
   image="/images/hero-about.jpg"
   eyebrow="The Facility"
   heading="Built by People Who Care<br>Deeply About Diving"
-  sub="A living network of collaborators, instructors, explorers, and engineers — supported by infrastructure built for serious diving."
+  sub="A living network of collaborators, instructors, explorers, and engineers - supported by infrastructure built for serious diving."
 />
 
 <!-- ── The Group ────────────────────────────────────────────── -->
@@ -49,7 +49,7 @@
     <div class="section-header blur-reveal">
       <p class="section-label">Part of</p>
       <img class="aion-logo" src="/images/logo-aion.png" alt="AION Group" />
-      <p class="lead">Three brands, one vision — advancing what is possible underwater.</p>
+      <p class="lead">Three brands, one vision - advancing what is possible underwater.</p>
     </div>
     <div class="feature-cards">
       <div class="feature-card brand-card reveal-left delay-1"><div class="feature-logo"><img src="/images/logo.png" alt="Base One" /></div><p>AION’s Mediterranean Operational, Training and Customer Experience Hub.</p></div>
@@ -73,7 +73,7 @@
     </div>
     <div class="feature-cards">
       <div class="feature-card reveal-left delay-1"><div class="feature-icon"><img src="/images/icons/rib-boat.svg" alt="" /></div><h3>Boat Fleet</h3><p>Purpose-built dive RHIBs and a larger vessel designed as professional working platforms with experienced skippers supporting all sea-based operations.</p></div>
-      <div class="feature-card reveal-right delay-2"><div class="feature-icon"><img src="/images/icons/classroom.svg" alt="" /></div><h3>Classrooms</h3><p>4 Dedicated Rooms for briefings, debriefs, theory sessions, and all classwork — with monitors, whiteboards, high-speed internet, and air conditioning.</p></div>
+      <div class="feature-card reveal-right delay-2"><div class="feature-icon"><img src="/images/icons/classroom.svg" alt="" /></div><h3>Classrooms</h3><p>4 Dedicated Rooms for briefings, debriefs, theory sessions, and all classwork - with monitors, whiteboards, high-speed internet, and air conditioning.</p></div>
       <div class="feature-card reveal-left delay-3"><div class="feature-icon"><img src="/images/icons/gauge.svg" alt="" /></div><h3>Filling Station</h3><p>Air, Nitrox, Trimix and custom gas blends from a TÜV-certified gas station equipped with BAUER compressors and MPS oxygen boosters.</p></div>
       <div class="feature-card reveal-right delay-1"><div class="feature-icon"><img src="/images/icons/charging.png" alt="" /></div><h3>Charging Station</h3><p>Dedicated charging and battery-management areas for DPVs, lights, cameras, and mission equipment, keeping every system organised and ready between operations.</p></div>
       <div class="feature-card reveal-left delay-2"><div class="feature-icon"><img src="/images/icons/mask.svg" alt="" /></div><h3>Equipment Hire</h3><p>Selected Halcyon backmount and sidemount systems, SUEX DPVs, primary lights, reels, cylinders, accessories, and JJ-CCR frames. Equipment is maintained, inspected, and prepared before use.</p></div>
@@ -108,15 +108,15 @@
       <h2>Core Values</h2>
     </div>
     <div class="steps">
-      <div class="step reveal-left delay-1"><div class="step-num">01</div><h3>Excellence</h3><p>The relentless pursuit of doing things properly — in training, operations, and how we treat the environment.</p></div>
-      <div class="step reveal-right delay-2"><div class="step-num">02</div><h3>Community</h3><p>Instructors, explorers, students, engineers — every perspective strengthens the whole.</p></div>
+      <div class="step reveal-left delay-1"><div class="step-num">01</div><h3>Excellence</h3><p>The relentless pursuit of doing things properly - in training, operations, and how we treat the environment.</p></div>
+      <div class="step reveal-right delay-2"><div class="step-num">02</div><h3>Community</h3><p>Instructors, explorers, students, engineers - every perspective strengthens the whole.</p></div>
       <div class="step reveal-left delay-3"><div class="step-num">03</div><h3>Environment</h3><p>Every dive plan must leave the place better than we found it. No exceptions.</p></div>
       <div class="step reveal-right delay-4"><div class="step-num">04</div><h3>Innovation</h3><p>Diving advances when people are willing to question, test, and improve.</p></div>
     </div>
   </div>
 </section>
 
-<!-- ── HIDDEN (dropped for now — kept for later cleanup) ──────
+<!-- ── HIDDEN (dropped for now - kept for later cleanup) ──────
   Dropped: The Story intro, The Team (Alessandro & Andrea), The Facility blurb, A Day at Base One
   (moved to Diving page), The Living Network.
 
@@ -139,7 +139,7 @@
 
 <CtaBlock
   heading="Come, Be Part of It"
-  text="Whether you are here to teach, learn, explore, test or simply dive well — you are welcome."
+  text="Whether you are here to teach, learn, explore, test or simply dive well - you are welcome."
   primaryLabel="Plan your Trip"
   secondaryLabel="Get in Touch"
 />

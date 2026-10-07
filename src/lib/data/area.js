@@ -3,7 +3,7 @@ export const activities = [
     icon: 'boat',
     title: 'DPV Snorkel Experience',
     url: 'https://sardiniasnorkeldpv.com/',
-    desc: `This is snorkelling with a boost: you'll use easy-to-handle scooters to explore coastline and shallow-water scenery with a supervisor—at a pace that's fun, controlled, and beginner-friendly.`,
+    desc: `This is snorkelling with a boost: you'll use easy-to-handle scooters to explore coastline and shallow-water scenery with a supervisor-at a pace that's fun, controlled, and beginner-friendly.`,
     tags: ['Cala Luna', 'Grottacce'],
   },
   {
@@ -39,13 +39,13 @@ export const activities = [
   {
     icon: 'ruins',
     title: 'Tiscali Nuragic Village',
-    desc: 'A Bronze Age settlement hidden inside a collapsed cave. The walk through the valley of Lanaittu is as rewarding as the site itself — a genuinely hidden piece of ancient Sardinia.',
+    desc: 'A Bronze Age settlement hidden inside a collapsed cave. The walk through the valley of Lanaittu is as rewarding as the site itself - a genuinely hidden piece of ancient Sardinia.',
     tags: ['History', 'Nuragic', 'Culture'],
   },
   {
     icon: 'murals',
     title: 'Orgosolo Murals',
-    desc: 'The hilltop town of Orgosolo, 40 minutes inland, is covered in hundreds of politically charged murals painted directly onto building facades — a living museum of Sardinian identity.',
+    desc: 'The hilltop town of Orgosolo, 40 minutes inland, is covered in hundreds of politically charged murals painted directly onto building facades - a living museum of Sardinian identity.',
     tags: ['Art', 'Culture', 'Orgosolo'],
   },
 ];
@@ -92,7 +92,7 @@ export const accommodations = [
     examples: ['Bue Marino Hotel', 'Hotel Nuovo Gabbiano', 'Piccolo Hotel'],
   },
   {
-    name: 'Apartments — Local Knowledge',
+    name: 'Apartments - Local Knowledge',
     desc: 'For bigger groups or family stays, apartments work best. Tell us your dates and group size and we will use our local network to find the right place for you.',
     examples: ['Groups & families', 'Long stays', 'Walk to base'],
   },

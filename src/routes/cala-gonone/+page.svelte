@@ -21,11 +21,11 @@
   ];
 
   const faqs = [
-    { q: 'When is the best time to visit Cala Gonone?', a: 'The season runs roughly April through November. Late spring and early autumn offer warm water, calm seas, and fewer crowds — ideal for diving and the outdoors.' },
+    { q: 'When is the best time to visit Cala Gonone?', a: 'The season runs roughly April through November. Late spring and early autumn offer warm water, calm seas, and fewer crowds - ideal for diving and the outdoors.' },
     { q: 'Do I need a car once I am there?', a: 'No. Cala Gonone is walkable, and we can arrange shuttle transfers from the airport. Most dive sites are reached by our boats, and activities are nearby.' },
     { q: 'How do I get to Sardinia?', a: 'Fly into Olbia or Cagliari, or take an overnight ferry from the Italian mainland (handy if you want to bring a car or equipment). See the routes above.' },
     { q: 'What is there to do besides diving?', a: 'Sea and river kayaking, rock climbing, hiking and trekking in the Supramonte, and DPV snorkeling. Contact us and we will tell you what is running during your stay.' },
-    { q: 'Can you help arrange accommodation?', a: 'Yes. We work directly with local hotels and apartments and can match options to your group size and length of stay — just get in touch.' },
+    { q: 'Can you help arrange accommodation?', a: 'Yes. We work directly with local hotels and apartments and can match options to your group size and length of stay - just get in touch.' },
   ];
 
   const transportIcons = {
@@ -46,10 +46,10 @@
 </script>
 
 <svelte:head>
-  <title>Cala Gonone Area Guide — Base One</title>
-  <meta property="og:title" content="Cala Gonone Area Guide — Base One">
-  <meta property="og:description" content="A complete guide to Cala Gonone, Sardinia — activities, getting here, where to stay, and why divers keep returning to the Gulf of Orosei.">
-  <meta name="description" content="A complete guide to Cala Gonone, Sardinia — activities, getting here, where to stay, and why divers keep returning to the Gulf of Orosei.">
+  <title>Cala Gonone Area Guide - Base One</title>
+  <meta property="og:title" content="Cala Gonone Area Guide - Base One">
+  <meta property="og:description" content="A complete guide to Cala Gonone, Sardinia - activities, getting here, where to stay, and why divers keep returning to the Gulf of Orosei.">
+  <meta name="description" content="A complete guide to Cala Gonone, Sardinia - activities, getting here, where to stay, and why divers keep returning to the Gulf of Orosei.">
 </svelte:head>
 
 <PageHero
@@ -64,8 +64,8 @@
   <div class="container-narrow">
     <p class="section-label reveal-left">The Place</p>
     <h2 class="reveal-left delay-1">Remote, wild and extraordinarily beautiful.</h2>
-    <p class="lead mt-sm reveal-left delay-2">Cala Gonone sits at the foot of the Supramonte limestone plateau, opening onto the Gulf of Orosei. The forty kilometres of coastline to the south have no roads or buildings — only white pebble coves reachable by boat or on foot through the mountains.</p>
-    <p class="mt-sm reveal-left delay-3">It is not a resort. It is a base — for people who want to be close to something genuinely wild.</p>
+    <p class="lead mt-sm reveal-left delay-2">Cala Gonone sits at the foot of the Supramonte limestone plateau, opening onto the Gulf of Orosei. The forty kilometres of coastline to the south have no roads or buildings - only white pebble coves reachable by boat or on foot through the mountains.</p>
+    <p class="mt-sm reveal-left delay-3">It is not a resort. It is a base - for people who want to be close to something genuinely wild.</p>
   </div>
 </section>
 
@@ -82,13 +82,13 @@
   </div>
 </div>
 
-<!-- ── Getting Here — Flights ─────────────────────────────────── -->
+<!-- ── Getting Here - Flights ─────────────────────────────────── -->
 <section class="section section-alt">
   <div class="container">
     <div class="section-header blur-reveal">
       <p class="section-label">Getting Here · Flights</p>
       <h2>How to Reach Cala Gonone</h2>
-      <p class="lead">Car rental is not needed; book a shuttle transfer directly through us and enjoy the scenery — the Supramonte landscape and the scenic road through Barbagia is part of the trip. You will not need a car once you are in Cala Gonone.</p>
+      <p class="lead">Car rental is not needed; book a shuttle transfer directly through us and enjoy the scenery - the Supramonte landscape and the scenic road through Barbagia is part of the trip. You will not need a car once you are in Cala Gonone.</p>
       <a href="/plan#contact" class="btn btn-teal mt-md">Contact us for a shuttle transfer →</a>
     </div>
     <div class="transport-grid">
@@ -115,7 +115,7 @@
       <div class="ferry-routes-header blur-reveal">
         <p class="section-label">Getting Here · Ferries</p>
         <h3>Ferry Routes to Sardinia</h3>
-        <p class="ferry-routes-sub">Take the overnight ferry — ideal if you want to bring your own equipment or a car.</p>
+        <p class="ferry-routes-sub">Take the overnight ferry - ideal if you want to bring your own equipment or a car.</p>
       </div>
       {#each [...new Set(ferryRoutes.map(r => r.region))] as region}
         <p class="ferry-routes-region-label">{region}</p>
@@ -217,7 +217,7 @@
     <div class="accom-cta reveal-up activity-cta">
       <div class="accom-cta-body">
         <p class="accom-cta-eyebrow">Want to add an activity?</p>
-        <p class="accom-cta-text">Availability changes with the season — tell us when you’re coming, and we’ll help you choose the best experiences running during your stay.</p>
+        <p class="accom-cta-text">Availability changes with the season - tell us when you’re coming, and we’ll help you choose the best experiences running during your stay.</p>
       </div>
       <a href="/plan#contact" class="btn btn-teal accom-cta-btn">Plan your Stay</a>
     </div>
@@ -235,7 +235,7 @@
   </div>
 </section>
 
-<!-- ── Why Divers — dark with aerial image background ────────── -->
+<!-- ── Why Divers - dark with aerial image background ────────── -->
 <!-- Hidden: More Than Just a Dive Trip
 <section class="section section-dark why-section">
   <div class="why-bg scale-reveal" style="background-image:url('/images/divider-cala-gonone.jpg')"></div>

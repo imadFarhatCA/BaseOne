@@ -3,7 +3,7 @@
 </script>
 
 <svelte:head>
-  <title>Terms & Conditions — Base One</title>
+  <title>Terms & Conditions - Base One</title>
   <meta name="robots" content="noindex">
 </svelte:head>
 

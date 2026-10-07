@@ -3,7 +3,7 @@
   export let eyebrow = '';
   export let heading = '';
   export let text = '';
-  export let src = '';                 // /videos/xxx.mp4 — supplied later
+  export let src = '';                 // /videos/xxx.mp4 - supplied later
   export let poster = '/images/divider-cave.jpg';
 </script>
 

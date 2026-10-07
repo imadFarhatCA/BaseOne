@@ -31,7 +31,7 @@
       <div>
         <p class="section-label">The Place</p>
         <h2>See It for Yourself</h2>
-        <p class="lead mt-sm">A place unlike any other — from the caves below to the people who dive them.</p>
+        <p class="lead mt-sm">A place unlike any other - from the caves below to the people who dive them.</p>
       </div>
       <div class="gallery-nav">
         <button class="gallery-arrow" type="button" on:click={() => carousel.scroll(-1)} aria-label="Previous" disabled={atStart}>←</button>

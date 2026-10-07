@@ -3,7 +3,7 @@
   export let heading = 'Ready to Dive?';
   export let text = '';
   export let label = 'Book Now';
-  export let href = '/plan';          // destination TBD — change later
+  export let href = '/plan';          // destination TBD - change later
   export let target = '_self';
 </script>
 

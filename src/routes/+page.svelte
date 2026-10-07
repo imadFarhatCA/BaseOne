@@ -7,7 +7,7 @@
   import { onMount } from 'svelte';
 
 
-  // ── Base One Experience — placeholder local photos; SWAP for real smiling-people shots ──
+  // ── Base One Experience - placeholder local photos; SWAP for real smiling-people shots ──
   const experienceShots = [
     { src: '/images/hero-about.jpg', alt: 'Divers preparing before a dive' },
     { src: '/images/alt-facility-2.jpg', alt: 'Relaxing in the Base One common area' },
@@ -17,7 +17,7 @@
     { src: '/images/hero-cala-gonone.jpg', alt: 'Cala Gonone in the sunshine' },
   ];
 
-  // ── Topside activities (for non-divers) — verified placeholders, swap later ──
+  // ── Topside activities (for non-divers) - verified placeholders, swap later ──
   const topsideShots = [
     { src: 'https://images.unsplash.com/photo-1604537466158-719b1972feb8?w=900&q=70&auto=format&fit=crop', alt: 'Kayaking on calm water', caption: 'Kayaking' },
     { src: 'https://images.unsplash.com/photo-1522163182402-834f871fd851?w=900&q=70&auto=format&fit=crop', alt: 'Rock climbing above the sea', caption: 'Rock climbing' },
@@ -26,10 +26,10 @@
   ];
 
   const faqs = [
-    { q: 'Do I need to be a certified diver to come?', a: 'No. Base One is built for serious divers, but Cala Gonone is also a stunning place to visit — non-divers can snorkel, kayak, hike, climb, and explore while their group dives.' },
+    { q: 'Do I need to be a certified diver to come?', a: 'No. Base One is built for serious divers, but Cala Gonone is also a stunning place to visit - non-divers can snorkel, kayak, hike, climb, and explore while their group dives.' },
     { q: 'What level of diver is Base One for?', a: 'Everyone from recreational divers through to advanced cave and CCR. We run GUE training from Fundamentals upward, plus guided cave, reef, and open-water dives.' },
     { q: 'When is the diving season?', a: 'Most diving and courses run April through November, with warm, clear water and long bottom times. Off-season diving is possible on request.' },
-    { q: 'Can you help with accommodation and transfers?', a: 'Yes. We work with local hotels and apartments and can arrange airport shuttle transfers — you will not need a car in Cala Gonone.' },
+    { q: 'Can you help with accommodation and transfers?', a: 'Yes. We work with local hotels and apartments and can arrange airport shuttle transfers - you will not need a car in Cala Gonone.' },
     { q: 'How do I get a price?', a: 'Use the Plan your Trip page to tell us what you want to do, and we will build a tailored plan for diving, training, and your stay.' },
     { q: 'How do I get here?', a: 'Fly into Olbia or Cagliari, or take a ferry from the Italian mainland, then continue to Cala Gonone by road. We can arrange transfers.', href: '/cala-gonone', linkLabel: 'See how to get to Cala Gonone' },
   ];
@@ -75,8 +75,8 @@
 
 <svelte:head><title>Base One</title>
   <meta property="og:title" content="Base One | Cave Diving &amp; Technical Training in Sardinia">
-  <meta property="og:description" content="A technical dive center in Cala Gonone, Sardinia. Cave diving, GUE training, DPV operations, and exploration — built for serious divers.">
-  <meta name="description" content="A technical dive center in Cala Gonone, Sardinia. Cave diving, GUE training, DPV operations, and exploration — built for serious divers.">
+  <meta property="og:description" content="A technical dive center in Cala Gonone, Sardinia. Cave diving, GUE training, DPV operations, and exploration - built for serious divers.">
+  <meta name="description" content="A technical dive center in Cala Gonone, Sardinia. Cave diving, GUE training, DPV operations, and exploration - built for serious divers.">
 </svelte:head>
 
 <section class="hero" role="region" aria-label="Hero" on:mousemove={onMouseMove}>
@@ -139,7 +139,7 @@
   <div class="container-narrow">
     <p class="section-label reveal-left">The Place</p>
     <h2 class="reveal-left delay-1">A base built for people who take diving seriously.</h2>
-    <p class="lead mt-sm reveal-left delay-2">Base One is not a resort dive shop. It is a specialist operation built around cave diving, technical training, underwater technology, and exploration in Cala Gonone, one of the Mediterranean’s most striking coastal wilderness areas — a place where world-class diving meets dramatic limestone landscapes, clear blue water, and one of Sardinia’s most beautiful tourism destinations.</p>
+    <p class="lead mt-sm reveal-left delay-2">Base One is not a resort dive shop. It is a specialist operation built around cave diving, technical training, underwater technology, and exploration in Cala Gonone, one of the Mediterranean’s most striking coastal wilderness areas - a place where world-class diving meets dramatic limestone landscapes, clear blue water, and one of Sardinia’s most beautiful tourism destinations.</p>
     <!-- Hidden: bullets
     <ul class="check-list mt-md">
       <li class="reveal-left delay-1">Extraordinary cave-diving sites of remarkable variety, accessible by boat directly from Base One in Cala Gonone</li>
@@ -155,7 +155,7 @@
   <div class="container">
     <div class="section-header blur-reveal"><p class="section-label">Four Pillars</p><h2>Everything Base One Offers</h2></div>
     <div class="pillars">
-      <div class="pillar-card reveal-left delay-1"><ul class="tag-list"><li>Cave</li><li>Wreck</li><li>Recreational Options</li></ul><h3>Diving</h3><p>Cave systems of the Gulf of Orosei — shallow passages, power caves, narrow tunnels, halocline zones, speleothem galleries, and deep exploration frontiers.</p><a href="/diving" class="pillar-link">Explore the Diving →</a></div>
+      <div class="pillar-card reveal-left delay-1"><ul class="tag-list"><li>Cave</li><li>Wreck</li><li>Recreational Options</li></ul><h3>Diving</h3><p>Cave systems of the Gulf of Orosei - shallow passages, power caves, narrow tunnels, halocline zones, speleothem galleries, and deep exploration frontiers.</p><a href="/diving" class="pillar-link">Explore the Diving →</a></div>
       <div class="pillar-card reveal-right delay-2"><ul class="tag-list"><li>GUE</li><li>TDI</li><li>IANTD</li></ul><h3>Training</h3><p>Real development in an environment shaped by active operations. GUE training from Fundamentals through advanced Cave and CCR, alongside selected TDI and IANTD instructors and training pathways.</p><a href="/training" class="pillar-link">Build your Training →</a></div>
       <div class="pillar-card reveal-left delay-3"><ul class="tag-list"><li>Survey</li><li>Science</li><li>Exploration</li></ul><h3>Projects &amp; Exploration</h3><p>Join selected exploration, survey, and citizen-science projects connected to the Phreatic Non Profit Organization. Participation is project-based, and separate from normal booking.</p><a href="/exploration" class="pillar-link">Join Active Projects →</a></div>
       <div class="pillar-card reveal-right delay-4"><ul class="tag-list"><li>TÜV-Certified Gas Station</li><li>Boat &amp; Rhib Support</li><li>SUEX Centre</li></ul><h3>Facility &amp; Logistics</h3><p>Gas fills, boats, classrooms, DPVs and equipment hire. Infrastructure that removes friction from serious diving.</p><a href="/about#the-facility" class="pillar-link">View Facility →</a></div>
@@ -235,7 +235,7 @@
     <div class="cta-final-text">
       <p class="eyebrow teal-light">Start Planning</p>
       <h2>What Do You Want<br>To Do Next?</h2>
-      <p class="lead">Tell us what you are here to do — training, cave diving, exploration or all of it.</p>
+      <p class="lead">Tell us what you are here to do - training, cave diving, exploration or all of it.</p>
       <div class="cta-buttons">
         <a href="/training#schedule" class="btn btn-teal btn-large">Make a Booking</a>
         <a href="/plan#contact" class="btn btn-ghost btn-large">Get in Touch</a>

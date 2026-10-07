@@ -1,4 +1,4 @@
-// Trip Simulator config — pricing from Base One Pricelist 2026
+// Trip Simulator config - pricing from Base One Pricelist 2026
 
 export const DIVE_TYPES = [
   { id: 'single',    label: 'Single Tank',  sub: '12L' },
