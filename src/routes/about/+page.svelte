@@ -91,7 +91,7 @@
     <div class="section-header blur-reveal">
       <p class="section-label">Events Support</p>
       <h2>A Base for Serious Gatherings</h2>
-      <p class="lead">Base One hosts companies, agencies, manufacturers, specialist organisations, professional teams, and premium groups in one of Sardinia’s most spectacular coastal locations. From product testing and training weeks to partner events, expedition support, and tailored group experiences, we provide the boats, gas, water access, equipment support, logistics, and local know-how to make complex projects run smoothly.</p>
+      <p class="lead">Base One hosts companies, agencies, manufacturers, specialist organisations, professional teams and premium groups in one of Sardinia’s most spectacular coastal locations. From product testing and training weeks to partner events, expedition support and tailored group experiences, we provide the boats, gas, water access, equipment support, logistics and local know-how to make complex projects run smoothly.</p>
     </div>
     <GalleryGrid images={eventsShots} columns={4} />
     <div class="text-center mt-lg scale-reveal">
