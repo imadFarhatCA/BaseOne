@@ -37,7 +37,7 @@
 
 <!-- ── Hero ─────────────────────────────────────────────────── -->
 <PageHero
-  image="/images/hero-about.jpg"
+  image="/images/hero-facility-nb.jpg"
   eyebrow="The Facility"
   heading="Built by People Who Care<br>Deeply About Diving"
   sub="A living network of collaborators, instructors, explorers, and engineers - supported by infrastructure built for serious diving."
