@@ -78,6 +78,8 @@
 <VideoSection
   eyebrow="See It in Motion"
   heading="A Glimpse Beneath the Surface"
+  src="/videos/grotte.mp4"
+  poster="/videos/grotte.jpg"
   text="A short film from the caves and waters of the Gulf of Orosei."
 />
 

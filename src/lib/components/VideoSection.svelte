@@ -15,7 +15,7 @@
   </div>
   <div class="videosec-frame scale-reveal">
     {#if src}
-      <video controls playsinline {poster} preload="none">
+      <video muted loop autoplay playsinline {poster} preload="metadata">
         <source {src} type="video/mp4" />
       </video>
     {:else}
