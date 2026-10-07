@@ -23,7 +23,7 @@
 
 /* Steps / Timeline */
 .steps { display: flex; flex-direction: column; gap: 0; margin-top: 2rem; border-left: 2px solid var(--border); }
-.step  { display: flex; gap: 1.5rem; align-items: flex-start; padding: 1.75rem 0 1.75rem 2rem; position: relative; }
+.step  { display: grid; grid-template-columns: 2rem 13rem 1fr; column-gap: 1.5rem; align-items: start; padding: 1.75rem 0 1.75rem 2rem; position: relative; }
 .step::before {
   content: ''; position: absolute; left: -7px; top: 2rem;
   width: 12px; height: 12px; border-radius: 50%;
@@ -82,6 +82,8 @@
   .feature-cards { grid-template-columns: 1fr 1fr; }
 }
 @media (max-width: 768px) {
+  .step { grid-template-columns: 2rem 1fr; row-gap: .25rem; }
+  .step p { grid-column: 2; }
   .feature-cards { grid-template-columns: 1fr; }
   .schedule-table { font-size: 0.9rem; }
   .schedule-table th, .schedule-table td { padding: 0.75rem 0.5rem; }
