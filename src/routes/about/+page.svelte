@@ -50,9 +50,9 @@
       <p class="lead">Three brands, one vision — advancing what is possible underwater.</p>
     </div>
     <div class="feature-cards">
-      <div class="feature-card reveal-left delay-1"><div class="feature-logo"><img src="/images/logo.png" alt="Base One" /></div><h3>Base One</h3><p>AION’s Mediterranean Operational, Training and Customer Experience Hub.</p></div>
-      <div class="feature-card reveal-up delay-2"><div class="feature-logo"><img src="/images/logo-suex.svg" alt="SUEX" /></div><h3>SUEX</h3><p>Underwater propulsion vehicles engineered for performance. DPVs built for cave, technical, and professional diving.</p></div>
-      <div class="feature-card reveal-right delay-3"><div class="feature-logo"><img src="/images/logo-blueprint.png" alt="Blueprint Subsea" /></div><h3>Blueprint Subsea</h3><p>Subsea technology and survey solutions. Precision tools for underwater mapping and data collection.</p></div>
+      <div class="feature-card brand-card reveal-left delay-1"><div class="feature-logo"><img src="/images/logo.png" alt="Base One" /></div><p>AION’s Mediterranean Operational, Training and Customer Experience Hub.</p></div>
+      <div class="feature-card brand-card reveal-up delay-2"><div class="feature-logo"><img src="/images/logo-suex.svg" alt="SUEX" /></div><p>Underwater propulsion vehicles engineered for performance. DPVs built for cave, technical, and professional diving.</p></div>
+      <div class="feature-card brand-card reveal-right delay-3"><div class="feature-logo"><img src="/images/logo-blueprint.png" alt="Blueprint Subsea" /></div><p>Subsea technology and survey solutions. Precision tools for underwater mapping and data collection.</p></div>
     </div>
   </div>
 </section>
@@ -141,6 +141,10 @@
 />
 
 <style>
+  /* Brand cards: no hover highlight */
+  :global(.brand-card:hover) { border-color: var(--border); box-shadow: none; }
+  :global(.brand-card:hover .feature-logo img) { filter: brightness(0) invert(0.4); }
+
   .mt-lg { margin-top: 2.5rem; }
   .aion-logo { display: block; height: 64px; width: auto; margin: 0 auto .5rem; }
 </style>
