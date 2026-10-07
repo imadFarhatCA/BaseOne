@@ -5,18 +5,20 @@
   // import { team } from '$lib/data/team.js';   // hidden — Alessandro & Andrea section dropped
 
   const logisticsShots = [
-    { src: '/images-facility/_DSC0505.jpg', alt: 'Base One facility' },
+    // hidden: { src: '/images-facility/_DSC0505.jpg', alt: 'Base One facility' },
     { src: '/images-facility/IMG_3732.jpg', alt: 'Base One facility' },
     { src: '/images-facility/P1010160.jpg', alt: 'Base One facility' },
     { src: '/images-facility/_DSC0017.jpg', alt: 'Base One dive boat at Cala Gonone marina' },
-    { src: '/images-facility/_DSC0539.jpg', alt: 'Base One blue dive boat at harbour' },
-    { src: '/images-facility/_DSC0012.jpg', alt: 'Tank storage room with compressor and dive gear' },
+    // hidden: { src: '/images-facility/_DSC0539.jpg', alt: 'Base One blue dive boat at harbour' },
+    // hidden: { src: '/images-facility/_DSC0012.jpg', alt: 'Tank storage room with compressor and dive gear' },
     { src: '/images-facility/P1010163.jpg', alt: 'MPS gas blending system — oxygen and helium fills' },
     { src: '/images-facility/_DSC0568.jpg', alt: 'Classroom with tables, screen and whiteboard' },
-    { src: '/images-facility/_DSC0579.jpg', alt: 'SUEX DPV storage and logistics warehouse' },
+    // hidden: { src: '/images-facility/_DSC0579.jpg', alt: 'SUEX DPV storage and logistics warehouse' },
     { src: '/images-facility/P1010183.jpg', alt: 'Rental dive cylinders lined up and ready' },
     { src: '/images-facility/P1010175.jpg', alt: 'Gas filling panel with cylinders connected' },
     { src: '/images-facility/_DSC0531.jpg', alt: 'Base One large dive vessel at sea' },
+
+    { src: '/images-facility/_DSC0598.jpg', alt: 'Meeting room with cave-diving mural and large table' },
   ];
 
   const eventsShots = [
