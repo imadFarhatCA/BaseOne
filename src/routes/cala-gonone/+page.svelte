@@ -182,7 +182,7 @@
 </section>
 
 <!-- ── Things to Do ──────────────────────────────────────────── -->
-<section class="section">
+<section class="section section-alt">
   <div class="container">
     <div class="section-header blur-reveal">
       <p class="section-label">While You're Here</p>
@@ -225,7 +225,7 @@
 </section>
 
 <!-- ── FAQ ──────────────────────────────────────────────────── -->
-<section class="section section-alt">
+<section class="section">
   <div class="container">
     <div class="section-header blur-reveal">
       <p class="section-label">Good to Know</p>
