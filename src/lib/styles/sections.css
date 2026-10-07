@@ -121,7 +121,7 @@
 .cta-block { text-align: center; padding: 6rem var(--gutter); }
 .cta-block h2 { color: #fff; margin-bottom: 1.25rem; }
 .cta-block .lead { color: rgba(255,255,255,.65); }
-.cta-block .cta-buttons { justify-content: center; }
+.cta-block .cta-buttons { justify-content: center; margin-top: 2.25rem; }
 
 /* Footer */
 .footer { background: var(--dark); color: rgba(255,255,255,.7); padding: 4rem var(--gutter) 2rem; }

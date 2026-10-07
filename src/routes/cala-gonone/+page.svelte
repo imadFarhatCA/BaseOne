@@ -264,9 +264,6 @@
 />
 
 <style>
-  /* Space between CTA text and button */
-  :global(.cta-block .cta-buttons) { margin-top: 2.25rem; }
-
   /* Darker hero overlay */
   :global(.hero-page .hero-bg::after) {
     background: rgba(4,10,18,.52) !important;

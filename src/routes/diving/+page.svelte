@@ -64,11 +64,11 @@
       <h2>How It Works</h2>
     </div>
     <div class="steps">
-      <div class="step reveal-left delay-1"><div class="step-num">01</div><h3>Arrive &amp; Prepare</h3><p>Collect equipment, check gas, load the boat. Everything charged and ready.</p></div>
-      <div class="step reveal-right delay-2"><div class="step-num">02</div><h3>Briefing</h3><p>Review the dive plan, discuss conditions, confirm team roles.</p></div>
-      <div class="step reveal-left delay-3"><div class="step-num">03</div><h3>Dive</h3><p>Boat transfer to the cave entrance. Execute with confidence.</p></div>
-      <div class="step reveal-right delay-4"><div class="step-num">04</div><h3>Return &amp; Debrief</h3><p>Rinse, upload data, review the dive. What went well. What to refine.</p></div>
-      <div class="step reveal-left delay-5"><div class="step-num">05</div><h3>Recharge &amp; Reset</h3><p>Plug in DPVs and lights, top off cylinders, update plans for tomorrow.</p></div>
+      <div class="step reveal-left delay-1"><div class="step-num">01</div><h3>Arrive &amp; Prepare</h3><p>Prepare your equipment, check the gas, load the boat. Everything is charged and ready.</p></div>
+      <div class="step reveal-right delay-2"><div class="step-num">02</div><h3>Briefing</h3><p>Review the dive site and your plan, discuss conditions, and confirm team roles.</p></div>
+      <div class="step reveal-left delay-3"><div class="step-num">03</div><h3>Dive</h3><p>Enjoy the boat ride to the cave entrance. Execute your dive with confidence and fun.</p></div>
+      <div class="step reveal-right delay-4"><div class="step-num">04</div><h3>Return &amp; Debrief</h3><p>Rinse the gear, upload the data, debrief the dive: what worked, and what needs refining.</p></div>
+      <div class="step reveal-left delay-5"><div class="step-num">05</div><h3>Recharge &amp; Reset</h3><p>Plug in. Top off. Plan ahead. DPVs and lights charging, cylinders filled, tomorrow's dive mapped out.</p></div>
     </div>
   </div>
 </section>

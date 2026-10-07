@@ -145,9 +145,6 @@
 />
 
 <style>
-  /* Space between CTA text and buttons */
-  :global(.cta-block .cta-buttons) { margin-top: 2.25rem; }
-
   /* Brand cards: no hover highlight */
   :global(.brand-card:hover) { border-color: var(--border); box-shadow: none; }
   :global(.brand-card:hover .feature-logo img) { filter: brightness(0) invert(0.4); }
