@@ -138,7 +138,7 @@
 <div class="image-divider scale-reveal" style="background-image:url('/images/divider-about.jpg')"></div>
 
 <CtaBlock
-  heading="Come Be Part of It"
+  heading="Come, Be Part of It"
   text="Whether you are here to teach, learn, explore, test, or simply dive well — you are welcome."
   primaryLabel="Plan your Trip"
   secondaryLabel="Get in Touch"
