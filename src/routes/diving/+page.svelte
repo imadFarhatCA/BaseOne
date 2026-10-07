@@ -16,6 +16,7 @@
 <!-- ── Hero ─────────────────────────────────────────────────── -->
 <PageHero
   image="/images/hero-diving.jpg"
+  credit="JP Bresser"
   eyebrow="Cave Diving Sardinia"
   heading="Dive a Place That<br>Still Feels Wild"
   sub="Cave systems of extraordinary beauty, variety, and potential - supported by logistics built for serious diving."
