@@ -96,6 +96,7 @@
           <select id="interest" name="interest">
             <option value="">Select...</option>
             <option value="cave-diving">Cave Diving</option>
+            <option value="non-cave-diving">Non-Cave Diving</option>
             <option value="training">Training / Courses</option>
             <option value="exploration">Exploration / Projects</option>
             <option value="equipment">Equipment / Logistics</option>
@@ -109,7 +110,7 @@
         </div>
         <div class="form-field full">
           <label for="message">Discuss Your Plans</label>
-          <textarea id="message" name="message" placeholder="What are you here to build?" required></textarea>
+          <textarea id="message" name="message" placeholder="What can we help you with?" required></textarea>
         </div>
         <div class="form-field full">
           <button type="submit" class="btn btn-teal btn-large" style="width:100%;" id="submitBtn">Send Inquiry</button>
