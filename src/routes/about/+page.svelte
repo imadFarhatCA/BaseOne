@@ -57,7 +57,9 @@
   </div>
 </section>
 
+<!-- Hidden: Precision on the surface quote
 <div class="quote-divider blur-reveal"><p class="brand-line">Precision on the surface. Capability below.</p></div>
+-->
 
 <!-- ── Logistics: Built for Serious Operations + gallery ─────── -->
 <section class="section" id="the-facility">
