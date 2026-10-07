@@ -51,7 +51,7 @@
 <!-- ── Book Now ─────────────────────────────────────────────── -->
 <BigCta
   heading="Ready to Get in the Water?"
-  text="Cave, wreck, or open water - reserve your diving days with Base One."
+  text="Cave, wreck or open water - reserve your diving days with Base One."
   label="Request Availability"
   href="/plan"
 />
