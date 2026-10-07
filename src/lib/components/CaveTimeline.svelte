@@ -4,7 +4,7 @@
 
   export let items = caves;
   export let label = 'The Systems';
-  export let heading = 'Six Coastal Caves';
+  export let heading = 'Coastal Caves';
   export let lead = 'Each cave system is remarkably different from the next, shaped by its own combination of haloclines, hydrogen sulphide layers, speleothems, changing passage levels, and varied limestone morphology.';
 
   let active = 0;
