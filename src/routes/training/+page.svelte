@@ -11,6 +11,7 @@
     { src: '/images-training/_DSC0050.jpg', alt: 'Students on the dive boat heading to the site' },
     { src: '/images-training/_DSC0063.jpg', alt: 'Divers at the surface near the Sardinian cliffs' },
     { src: '/images-training/_DSC0074.jpg', alt: 'Dive team pre-dive briefing on the boat' },
+    { src: '/images-training/IMG_2377.jpg', alt: 'Instructor explaining cylinder checks to students' },
   ];
 
   const reasons = [
