@@ -43,9 +43,8 @@
 <section class="section section-alt">
   <div class="container-narrow">
     <p class="section-label reveal-left">Mastery Training</p>
-    <h2 class="reveal-left delay-1">Good training isn't about collecting certifications.</h2>
-    <p class="lead mt-sm reveal-left delay-2">It's about building skills you can rely on when it matters.</p>
-    <p class="lead mt-md reveal-left delay-3">Base One is not built around volume training. We operate primarily as a GUE-oriented hub, while welcoming selected high-level instructors from other agencies who share our standards for preparation, logistics, safety, and meaningful student progression.</p>
+    <h2 class="reveal-left delay-1">Good training is about building skills you can rely on when it matters.</h2>
+    <p class="lead mt-md reveal-left delay-2">Base One is not built around volume training. We operate primarily as a GUE-oriented hub, while welcoming selected high-level instructors from other agencies who share our standards for preparation, logistics, safety, and meaningful student progression.</p>
   </div>
 </section>
 
