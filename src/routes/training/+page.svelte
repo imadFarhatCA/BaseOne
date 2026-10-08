@@ -39,9 +39,14 @@
 
 <!-- ── Training Philosophy ──────────────────────────────────── -->
 <section class="section section-alt">
+  <div class="container">
+    <div class="section-header blur-reveal">
+      <p class="section-label">Mastery Training</p>
+      <h2>Good training isn't about collecting certifications.</h2>
+      <p class="lead">It's about building skills you can rely on when it matters.</p>
+    </div>
+  </div>
   <div class="container-narrow">
-    <p class="section-label blur-reveal">Mastery Training</p>
-    <p class="lead blur-reveal">Good training isn't about collecting certifications. It's about building skills you can rely on when it matters.</p>
     <p class="lead mt-md blur-reveal">Base One is not built around volume training. We operate primarily as a GUE-oriented hub, while welcoming selected high-level instructors from other agencies who share our standards for preparation, logistics, safety, and meaningful student progression.</p>
   </div>
 </section>
