@@ -14,12 +14,12 @@
   ];
 
   const reasons = [
-    { t: 'Exceptional European cave environments', d: 'Base One gives access to some of Europe’s most distinctive cave-diving systems, with clear water, varied passages, stable conditions, and the right level of complexity for high-quality training.' },
-    { t: 'High standards, lived daily', d: 'You enter an operation where details matter and progression is earned, not handed over.' },
-    { t: 'Strong GUE presence', d: 'From Fundamentals through advanced Cave and CCR, taught by experienced instructors.' },
-    { t: 'Connected to real operations', d: 'Training tied to active exploration and projects - learning with consequence and context.' },
-    { t: 'Small groups', d: 'Limited numbers mean more water time, more feedback, and a pace that fits you.' },
-    { t: 'Full logistics on site', d: 'Gas fills, boats, classrooms and equipment - so you focus only on the diving.' },
+    { t: 'Exceptional European cave environments', d: 'Clear water, stable conditions and varied passages make Sardinia’s cave systems an ideal classroom, from first cave dives to complex navigation.' },
+    { t: 'High standards, lived daily', d: 'Every dive, briefing and debrief follows the same exacting standards. Details matter here, and progression is earned through demonstrated skill.' },
+    { t: 'Strong GUE presence', d: 'The full GUE curriculum, from Fundamentals to advanced Cave, CCR and instructor training taught by instructors who apply these standards in their own diving.' },
+    { t: 'Connected to real operations', d: 'Courses run alongside active exploration and project work, so you see how every skill is used beyond the training dive.' },
+    { t: 'Small groups', d: 'Limited numbers mean more time in the water, more individual feedback, and a pace set by your progress, not the schedule.' },
+    { t: 'Full logistics on site', d: 'Gas fills, boats, classrooms and equipment are all on site, so your energy goes into learning and diving, not logistics.' },
   ];
 </script>
 
