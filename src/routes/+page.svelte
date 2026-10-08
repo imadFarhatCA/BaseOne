@@ -7,14 +7,14 @@
   import { onMount } from 'svelte';
 
 
-  // ── Base One Experience - placeholder local photos; SWAP for real smiling-people shots ──
+  // ── Base One Experience ──
   const experienceShots = [
-    { src: '/images/hero-about.jpg', alt: 'Divers preparing before a dive' },
-    { src: '/images/alt-facility-2.jpg', alt: 'Relaxing in the Base One common area' },
-    { src: '/images/divider-facility.jpg', alt: 'A day out on the Base One boats' },
-    { src: '/images/hero-training.jpg', alt: 'Open-water DPV training together' },
-    { src: '/images/alt-diving-1.jpg', alt: 'A team exploring a cave' },
-    { src: '/images/hero-cala-gonone.jpg', alt: 'Cala Gonone in the sunshine' },
+    { src: '/images-experience/exp-1.jpg', alt: 'Four smiling Base One team members in Cala Gonone' },
+    { src: '/images-experience/exp-2.jpg', alt: 'Divers jumping into the sea together below the cliffs' },
+    { src: '/images-experience/exp-3.jpg', alt: 'Diver adjusting a hood before a dive' },
+    { src: '/images-experience/exp-4.jpg', alt: 'Rebreather diver waving at the camera' },
+    { src: '/images-experience/exp-5.jpg', alt: 'Group selfie with gelato in Cala Gonone' },
+    { src: '/images-experience/exp-6.jpg', alt: 'Looking out to a Base One RIB on the water' },
   ];
 
   // ── Topside activities (for non-divers) - verified placeholders, swap later ──
