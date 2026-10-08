@@ -65,7 +65,9 @@
   </div>
 </section>
 
+<!-- Hidden: quote divider
 <div class="quote-divider"><p class="brand-line">For people who know that good diving is never accidental.</p></div>
+-->
 
 <!-- ── Training Gallery ─────────────────────────────────────── -->
 <section class="section">
