@@ -30,7 +30,7 @@
 <section class="section">
   <div class="container-narrow">
     <p class="section-label reveal-left">The Conversation</p>
-    <h2 class="reveal-left delay-1">Not with a generic package. With a question: what are you here to build?</h2>
+    <h2 class="reveal-left delay-1">There's no standard package here, just a conversation about what you want to build.</h2>
     <p class="lead mt-sm reveal-left delay-2">No two divers arrive with the same goal. Some come for cave training, others to continue their progression, organise a team, or support a product test.</p>
     <p class="lead mt-sm reveal-left delay-3">Standard diving arrangements can be explored through Plan Your Trip for an initial estimate, while team, training, professional, and manufacturer programmes are quoted individually.</p>
   </div>
