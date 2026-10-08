@@ -80,7 +80,7 @@
 </svelte:head>
 
 <section class="hero" role="region" aria-label="Hero" on:mousemove={onMouseMove}>
-  <div class="hero-bg" style="background-image:url('/images/hero-cave.jpg')"></div>
+  <div class="hero-bg" style="background-image:url('/images/divider-cave.jpg')"></div>
   <div class="hero-spotlight" style="--mx:{mx}%;--my:{my}%"></div>
   {#if showGyroBtn}
     <div class="gyro-prompt">
