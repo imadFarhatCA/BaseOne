@@ -72,14 +72,14 @@
 -->
 
 <!-- ── Training Gallery ─────────────────────────────────────── -->
-<section class="section">
+<section class="section section-alt">
   <div class="container">
     <GalleryGrid images={trainingShots} columns={3} />
   </div>
 </section>
 
 <!-- ── Course Calendar (color-coded, click for details + enquiry) ── -->
-<section class="section section-alt" id="schedule">
+<section class="section" id="schedule">
   <div class="container">
     <div class="section-header blur-reveal">
       <p class="section-label">Course Calendar</p>
