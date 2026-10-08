@@ -2,7 +2,7 @@
   import PageHero from '$lib/components/PageHero.svelte';
   import CtaBlock from '$lib/components/CtaBlock.svelte';
   import CourseCalendar from '$lib/components/CourseCalendar.svelte';
-  import ImageCarousel from '$lib/components/ImageCarousel.svelte';
+  import GalleryGrid from '$lib/components/GalleryGrid.svelte';
   import { courses } from '$lib/data/courses.js';
 
   const trainingShots = [
@@ -40,7 +40,9 @@
 <!-- ── Training Philosophy ──────────────────────────────────── -->
 <section class="section section-alt">
   <div class="container-narrow">
-    <p class="lead blur-reveal">Base One is not built around volume training. We operate primarily as a GUE-oriented hub, while welcoming selected high-level instructors from other agencies who share our standards for preparation, logistics, safety, and meaningful student progression.</p>
+    <p class="section-label blur-reveal">Mastery Training</p>
+    <p class="lead blur-reveal">Good training isn't about collecting certifications. It's about building skills you can rely on when it matters.</p>
+    <p class="lead mt-md blur-reveal">Base One is not built around volume training. We operate primarily as a GUE-oriented hub, while welcoming selected high-level instructors from other agencies who share our standards for preparation, logistics, safety, and meaningful student progression.</p>
   </div>
 </section>
 
@@ -66,8 +68,10 @@
 <div class="quote-divider"><p class="brand-line">For people who know that good diving is never accidental.</p></div>
 
 <!-- ── Training Gallery ─────────────────────────────────────── -->
-<section class="section section-dark">
-  <ImageCarousel images={trainingShots} alt="Base One training" theme="dark" />
+<section class="section">
+  <div class="container">
+    <GalleryGrid images={trainingShots} columns={3} />
+  </div>
 </section>
 
 <!-- ── Course Calendar (color-coded, click for details + enquiry) ── -->
