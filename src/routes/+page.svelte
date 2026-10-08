@@ -142,8 +142,8 @@
 <section class="section">
   <div class="container-narrow">
     <p class="section-label reveal-left">The Place</p>
-    <h2 class="reveal-left delay-1">A base built for people who take diving seriously.</h2>
-    <p class="lead mt-sm reveal-left delay-2">Base One is not a resort dive shop. It is a specialist operation built around cave diving, technical training, underwater technology, and exploration in Cala Gonone, one of the Mediterranean’s most striking coastal wilderness areas - a place where world-class diving meets dramatic limestone landscapes, clear blue water, and one of Sardinia’s most beautiful tourism destinations.</p>
+    <h2 class="reveal-left delay-1">Where the mountains meet the sea, and the caves begin.</h2>
+    <p class="lead mt-sm reveal-left delay-2">Base One is not a resort dive shop. It’s a specialist base for cave diving, technical training, underwater technology and exploration, set in Cala Gonone on Sardinia’s wild east coast. Here, dramatic limestone cliffs drop into clear blue water, and some of Europe’s finest cave systems lie just offshore, in one of the island’s most beautiful corners.</p>
     <!-- Hidden: bullets
     <ul class="check-list mt-md">
       <li class="reveal-left delay-1">Extraordinary cave-diving sites of remarkable variety, accessible by boat directly from Base One in Cala Gonone</li>
