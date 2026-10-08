@@ -2,15 +2,15 @@
   import PageHero from '$lib/components/PageHero.svelte';
   import CtaBlock from '$lib/components/CtaBlock.svelte';
   import CourseCalendar from '$lib/components/CourseCalendar.svelte';
-  import GalleryGrid from '$lib/components/GalleryGrid.svelte';
+  import ImageCarousel from '$lib/components/ImageCarousel.svelte';
   import { courses } from '$lib/data/courses.js';
 
   const trainingShots = [
     { src: '/images-training/P1010113.jpg', alt: 'Base One training' },
-    { src: '/images-training/_DSC0006.jpg', alt: 'Instructor leading a theory session in the classroom', caption: 'Theory & Briefings' },
-    { src: '/images-training/_DSC0050.jpg', alt: 'Students on the dive boat heading to the site', caption: 'Boat Experience' },
-    { src: '/images-training/_DSC0063.jpg', alt: 'Divers at the surface near the Sardinian cliffs', caption: 'Surface Briefs' },
-    { src: '/images-training/_DSC0074.jpg', alt: 'Dive team pre-dive briefing on the boat', caption: 'Boat Briefings' },
+    { src: '/images-training/_DSC0006.jpg', alt: 'Instructor leading a theory session in the classroom' },
+    { src: '/images-training/_DSC0050.jpg', alt: 'Students on the dive boat heading to the site' },
+    { src: '/images-training/_DSC0063.jpg', alt: 'Divers at the surface near the Sardinian cliffs' },
+    { src: '/images-training/_DSC0074.jpg', alt: 'Dive team pre-dive briefing on the boat' },
   ];
 
   const reasons = [
@@ -66,10 +66,8 @@
 <div class="quote-divider"><p class="brand-line">For people who know that good diving is never accidental.</p></div>
 
 <!-- ── Training Gallery ─────────────────────────────────────── -->
-<section class="section">
-  <div class="container">
-    <GalleryGrid images={trainingShots} columns={4} />
-  </div>
+<section class="section section-dark">
+  <ImageCarousel images={trainingShots} alt="Base One training" theme="dark" />
 </section>
 
 <!-- ── Course Calendar (color-coded, click for details + enquiry) ── -->
