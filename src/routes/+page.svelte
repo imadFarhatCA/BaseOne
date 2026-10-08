@@ -12,7 +12,7 @@
     { src: '/images-experience/exp-1.jpg', alt: 'Four smiling Base One team members in Cala Gonone' },
     { src: '/images-experience/exp-2.jpg', alt: 'Divers jumping into the sea together below the cliffs' },
     { src: '/images-experience/exp-3.jpg', alt: 'Diver adjusting a hood before a dive' },
-    { src: '/images-experience/exp-4.jpg', alt: 'Rebreather diver waving at the camera' },
+    { src: '/images-experience/exp-4.jpg', alt: 'Base One team standing arm in arm looking out to sea' },
     { src: '/images-experience/exp-5.jpg', alt: 'Group selfie with gelato in Cala Gonone' },
     { src: '/images-experience/exp-6.jpg', alt: 'Looking out to a Base One RIB on the water' },
   ];
