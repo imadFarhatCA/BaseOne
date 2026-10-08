@@ -34,6 +34,8 @@
     { q: 'How do I get here?', a: 'Fly into Olbia or Cagliari, or take a ferry from the Italian mainland, then continue to Cala Gonone by road. We can arrange transfers.', href: '/cala-gonone', linkLabel: 'See how to get to Cala Gonone' },
   ];
 
+  // Torch (cursor/tilt spotlight) effect on the hero - set to true to bring it back
+  const TORCH_ENABLED = false;
   let mx = 50, my = 50;
   let showGyroBtn = false;
   let gyroActive = false;
@@ -81,6 +83,7 @@
 
 <section class="hero" role="region" aria-label="Hero" on:mousemove={onMouseMove}>
   <div class="hero-bg" style="background-image:url('/images/divider-cave.jpg')"></div>
+  {#if TORCH_ENABLED}
   <div class="hero-spotlight" style="--mx:{mx}%;--my:{my}%"></div>
   {#if showGyroBtn}
     <div class="gyro-prompt">
@@ -95,6 +98,7 @@
         <button class="gyro-confirm" on:click={enableGyro}>Enable</button>
       </div>
     </div>
+  {/if}
   {/if}
   <div class="hero-content">
     <div class="eyebrow stone">Cala Gonone, Sardinia</div>
