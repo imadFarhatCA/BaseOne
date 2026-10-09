@@ -1,6 +1,7 @@
 <script>
   import PhotoGallery from '$lib/components/PhotoGallery.svelte';
-  import VideoReel from '$lib/components/VideoReel.svelte';
+  import TrailerSection from '$lib/components/TrailerSection.svelte';
+  // import VideoReel from '$lib/components/VideoReel.svelte';  // 4 vertical reels - hidden, to be placed elsewhere
   import GalleryGrid from '$lib/components/GalleryGrid.svelte';
   import Faq from '$lib/components/Faq.svelte';
 
@@ -183,7 +184,11 @@
 
 <PhotoGallery />
 
+<TrailerSection />
+
+<!-- Hidden: 4 vertical reels (to be placed elsewhere)
 <VideoReel eyebrow="In the Water" heading="Moments from Below" />
+-->
 
 <!-- ── Not Diving? Topside activities ───────────────────────── -->
 <!-- Hidden: Not Diving section

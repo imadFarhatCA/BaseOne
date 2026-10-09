@@ -5,6 +5,7 @@
   export let text = '';
   export let src = '';                 // /videos/xxx.mp4 - supplied later
   export let poster = '/images/divider-cave.jpg';
+  export let player = false;           // true: normal player with sound + controls (no autoplay/loop)
 </script>
 
 <section class="section videosec">
@@ -14,7 +15,11 @@
     {#if text}<p class="lead mt-sm reveal-up delay-2">{text}</p>{/if}
   </div>
   <div class="videosec-frame scale-reveal">
-    {#if src}
+    {#if src && player}
+      <video controls playsinline {poster} preload="metadata">
+        <source {src} type="video/mp4" />
+      </video>
+    {:else if src}
       <video muted loop autoplay playsinline {poster} preload="metadata">
         <source {src} type="video/mp4" />
       </video>
