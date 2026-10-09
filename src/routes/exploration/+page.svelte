@@ -105,6 +105,7 @@
   </div>
 </section>
 
+<!-- Hidden: Bue Marino - Dry Section and Utopia galleries
 <section class="section">
   <div class="container">
     <div class="section-header blur-reveal">
@@ -124,6 +125,7 @@
     <GalleryGrid images={utopiaShots} columns={3} />
   </div>
 </section>
+-->
 
 <div class="image-divider scale-reveal" style="background-image:url('/images/divider-exploration.jpg')"></div>
 
