@@ -45,11 +45,11 @@
 <section class="section">
   <div class="container-narrow">
     <p class="section-label reveal-left">The Mindset</p>
-    <h2 class="reveal-left delay-1">Exploration is not just distance. It is attitude.</h2>
-    <p class="lead mt-sm reveal-left delay-2">It is the willingness to stay curious, to document carefully, to collaborate well, and to treat the unknown with both ambition and restraint. Base One supports that mindset.</p>
+    <h2 class="reveal-left delay-1">Exploration isn’t measured in distance. It’s a mindset.</h2>
+    <p class="lead mt-sm reveal-left delay-2">It means staying curious, documenting carefully, working well as a team, and approaching the unknown with both ambition and restraint. At Base One, that mindset shapes everything we do, in training and beyond.</p>
     <ul class="check-list mt-md">
-      <li class="reveal-left delay-1">Active cave survey and cartography projects</li>
-      <li class="reveal-right delay-2">Phreatic non-profit organisation</li>
+      <li class="reveal-left delay-1">Ongoing cave survey and cartography projects</li>
+      <li class="reveal-right delay-2">Home of Phreatic, our non-profit exploration organisation</li>
       <li class="reveal-left delay-3">Scientific diving support and documentation</li>
       <li class="reveal-right delay-4">Collaboration with international exploration teams</li>
     </ul>
