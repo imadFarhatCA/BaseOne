@@ -56,7 +56,9 @@
   </div>
 </section>
 
+<!-- Hidden: quote divider
 <div class="quote-divider"><p class="brand-line">Come for the caves. Leave with more.</p></div>
+-->
 
 <section class="section section-alt">
   <div class="container">
