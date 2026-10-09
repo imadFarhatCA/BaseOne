@@ -2,6 +2,7 @@
   import PageHero from '$lib/components/PageHero.svelte';
   import CtaBlock from '$lib/components/CtaBlock.svelte';
   import GalleryGrid from '$lib/components/GalleryGrid.svelte';
+  import SocialFollow from '$lib/components/SocialFollow.svelte';
 
   const bueMarinoDryShots = [
     { src: '/images/exploration/bue-marino-dry-1.jpg', alt: 'Bue Marino dry section' },
@@ -23,7 +24,7 @@
 
   // ── Phreatic - images from phreatic.org (saved locally), one CTA under each ──
   const phreaticCards = [
-    { src: '/images/phreatic/exploration.jpg', alt: 'Diver silhouette in a glowing cave pool', label: 'Join a Project', href: 'https://www.phreatic.org/', external: true },
+    { src: '/images/phreatic/join-project.jpg', alt: 'Rebreather diver collecting samples in a flooded cave', label: 'Join a Project', href: 'https://www.phreatic.org/', external: true },
     { src: '/images/phreatic/survey.jpg', alt: 'Survey gear and DPVs staged at a cave water edge', label: 'Help by Donating', href: 'https://www.phreatic.org/', external: true },
     { src: '/images/phreatic/sediment.jpg', alt: 'Diver collecting a sediment sample', label: 'Download Annual Report ↓', href: 'https://www.phreatic.org/report/Phreatic-2024-Annual-Report.pdf', external: true },
   ];
@@ -102,6 +103,15 @@
         </div>
       {/each}
     </div>
+    <SocialFollow
+      eyebrow="Follow Phreatic"
+      title="Be part of the story, before you dive it"
+      text="Survey updates, new discoveries and behind-the-scenes moments from the flooded caves of Sardinia. Follow Phreatic and see where exploration is heading next."
+      links={[
+        { label: 'Follow on Instagram', href: 'https://www.instagram.com/phreatic_organization/', icon: 'instagram' },
+        { label: 'Follow on Facebook', href: 'https://www.facebook.com/phreatic.org', icon: 'facebook' }
+      ]}
+    />
   </div>
 </section>
 
