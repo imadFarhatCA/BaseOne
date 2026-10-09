@@ -61,24 +61,24 @@
 <section class="section section-alt">
   <div class="container">
     <div class="section-header blur-reveal">
-      <p class="section-label">Active Projects</p>
-      <h2>What We Work On</h2>
+      <p class="section-label">Where Exploration Happens</p>
+      <h2>Projects Beyond the Classroom</h2>
     </div>
     <div class="feature-cards">
       <div class="feature-card reveal-left delay-1">
         <div class="feature-icon"><img src="/images/icons/compass.svg" alt="" /></div>
         <h3>Cave Mapping &amp; GIS</h3>
-        <p>Systematic mapping of cave passages using line surveys and 3D scanning - expanding the known extent of Gulf of Orosei systems.</p>
+        <p>Systematic surveys of cave passages using line surveys and 3D scanning, steadily expanding what we know about the cave systems of the Gulf of Orosei.</p>
       </div>
       <div class="feature-card reveal-right delay-2">
         <div class="feature-icon"><img src="/images/icons/phreatic.png" alt="" /></div>
-        <h3>Phreatic</h3>
-        <p>Phreatic is a not-for-profit organisation bringing cave divers, explorers, and scientists together to study, document, and protect underwater caves, groundwater systems, and fragile coastal environments.</p>
+        <h3>Phreatic A.p.S</h3>
+        <p>A not-for-profit organisation bringing cave divers, explorers and scientists together to study, document and protect underwater caves, groundwater and fragile coastal environments.</p>
       </div>
       <div class="feature-card reveal-left delay-3">
         <div class="feature-icon"><img src="/images/icons/dpv.svg" alt="" /></div>
         <h3>Technology</h3>
-        <p>Combining SUEX DPVs with advanced acoustic navigation, underwater positioning, and environmental sensing to extend exploration range and operate safely in long, complex cave systems.</p>
+        <p>SUEX DPVs combined with acoustic navigation, underwater positioning and environmental sensing, extending exploration range and keeping divers safe in long, complex cave systems.</p>
       </div>
     </div>
   </div>
