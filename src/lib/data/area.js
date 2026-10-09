@@ -88,7 +88,7 @@ export const ferryRoutes = [
 export const accommodations = [
   {
     name: 'Recommended Hotels',
-    desc: 'Base One has long-standing relationships with the best structures in Cala Gonone. We can help you book.',
+    desc: 'Base One has long-standing relationships with the local community in Cala Gonone. We can help you with your booking.',
     examples: ['Bue Marino Hotel', 'Hotel Nuovo Gabbiano', 'Piccolo Hotel'],
   },
   {
