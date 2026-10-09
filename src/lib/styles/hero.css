@@ -143,7 +143,8 @@ ul.hero-highlights li::before {
   justify-content: center;
 }
 .hero-page .hero-content { margin: 0 auto; }
-.hero-page h1 { text-wrap: balance; }
+.hero-page h1 { font-size: clamp(1.8rem, 4vw, 3.1rem); text-wrap: balance; }
+.hero-page .hero-content { max-width: 960px; }
 .hero-page .hero-sub { margin-left: auto; margin-right: auto; }
 /* Same darker overlay on every inner-page hero (was only set in the Cala Gonone route) */
 .hero-page .hero-bg::after { background: rgba(4,10,18,.52); }
