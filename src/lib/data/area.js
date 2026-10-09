@@ -94,6 +94,6 @@ export const accommodations = [
   {
     name: 'Apartments - Local Knowledge',
     desc: 'For bigger groups or family stays, apartments work best. Tell us your dates and group size and we will use our local network to find the right place for you.',
-    examples: ['Groups & families', 'Long stays', 'Walk to base'],
+    examples: ['Groups & families', 'Long stays', 'Walking distance to base'],
   },
 ];
