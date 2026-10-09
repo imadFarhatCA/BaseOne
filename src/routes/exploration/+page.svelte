@@ -25,8 +25,8 @@
   // ── Phreatic - images from phreatic.org (saved locally), one CTA under each ──
   const phreaticCards = [
     { src: '/images/phreatic/join-project.jpg', alt: 'Rebreather diver collecting samples in a flooded cave', label: 'Join a Project', href: 'https://www.phreatic.org/', external: true },
-    { src: '/images/phreatic/survey.jpg', alt: 'Survey gear and DPVs staged at a cave water edge', label: 'Help by Donating', href: 'https://www.phreatic.org/', external: true },
-    { src: '/images/phreatic/sediment.jpg', alt: 'Diver collecting a sediment sample', label: 'Download Annual Report ↓', href: 'https://www.phreatic.org/report/Phreatic-2024-Annual-Report.pdf', external: true },
+    { src: '/images/phreatic/donate.jpg', alt: 'Divers checking rebreather gear inside a support vehicle', label: 'Help by Donating', href: 'https://www.phreatic.org/', external: true },
+    { src: '/images/phreatic/report.jpg', alt: 'Survey equipment and cylinders laid out on a rock', label: 'Download Annual Report ↓', href: 'https://www.phreatic.org/report/Phreatic-2024-Annual-Report.pdf', external: true },
   ];
 </script>
 
@@ -37,7 +37,8 @@
 </svelte:head>
 
 <PageHero
-  image="/images/hero-exploration.jpg"
+  image="/images/hero-exploration-new.jpg"
+  credit="Alice Bennett / Phreatic"
   eyebrow="Exploration & Projects"
   heading="Because Not Everything<br>Has Been Found Yet"
   sub="A place where dives can still contribute to discovery, science, and a deeper understanding of the underground world."
