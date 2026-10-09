@@ -49,7 +49,7 @@
     <p class="lead mt-sm reveal-left delay-2">It means staying curious, documenting carefully, working well as a team, and approaching the unknown with both ambition and restraint. At Base One, that mindset shapes everything we do, in training and beyond.</p>
     <ul class="check-list mt-md">
       <li class="reveal-left delay-1">Ongoing cave survey and cartography projects</li>
-      <li class="reveal-right delay-2">Home of Phreatic, our non-profit exploration organisation</li>
+      <li class="reveal-right delay-2">Home of Phreatic A.p.S, our non-profit exploration organisation</li>
       <li class="reveal-left delay-3">Scientific diving support and documentation</li>
       <li class="reveal-right delay-4">Collaboration with international exploration teams</li>
     </ul>
@@ -90,7 +90,7 @@
     <div class="section-header blur-reveal">
       <p class="section-label">Citizen Science &amp; Community</p>
       <h2>Phreatic</h2>
-      <p class="lead">Base One is the operational home of Phreatic - a non-profit organization exploring and protecting the flooded caves and groundwater of Sardinia. Volunteer divers contribute to cave survey, 3D mapping, sediment or biology sampling, and conservation. Your dives become real data.</p>
+      <p class="lead">Base One is the operational home of Phreatic A.p.S - a non-profit organisation exploring and protecting the flooded caves and groundwater of Sardinia. Volunteer divers contribute to cave survey, 3D mapping, sediment or biology sampling, and conservation. Your dives become real data.</p>
     </div>
     <div class="phreatic-cards">
       {#each phreaticCards as c, i}
