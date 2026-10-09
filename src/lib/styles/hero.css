@@ -94,7 +94,7 @@
 }
 .hero h1 { font-size: clamp(2rem, 5vw, 4.2rem); color: #fff; margin-bottom: 1.25rem; text-shadow: 0 2px 40px rgba(0,0,0,.3); }
 /* Keep the title on its two <br> lines; only allow extra wrapping on phones */
-@media (min-width: 481px) { .hero h1 { white-space: nowrap; } }
+@media (min-width: 481px) { .hero:not(.hero-page) h1 { white-space: nowrap; } }
 .hero-sub {
   font-size: clamp(1rem, 2vw, 1.2rem);
   color: rgba(255,255,255,.85);
@@ -143,6 +143,10 @@ ul.hero-highlights li::before {
   justify-content: center;
 }
 .hero-page .hero-content { margin: 0 auto; }
+.hero-page h1 { text-wrap: balance; }
+.hero-page .hero-sub { margin-left: auto; margin-right: auto; }
+/* Same darker overlay on every inner-page hero (was only set in the Cala Gonone route) */
+.hero-page .hero-bg::after { background: rgba(4,10,18,.52); }
 
 /* Buttons */
 .btn {

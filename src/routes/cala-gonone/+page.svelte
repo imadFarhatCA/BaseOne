@@ -264,12 +264,6 @@
 />
 
 <style>
-  /* Darker hero overlay */
-  :global(.hero-page .hero-bg::after) {
-    background: rgba(4,10,18,.52) !important;
-  }
-
-
   /* ── 3-image horizontal strip ── */
   .photo-strip {
     display: grid;
