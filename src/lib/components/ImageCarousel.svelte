@@ -1,5 +1,6 @@
 <script>
   import { onMount } from 'svelte';
+  import { inviewPlay } from '$lib/actions/inviewPlay.js';
 
   export let images = [];
   export let alt = '';
@@ -38,8 +39,12 @@
   <div class="gallery-slider-wrap">
     <div class="gallery-slider" bind:this={slider} on:scroll={onScroll}>
       {#each images as img, i}
-        <div class="gallery-card">
+        <div class="gallery-card" class:gallery-card-video={img.video}>
+          {#if img.video}
+            <video src={img.video} poster={img.poster} muted loop playsinline preload="metadata" aria-label={img.alt} use:inviewPlay></video>
+          {:else}
           <img src={typeof img === 'string' ? img : img.src} alt={typeof img === 'string' ? `${alt} - photo ${i + 1}` : img.alt} style={img.position ? `object-position:${img.position}` : undefined} loading="lazy" />
+          {/if}
           {#if img.credit}<span class="gallery-credit">© {img.credit}</span>{/if}
         </div>
       {/each}
@@ -49,6 +54,9 @@
 
 <style>
   .image-carousel { position: relative; }
+  /* Portrait video cards */
+  :global(.gallery-card-video) { flex: 0 0 min(250px, 62vw) !important; height: clamp(380px, 46vw, 440px) !important; }
+  :global(.gallery-card-video video) { width: 100%; height: 100%; object-fit: cover; display: block; }
   :global(.gallery-card) { position: relative; }
   .gallery-credit {
     position: absolute; left: 0; right: 0; bottom: 0;

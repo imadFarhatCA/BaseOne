@@ -6,12 +6,12 @@ export const caves = [
     tags: ['Halocline', 'Speleothems', 'Multiple sumps', 'Distance'],
     images: [
       // hidden: '/images/caves/bue-marino-8.jpg',
+      '/images/caves/bue-marino-10.jpg',
+      '/images/caves/bue-marino-9.jpg',
       '/images/caves/bue-marino-1.jpg',
       '/images/caves/bue-marino-2.jpg',
       '/images/caves/bue-marino-3.jpg',
       '/images/caves/bue-marino-4.jpg',
-      '/images/caves/bue-marino-9.jpg',
-      '/images/caves/bue-marino-10.jpg',
     ],
   },
   {

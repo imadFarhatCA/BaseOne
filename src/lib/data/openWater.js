@@ -6,14 +6,21 @@ export const openWater = [
     access: 'Boat access · ~87 m',
     description: 'One of Sardinia’s most impressive deep wrecks. The Ugo Bassi, a cargo steamship torpedoed and sunk in 1941, rests upright off the coast of Orosei at approximately 87 metres. Its well-preserved hull, open holds, superstructure, and abundant marine life make it an exceptional technical-diving site. Discovered in 2012, the wreck requires advanced trimix procedures, precise planning, and substantial decompression, making it suitable only for experienced deep technical and rebreather divers.',
     tags: ['Wreck', 'Deep', 'Trimix', 'CCR'],
-    images: ['https://images.unsplash.com/photo-1544551763-46a013bb70d5?w=900&q=70&auto=format&fit=crop'],
+    images: [
+      { video: '/videos/ugo-bassi-1.mp4', poster: '/videos/ugo-bassi-1.jpg', alt: 'Ugo Bassi wreck dive footage 1' },
+      { video: '/videos/ugo-bassi-2.mp4', poster: '/videos/ugo-bassi-2.jpg', alt: 'Ugo Bassi wreck dive footage 2' },
+      { video: '/videos/ugo-bassi-3.mp4', poster: '/videos/ugo-bassi-3.jpg', alt: 'Ugo Bassi wreck dive footage 3' },
+    ],
   },
   {
     name: 'KT-12',
     access: 'Boat access · 24–34 m',
     description: 'A distinctive Second World War wreck in the Gulf of Orosei. The German transport ship KT12 was sunk in 1943 and now lies in two main sections between approximately 24 and 34 metres. Its stern, cannon, propeller, rudder, and scattered cargo remain clearly visible.',
     tags: ['Wreck', 'WWII', 'Technical'],
-    images: ['https://images.unsplash.com/photo-1551244072-5d12893278ab?w=900&q=70&auto=format&fit=crop'],
+    images: [
+      { src: '/images/kt12.jpg', alt: 'Three divers with DPVs above the KT12 wreck deck gun' },
+      'https://images.unsplash.com/photo-1551244072-5d12893278ab?w=900&q=70&auto=format&fit=crop',
+    ],
   },
   {
     name: 'Nasello',
