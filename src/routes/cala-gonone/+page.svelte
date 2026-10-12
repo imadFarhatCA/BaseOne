@@ -53,7 +53,7 @@
 </svelte:head>
 
 <PageHero
-  image="/images/hero-cala-gonone.jpg"
+  image="/images-calaGonone/hero-cala-gonone-new.jpg"
   eyebrow="Cala Gonone, Sardinia"
   heading="A Place Worth<br>Coming Back To"
   sub="The Gulf of Orosei is one of the last wild coastlines in the Mediterranean. Here is how to make the most of it."
@@ -72,13 +72,13 @@
 <!-- ── 3-image horizontal strip ──────────────────────────────── -->
 <div class="photo-strip">
   <div class="photo-strip-item scale-reveal">
-    <img src="/images-calaGonone/6458cd8639bc7.webp" alt="Aerial view of cave beach in the Gulf of Orosei" />
+    <img src="/images-calaGonone/strip-1.jpg" alt="Hiker on white limestone above the Gulf of Orosei" />
   </div>
   <div class="photo-strip-item scale-reveal delay-1">
     <img src="/images-calaGonone/f3dda76f07224a461a758a530aa28a1f4071b32c1fb03778877ffd985092251b.webp" alt="Brilliant blue sea along the Sardinian coastline" />
   </div>
   <div class="photo-strip-item scale-reveal delay-2">
-    <img src="/images-calaGonone/0897ba534113a960e638417095c0ea9169a0c937fbe9d82c5f17ecff8c080a71.webp" alt="Dramatic limestone cliffs of the Gulf of Orosei" />
+    <img src="/images-calaGonone/strip-3.jpg" alt="View over the coast and sea at Cala Gonone from the hills" />
   </div>
 </div>
 
