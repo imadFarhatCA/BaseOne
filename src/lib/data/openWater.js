@@ -45,6 +45,8 @@ export const openWater = [
       { video: '/videos/galleria-1.mp4', poster: '/videos/galleria-1.jpg', alt: 'Swim-through footage 1' },
       { video: '/videos/galleria-2.mp4', poster: '/videos/galleria-2.jpg', alt: 'Bel Torrente swim-through' },
       { video: '/videos/galleria-3.mp4', poster: '/videos/galleria-3.jpg', alt: 'Acqua Dolce at dawn' },
+      { src: '/images/caves/galleria-1.jpg', alt: 'Diver with a DPV gliding over white sand in clear shallow water' },
+      { src: '/images/caves/galleria-2.jpg', alt: 'Diver with a SUEX DPV over a rock in shallow water', position: '50% 63%' },
     ],
   },
   {
