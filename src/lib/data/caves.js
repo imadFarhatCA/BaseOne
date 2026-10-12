@@ -23,8 +23,8 @@ export const caves = [
     images: [
       { src: '/images/caves/bel-torrente-4.jpg', alt: 'Diver crossing a sandy slope inside Bel Torrente', position: '50% 80%' },
       { src: '/images/caves/bel-torrente-5.jpg', alt: 'Two divers with lights moving through a sandy passage', position: '50% 40%' },
-      // hidden: '/images/caves/bue-marino-5.jpg',
-      // hidden: { src: '/images/caves/bue-marino-6.jpg', alt: 'Diver with a light in a flooded cave passage', position: '50% 72%' },
+      '/images/caves/bue-marino-5.jpg',
+      { src: '/images/caves/bue-marino-6.jpg', alt: 'Diver with a light in a flooded cave passage', position: '50% 72%' },
       '/images/caves/bue-marino-7.jpg',
       '/images/caves/bel-torrente-1.jpg',
       // hidden: '/images/caves/bel-torrente-2.jpg',
