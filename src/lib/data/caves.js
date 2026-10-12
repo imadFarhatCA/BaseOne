@@ -9,6 +9,7 @@ export const caves = [
       '/images/caves/bue-marino-10.jpg',
       '/images/caves/bue-marino-9.jpg',
       { src: '/images/caves/bue-marino-3.jpg', alt: 'Diver with a light between narrow, layered cave walls', position: '50% 38%' },
+      '/images/caves/fico-3.jpg',
       { src: '/images/caves/bue-marino-1.jpg', alt: 'Divers with lights in a dark cave gallery', position: '50% 72%' },
       { src: '/images/caves/bue-marino-2.jpg', alt: 'Diver in a tall colourful cave passage', position: '50% 67%' },
       { src: '/images/caves/bue-marino-4.jpg', alt: 'Diver beside a stalactite in clear green water', position: '50% 57%' },
@@ -58,13 +59,13 @@ export const caves = [
     description: 'A visually striking cave system with crystal-clear visibility, white limestone walls, dark basaltic rocks, ancient floor deposits, and multiple vertical shafts. Its morphology combines sculpted limestone passages, vertical drops, decorated sections, and open phreatic volumes, creating strong contrasts in shape, colour, and scale. Suitable for qualified cave divers across a range of levels, it is especially rewarding for underwater photographers.',
     tags: ['Vertical shafts', 'Speleothems', 'Navigation'],
     images: [
-      '/images/caves/fico-4.jpg',
+      // hidden: '/images/caves/fico-4.jpg',
       '/images/caves/fico-5.jpg',
       '/images/caves/fico-6.jpg',
       '/images/caves/fico-7.jpg',
       '/images/caves/fico-1.jpg',
       '/images/caves/fico-2.jpg',
-      '/images/caves/fico-3.jpg',
+      '/images/caves/fico-8.jpg',
     ],
   },
   {

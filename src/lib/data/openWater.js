@@ -19,7 +19,7 @@ export const openWater = [
     tags: ['Wreck', 'WWII', 'Technical'],
     images: [
       { src: '/images/kt12.jpg', alt: 'Three divers with DPVs above the KT12 wreck deck gun' },
-      'https://images.unsplash.com/photo-1551244072-5d12893278ab?w=900&q=70&auto=format&fit=crop',
+      // hidden: 'https://images.unsplash.com/photo-1551244072-5d12893278ab?w=900&q=70&auto=format&fit=crop',
     ],
   },
   {
