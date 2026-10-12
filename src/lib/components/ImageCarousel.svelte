@@ -55,7 +55,7 @@
 <style>
   .image-carousel { position: relative; }
   /* When a carousel mixes videos and photos, all cards share the video height */
-  .image-carousel.has-video :global(.gallery-card) { height: clamp(380px, 46vw, 440px) !important; }
+  .image-carousel.has-video :global(.gallery-card) { height: clamp(380px, 46vw, 440px) !important; flex: 0 0 min(250px, 62vw) !important; }
   /* Portrait video cards */
   :global(.gallery-card-video) { flex: 0 0 min(250px, 62vw) !important; height: clamp(380px, 46vw, 440px) !important; }
   :global(.gallery-card-video video) { width: 100%; height: 100%; object-fit: cover; display: block; }
