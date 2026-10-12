@@ -5,11 +5,13 @@ export const caves = [
     description: 'The most extensive cave system in the Gulf of Orosei. Its branching passages - Ramo Nord, Ramo di Mezzo, and Ramo Sud - extend for kilometres through mapped tunnels and unexplored continuations. Rich speleothems, a prominent halocline, and long open galleries make this one of the cave systems that helped establish the Gulf of Orosei as a world-class cave diving destination. Suitable for a wide range of experience levels, from long shallow dives to multi-sump cave diving.',
     tags: ['Halocline', 'Speleothems', 'Multiple sumps', 'Distance'],
     images: [
-      '/images/caves/bue-marino-8.jpg',
+      // hidden: '/images/caves/bue-marino-8.jpg',
       '/images/caves/bue-marino-1.jpg',
       '/images/caves/bue-marino-2.jpg',
       '/images/caves/bue-marino-3.jpg',
       '/images/caves/bue-marino-4.jpg',
+      '/images/caves/bue-marino-9.jpg',
+      '/images/caves/bue-marino-10.jpg',
     ],
   },
   {
@@ -22,8 +24,8 @@ export const caves = [
       { src: '/images/caves/bue-marino-6.jpg', alt: 'Diver with a light in a flooded cave passage', position: '50% 72%' },
       '/images/caves/bue-marino-7.jpg',
       '/images/caves/bel-torrente-1.jpg',
-      '/images/caves/bel-torrente-2.jpg',
-      '/images/caves/bel-torrente-3.jpg',
+      // hidden: '/images/caves/bel-torrente-2.jpg',
+      // hidden: '/images/caves/bel-torrente-3.jpg',
     ],
   },
   {
