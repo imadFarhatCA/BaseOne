@@ -1,5 +1,6 @@
 // Course schedule for the Training page.
-// GUE rows: live from GUE.com (Cala Gonone) via /api/gue-classes, with a build-time snapshot as fallback.
+// GUE rows: snapshot of GUE.com classes in Nuoro / Cala Gonone, refreshed on every build (npm run gue:sync).
+// A live Pages Function version is parked in /functions-disabled (Cloudflare failed to publish it).
 // Non-GUE rows (TDI samples) open the enquiry popup; they stay as manually-entered samples and are listed after the live GUE classes.
 import snapshot from './gueClasses.json';
 
