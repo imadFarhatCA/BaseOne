@@ -1,4 +1,4 @@
-// Cloudflare Pages Function: live GUE classes in Cala Gonone, cached for 6 hours.
+// Cloudflare Pages Function: live GUE classes in Nuoro / Cala Gonone, cached for 6 hours.
 import { parseGueClasses } from '../../src/lib/utils/gueClasses.js';
 
 const SOURCE = 'https://www.gue.com/diver-training/gue-class-schedule';
