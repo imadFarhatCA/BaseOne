@@ -41,7 +41,11 @@ export const openWater = [
     access: 'Boat access · Shallow',
     description: 'A varied selection of shallow dive sites along the Gulf of Orosei, shaped by limestone walls, submerged galleries, small caverns, and natural swim-throughs. Clear water and dramatic coastal geology define the experience.',
     tags: ['Reef', 'Swim-throughs', 'All levels'],
-    images: ['https://images.unsplash.com/photo-1437622368342-7a3d73a34c8f?w=900&q=70&auto=format&fit=crop'],
+    images: [
+      { video: '/videos/galleria-1.mp4', poster: '/videos/galleria-1.jpg', alt: 'Swim-through footage 1' },
+      { video: '/videos/galleria-2.mp4', poster: '/videos/galleria-2.jpg', alt: 'Bel Torrente swim-through' },
+      { video: '/videos/galleria-3.mp4', poster: '/videos/galleria-3.jpg', alt: 'Acqua Dolce at dawn' },
+    ],
   },
   {
     name: 'Training Sites',
