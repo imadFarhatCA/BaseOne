@@ -5,6 +5,8 @@
   "type": "module",
   "scripts": {
     "dev": "vite dev --port 5220",
+    "gue:sync": "node scripts/fetch-gue-classes.mjs",
+    "prebuild": "node scripts/fetch-gue-classes.mjs",
     "build": "vite build",
     "preview": "vite preview"
   },

@@ -3,7 +3,17 @@
   import CtaBlock from '$lib/components/CtaBlock.svelte';
   import CourseCalendar from '$lib/components/CourseCalendar.svelte';
   import GalleryGrid from '$lib/components/GalleryGrid.svelte';
-  import { courses } from '$lib/data/courses.js';
+  import { onMount } from 'svelte';
+  import { courses as initialCourses, mergeCourses } from '$lib/data/courses.js';
+
+  let courses = initialCourses;
+  onMount(async () => {
+    try {
+      const res = await fetch('/api/gue-classes');
+      const { classes } = await res.json();
+      if (classes?.length) courses = mergeCourses(classes);
+    } catch {}
+  });
 
   const trainingShots = [
     { src: '/images-training/P1010113.jpg', alt: 'Base One training' },
