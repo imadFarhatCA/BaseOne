@@ -3,6 +3,9 @@
 // Non-GUE rows (TDI samples) open the enquiry popup; they stay as manually-entered samples and are listed after the live GUE classes.
 import snapshot from './gueClasses.json';
 
+// Non-GUE classes are outdated for now - set to true when real ones are entered.
+const SHOW_OTHER_COURSES = false;
+
 const others = [
   // ── TDI / IANTD sample courses (visual reference only) ──
   { course: 'TDI Intro to Tech',           date: 'May 30, 2026', instructor: 'Olivier Bertieaux', org: 'TDI', level: 'Tech',       details: 'A bridge from recreational into technical diving - equipment configuration and skills.' },
@@ -16,5 +19,5 @@ export const upcoming = (list) => {
   const today = new Date(); today.setHours(0, 0, 0, 0);
   return list.filter((c) => new Date(c.date) >= today).sort(byDate);
 };
-export const mergeCourses = (gue) => [...upcoming(gue), ...others];
+export const mergeCourses = (gue) => [...upcoming(gue), ...(SHOW_OTHER_COURSES ? others : [])];
 export const courses = mergeCourses(snapshot);

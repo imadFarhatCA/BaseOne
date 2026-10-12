@@ -18,7 +18,9 @@
 
 <div class="cal-legend">
   <span class="cal-key"><i class="dot dot-gue"></i> GUE - book on GUE.com</span>
+  {#if courses.some((c) => c.org !== 'GUE')}
   <span class="cal-key"><i class="dot dot-tdi"></i> Non-GUE - enquire with us</span>
+  {/if}
 </div>
 
 <div class="cal-list">
