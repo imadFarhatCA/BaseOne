@@ -81,6 +81,19 @@
     <img src="/images-calaGonone/strip-3.jpg" alt="View over the coast and sea at Cala Gonone from the hills" />
   </div>
 </div>
+<div class="photo-strip photo-strip-row2">
+  <div class="photo-strip-item scale-reveal">
+    <img src="/images-calaGonone/strip-4.jpg" alt="Two people standing in a sea cave opening onto the Gulf of Orosei" loading="lazy" />
+  </div>
+  <div class="photo-strip-item scale-reveal delay-1">
+    <img src="/images-calaGonone/strip-5.jpg" alt="Twisted juniper tree above the blue sea at Cala Gonone" loading="lazy" />
+  </div>
+  <div class="photo-strip-item scale-reveal delay-2">
+    <video muted loop autoplay playsinline preload="metadata" poster="/videos/cala-gonone-drone.jpg" aria-label="Drone view of Cala Gonone harbour">
+      <source src="/videos/cala-gonone-drone.mp4" type="video/mp4" />
+    </video>
+  </div>
+</div>
 
 <!-- ── Getting Here - Flights ─────────────────────────────────── -->
 <section class="section section-alt">
@@ -276,6 +289,8 @@
     height: clamp(220px, 28vw, 420px);
     border-radius: 12px;
   }
+  .photo-strip-row2 { margin-top: 10px; }
+  .photo-strip-item video { width: 100%; height: 100%; object-fit: cover; display: block; }
   .photo-strip-item img { width: 100%; height: 100%; object-fit: cover; display: block; transition: transform .6s cubic-bezier(0.16,1,0.3,1); }
   .photo-strip-item:hover img { transform: scale(1.04); }
 
