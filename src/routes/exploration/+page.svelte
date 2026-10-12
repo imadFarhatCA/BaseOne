@@ -49,7 +49,7 @@
     <p class="section-label reveal-left">The Mindset</p>
     <h2 class="reveal-left delay-1">Exploration isn’t measured in distance. It’s a mindset.</h2>
     <p class="lead mt-sm reveal-left delay-2">It means staying curious, documenting carefully, working well as a team, and approaching the unknown with both ambition and restraint. At Base One, that mindset shapes everything we do, in training and beyond.</p>
-    <ul class="check-list mt-md">
+    <ul class="check-list mindset-list mt-md">
       <li class="reveal-left delay-1">Ongoing cave survey and cartography projects</li>
       <li class="reveal-right delay-2">Home of Phreatic A.p.S, our non-profit exploration organisation</li>
       <li class="reveal-left delay-3">Scientific diving support and documentation</li>
@@ -148,6 +148,9 @@
 />
 
 <style>
+  /* Bullets match the lead paragraph above them */
+  .mindset-list li { font-size: clamp(1.05rem, 2vw, 1.2rem); line-height: 1.7; color: var(--text-muted); }
+
   .phreatic-cards {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
