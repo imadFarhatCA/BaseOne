@@ -29,7 +29,7 @@
   }
 </script>
 
-<div class="image-carousel" class:dark={theme === 'dark'}>
+<div class="image-carousel" class:dark={theme === 'dark'} class:has-video={images.some((i) => i.video)}>
   {#if showArrows && !hideNav}
     <div class="image-carousel-nav">
       <button class="gallery-arrow" type="button" on:click={() => scroll(-1)} aria-label="Previous" disabled={atStart}>←</button>
@@ -54,6 +54,8 @@
 
 <style>
   .image-carousel { position: relative; }
+  /* When a carousel mixes videos and photos, all cards share the video height */
+  .image-carousel.has-video :global(.gallery-card) { height: clamp(380px, 46vw, 440px) !important; }
   /* Portrait video cards */
   :global(.gallery-card-video) { flex: 0 0 min(250px, 62vw) !important; height: clamp(380px, 46vw, 440px) !important; }
   :global(.gallery-card-video video) { width: 100%; height: 100%; object-fit: cover; display: block; }
