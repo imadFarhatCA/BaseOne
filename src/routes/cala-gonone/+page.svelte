@@ -282,7 +282,7 @@
     grid-template-columns: repeat(3, 1fr);
     gap: 1rem;
     max-width: var(--container);
-    margin: 0 auto;
+    margin: 0 auto clamp(3rem, 6vw, 5rem);
     padding: 0 var(--gutter);
   }
   .photo-strip-item {
