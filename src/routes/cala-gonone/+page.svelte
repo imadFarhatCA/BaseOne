@@ -53,7 +53,7 @@
 </svelte:head>
 
 <PageHero
-  image="/images-calaGonone/hero-cala-gonone-new.jpg"
+  image="/images/hero-cala-gonone.jpg"
   eyebrow="Cala Gonone, Sardinia"
   heading="A Place Worth<br>Coming Back To"
   sub="The Gulf of Orosei is one of the last wild coastlines in the Mediterranean. Here is how to make the most of it."

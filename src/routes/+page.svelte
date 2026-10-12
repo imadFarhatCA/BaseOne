@@ -13,9 +13,12 @@
     { src: '/images-experience/exp-1.jpg', alt: 'Four smiling Base One team members in Cala Gonone' },
     { src: '/images-experience/exp-2.jpg', alt: 'Divers jumping into the sea together below the cliffs' },
     { src: '/images-experience/exp-3.jpg', alt: 'Diver adjusting a hood before a dive' },
-    { src: '/images-experience/exp-4.jpg', alt: 'Base One team standing arm in arm looking out to sea' },
+    { src: '/images-experience/exp-4.jpg', alt: 'Two Base One team members relaxing on the seafront' },
     { src: '/images-experience/exp-5.jpg', alt: 'Group selfie with gelato in Cala Gonone' },
     { src: '/images-experience/exp-6.jpg', alt: 'Looking out to a Base One RIB on the water' },
+    { src: '/images-experience/exp-7.jpg', alt: 'Divers smiling for a selfie on the boat in the marina' },
+    { src: '/images-experience/exp-8.jpg', alt: 'Group of divers laughing together on the boat' },
+    { src: '/images-experience/exp-9.jpg', alt: 'Divers in drysuits on a RIB below the Cala Gonone cliffs' },
   ];
 
   // ── Topside activities (for non-divers) - verified placeholders, swap later ──
