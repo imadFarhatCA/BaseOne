@@ -80,8 +80,6 @@
   <div class="photo-strip-item scale-reveal delay-2">
     <img src="/images-calaGonone/strip-3.jpg" alt="View over the coast and sea at Cala Gonone from the hills" />
   </div>
-</div>
-<div class="photo-strip photo-strip-row2">
   <div class="photo-strip-item scale-reveal">
     <img src="/images-calaGonone/strip-4.jpg" alt="Two people standing in a sea cave opening onto the Gulf of Orosei" loading="lazy" />
   </div>
@@ -278,18 +276,21 @@
 
 <style>
   /* ── 3-image horizontal strip ── */
+  /* Same grid, tile size and spacing as the Base One Experience gallery */
   .photo-strip {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 10px;
-    padding: 0 10px;
+    gap: 1rem;
+    max-width: var(--container);
+    margin: 0 auto;
+    padding: 0 var(--gutter);
   }
   .photo-strip-item {
     overflow: hidden;
-    height: clamp(220px, 28vw, 420px);
-    border-radius: 12px;
+    height: clamp(180px, 22vw, 280px);
+    border-radius: var(--radius-lg);
+    box-shadow: 0 4px 20px rgba(0,0,0,.1);
   }
-  .photo-strip-row2 { margin-top: 10px; }
   .photo-strip-item video { width: 100%; height: 100%; object-fit: cover; display: block; }
   .photo-strip-item img { width: 100%; height: 100%; object-fit: cover; display: block; transition: transform .6s cubic-bezier(0.16,1,0.3,1); }
   .photo-strip-item:hover img { transform: scale(1.04); }
@@ -553,9 +554,9 @@
     .transport-ferry { grid-column: 1 / -1; }
     .accom-layout { grid-template-columns: 1fr; gap: 2rem; }
   }
+  @media (max-width: 900px) { .photo-strip { grid-template-columns: repeat(2, 1fr); } }
+  @media (max-width: 560px) { .photo-strip { grid-template-columns: 1fr; } }
   @media (max-width: 768px) {
-    .photo-strip { grid-template-columns: 1fr; gap: 8px; padding: 0 8px; }
-    .photo-strip-item { height: 240px; }
     .transport-grid { grid-template-columns: 1fr; }
     .transport-ferry.transport-card { flex-direction: column; align-items: flex-start; }
     .ferry-routes-grid { grid-template-columns: 1fr; }
