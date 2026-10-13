@@ -32,7 +32,6 @@
   // ── Exploration gallery ──
   const explorationShots = [
     { src: '/images-exploration/exp-11.jpg', alt: 'Diver in a narrow cave passage reading a waterproof book' },
-    { src: '/images-exploration/exp-10.jpg', alt: 'Diver at the water edge with a survey slate, a colleague pointing' },
     { src: '/images-exploration/exp-2.jpg', alt: 'Two divers at a spring pool with their sidemount cylinders' },
     { src: '/images-exploration/exp-4.jpg', alt: 'Aerial view of dive gear laid out on the rocks beside a clear spring' },
     { src: '/images-exploration/exp-3.jpg', alt: 'Survey divers recording notes on a slate inside a cave' },
@@ -42,6 +41,7 @@
     { src: '/images-exploration/exp-8.jpg', alt: 'Explorer standing beside a turquoise pool in a decorated cave' },
     { src: '/images-exploration/exp-9.jpg', alt: 'Divers with scooters and lights in a cave passage' },
     // hidden: { src: '/images-exploration/exp-1.jpg', alt: 'Hand filling in a cave survey sheet on a dive slate' },
+    // hidden: { src: '/images-exploration/exp-10.jpg', alt: 'Diver at the water edge with a survey slate, a colleague pointing' },
   ];
 </script>
 
