@@ -31,7 +31,16 @@ export const openWater = [
     access: 'Boat access · ~30 m',
     description: 'A practical wreck site in the Gulf of Orosei. The Nasello lies at approximately 30 metres, with visible hull sections, machinery, propeller, and rudder. Its depth and simple layout make it particularly useful for advanced and technical-diving training.',
     tags: ['Wreck', 'Training', 'Advanced'],
-    images: ['https://images.unsplash.com/photo-1583212292454-1fe6229603b7?w=900&q=70&auto=format&fit=crop'],
+    images: [
+      {
+        model: '9671bbd86d214a428a5ab8d4d94bd1ab',
+        poster: '/images/nasello-3d.jpg',
+        alt: 'Nasello wreck - 3D photogrammetry model',
+        credit: 'Kees.BL',
+        url: 'https://sketchfab.com/3d-models/nasello-9671bbd86d214a428a5ab8d4d94bd1ab'
+      },
+      'https://images.unsplash.com/photo-1583212292454-1fe6229603b7?w=900&q=70&auto=format&fit=crop',
+    ],
   },
   {
     name: 'Le Gorgonie',
