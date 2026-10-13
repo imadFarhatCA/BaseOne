@@ -31,10 +31,11 @@
 
   // ── Exploration gallery ──
   const explorationShots = [
+    { src: '/images-exploration/exp-10.jpg', alt: 'Diver at the water edge with a survey slate, a colleague pointing' },
     { src: '/images-exploration/exp-1.jpg', alt: 'Hand filling in a cave survey sheet on a dive slate' },
     { src: '/images-exploration/exp-2.jpg', alt: 'Two divers at a spring pool with their sidemount cylinders' },
-    { src: '/images-exploration/exp-3.jpg', alt: 'Survey divers recording notes on a slate inside a cave' },
     { src: '/images-exploration/exp-4.jpg', alt: 'Aerial view of dive gear laid out on the rocks beside a clear spring' },
+    { src: '/images-exploration/exp-3.jpg', alt: 'Survey divers recording notes on a slate inside a cave' },
     { src: '/images-exploration/exp-5.jpg', alt: 'Hands operating an underwater survey tablet by the water' },
     { src: '/images-exploration/exp-6.jpg', alt: 'Diver holding the Explorers Club flag in front of cave formations' },
     { src: '/images-exploration/exp-7.jpg', alt: 'Diver surfacing in a still cave pool' },
