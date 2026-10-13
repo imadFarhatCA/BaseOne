@@ -142,6 +142,8 @@
   </div>
 </section>
 
+<div class="image-divider scale-reveal" style="background-image:url('/images/divider-plan.jpg'); background-position:center 52%"></div>
+
 <style>
   .contact-tiles {
     display: grid;
