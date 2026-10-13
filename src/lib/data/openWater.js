@@ -59,6 +59,8 @@ export const openWater = [
       { video: '/videos/galleria-2.mp4', poster: '/videos/galleria-2.jpg', alt: 'Bel Torrente swim-through' },
       { video: '/videos/galleria-3.mp4', poster: '/videos/galleria-3.jpg', alt: 'Acqua Dolce at dawn' },
       { src: '/images/caves/galleria-2.jpg', alt: 'Diver with a SUEX DPV over a rock in shallow water' },
+      { src: '/images/caves/galleria-3.jpg', alt: 'Diver with a DPV passing under a rocky overhang in shallow water', position: '10% 50%' },
+      { src: '/images/caves/galleria-4.jpg', alt: 'Diver pushing a SUEX DPV through a bright swim-through', position: '18% 50%' },
     ],
   },
   {
@@ -70,6 +72,9 @@ export const openWater = [
       { src: '/images/training-site-1.jpg', alt: 'Divers with DPVs and side cylinders over a seagrass meadow' },
       { src: '/images/caves/galleria-1.jpg', alt: 'Diver with a DPV gliding over white sand in clear shallow water' },
       { src: '/images/training-site-2.jpg', alt: 'Diver with a SUEX DPV in clear shallow water under the surface', position: '50% 67%' },
+      { src: '/images/training-site-3.jpg', alt: 'Diver making the OK sign over a seagrass meadow' },
+      { src: '/images/training-site-4.jpg', alt: 'Diver in a mask swimming toward the camera over seagrass' },
+      { src: '/images/training-site-5.jpg', alt: 'Divers with DPVs crossing a sandy patch between seagrass beds' },
       'https://images.unsplash.com/photo-1559825481-12a05cc00344?w=900&q=70&auto=format&fit=crop',
     ],
   },
