@@ -48,9 +48,14 @@ export const caves = [
     description: 'Utopia and Euforia are adjacent cave systems on the Gulf of Orosei coastline, known for large-scale morphology, depth, distance, and demanding dive planning. Utopia is one of the deepest cave systems in the Gulf, with powerful phreatic galleries, strong photographic potential, and profiles that may require DPV support, decompression strategy, and rebreather-level experience.',
     tags: ['Complex navigation', 'Depth', 'Power cave'],
     images: [
-      '/images/caves/utopia-1.jpg',
-      '/images/caves/utopia-2.jpg',
-      '/images/caves/utopia-3.jpg',
+      // hidden (replaced): '/images/caves/utopia-1.jpg', utopia-2.jpg, utopia-3.jpg
+      '/images/caves/utopia-4.jpg',
+      '/images/caves/utopia-5.jpg',
+      '/images/caves/utopia-6.jpg',
+      '/images/caves/utopia-7.jpg',
+      '/images/caves/utopia-8.jpg',
+      '/images/caves/utopia-9.jpg',
+      '/images/caves/utopia-10.jpg',
     ],
   },
   {

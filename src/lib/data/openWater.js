@@ -10,6 +10,7 @@ export const openWater = [
       { video: '/videos/ugo-bassi-1.mp4', poster: '/videos/ugo-bassi-1.jpg', alt: 'Ugo Bassi wreck dive footage 1' },
       { video: '/videos/ugo-bassi-2.mp4', poster: '/videos/ugo-bassi-2.jpg', alt: 'Ugo Bassi wreck dive footage 2' },
       { video: '/videos/ugo-bassi-3.mp4', poster: '/videos/ugo-bassi-3.jpg', alt: 'Ugo Bassi wreck dive footage 3' },
+      { video: '/videos/ugo-bassi-4.mp4', poster: '/videos/ugo-bassi-4.jpg', alt: 'Ugo Bassi wreck dive footage 4' },
     ],
   },
   {
