@@ -4,10 +4,11 @@
   export let heading;
   export let sub = '';
   export let credit = '';
+  export let position = 'center';
 </script>
 
 <section class="hero hero-page">
-  <div class="hero-bg" style="background-image:url('{image}')"></div>
+  <div class="hero-bg" style="background-image:url('{image}'); background-position:{position}"></div>
   <div class="hero-content">
     <div class="eyebrow stone">{eyebrow}</div>
     <h1>{@html heading}</h1>

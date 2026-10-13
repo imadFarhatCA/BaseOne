@@ -33,7 +33,8 @@
 
 <!-- ── Hero ─────────────────────────────────────────────────── -->
 <PageHero
-  image="/images/hero-training.jpg"
+  image="/images/hero-training-new.jpg"
+  position="50% 35%"
   eyebrow="Training & Education"
   heading="Training That Stays<br>With You"
   sub="Not just courses. Not just certifications. Real development in a place where high standards are lived every day."
