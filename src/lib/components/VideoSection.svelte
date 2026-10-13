@@ -35,17 +35,16 @@
 
 <style>
   .videosec-head { text-align: center; }
-  /* Full-bleed: span the entire viewport width regardless of container */
+  /* Fixed frame: 75% of the screen width, centred, 16:9 - the video is never cropped */
   .videosec-frame {
-    width: 100vw;
-    margin-left: calc(50% - 50vw);
-    margin-top: 2.5rem;
+    width: 75vw;
+    margin: 2.5rem auto 0;
     overflow: hidden;
     aspect-ratio: 16 / 9;
-    max-height: 100vh;
     background: #000;
+    border-radius: var(--radius-lg, 12px);
   }
-  .videosec-frame video { width: 100%; height: 100%; object-fit: cover; display: block; }
+  .videosec-frame video { width: 100%; height: 100%; object-fit: contain; display: block; }
   .videosec-placeholder {
     width: 100%; height: 100%;
     background-size: cover; background-position: center;
