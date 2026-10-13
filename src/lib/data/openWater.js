@@ -20,6 +20,9 @@ export const openWater = [
     tags: ['Wreck', 'WWII', 'Technical'],
     images: [
       { src: '/images/kt12.jpg', alt: 'Three divers with DPVs above the KT12 wreck deck gun' },
+      { src: '/images/kt12-2.jpg', alt: 'Diver with a light framed by the broken structure of the KT12 wreck' },
+      { src: '/images/kt12-3.jpg', alt: 'Diver in drysuit inside the KT12 wreck, light shafts above' },
+      { src: '/images/kt12-4.jpg', alt: 'Two divers with lights swimming along the structure of the KT12 wreck' },
       // hidden: 'https://images.unsplash.com/photo-1551244072-5d12893278ab?w=900&q=70&auto=format&fit=crop',
     ],
   },
@@ -55,6 +58,9 @@ export const openWater = [
     access: 'Boat or shore access · All levels',
     description: 'Convenient training sites with excellent visibility, clear water, and broad sandy bottoms. Consistent conditions and easy beach or boat access allow teams to maximise in-water time and focus fully on skill development and the learning process.',
     tags: ['Training', 'Shallow', 'All levels'],
-    images: ['https://images.unsplash.com/photo-1559825481-12a05cc00344?w=900&q=70&auto=format&fit=crop'],
+    images: [
+      { src: '/images/training-site-1.jpg', alt: 'Divers with DPVs and side cylinders over a seagrass meadow' },
+      'https://images.unsplash.com/photo-1559825481-12a05cc00344?w=900&q=70&auto=format&fit=crop',
+    ],
   },
 ];

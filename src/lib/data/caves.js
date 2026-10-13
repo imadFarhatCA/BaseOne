@@ -40,6 +40,8 @@ export const caves = [
       '/images/caves/cala-luna-1.jpg',
       '/images/caves/cala-luna-2.jpg',
       '/images/caves/cala-luna-3.jpg',
+      '/images/caves/cala-luna-4.jpg',
+      '/images/caves/cala-luna-5.jpg',
     ],
   },
   {
@@ -71,6 +73,7 @@ export const caves = [
       '/images/caves/fico-1.jpg',
       '/images/caves/fico-2.jpg',
       '/images/caves/fico-8.jpg',
+      '/images/caves/fico-9.jpg',
     ],
   },
   {
