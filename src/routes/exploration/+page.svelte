@@ -37,7 +37,7 @@
     { src: '/images-exploration/exp-3.jpg', alt: 'Survey divers recording notes on a slate inside a cave' },
     { src: '/images-exploration/exp-5.jpg', alt: 'Hands operating an underwater survey tablet by the water' },
     { src: '/images-exploration/exp-6.jpg', alt: 'Diver holding the Explorers Club flag in front of cave formations' },
-    { src: '/images-exploration/exp-7.jpg', alt: 'Diver surfacing in a still cave pool' },
+    { src: '/images-exploration/exp-12.jpg', alt: 'Diver with a light descending between mossy rock walls below a sunlit opening' },
     { src: '/images-exploration/exp-8.jpg', alt: 'Explorer standing beside a turquoise pool in a decorated cave' },
     { src: '/images-exploration/exp-9.jpg', alt: 'Divers with scooters and lights in a cave passage' },
     // hidden: { src: '/images-exploration/exp-1.jpg', alt: 'Hand filling in a cave survey sheet on a dive slate' },
