@@ -39,7 +39,7 @@
   ];
 
   // Torch (cursor/tilt spotlight) effect on the hero - set to true to bring it back
-  const TORCH_ENABLED = false;
+  const TORCH_ENABLED = true;
   let mx = 50, my = 50;
   let showGyroBtn = false;
   let gyroActive = false;
