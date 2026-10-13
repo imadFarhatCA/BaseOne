@@ -135,14 +135,14 @@
   </div>
 </section>
 
+<div class="image-divider scale-reveal" style="background-image:url('/images/divider-plan.jpg'); background-position:center 52%"></div>
+
 <section class="section section-dark cta-block">
   <div class="container reveal">
     <h2>Built for Divers Who Want More</h2>
     <p class="lead" style="color:var(--text-light);">Whatever brought you here, we will help you make the most of it.</p>
   </div>
 </section>
-
-<div class="image-divider scale-reveal" style="background-image:url('/images/divider-plan.jpg'); background-position:center 52%"></div>
 
 <style>
   .contact-tiles {
