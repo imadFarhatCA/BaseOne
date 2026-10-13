@@ -74,17 +74,19 @@ export const caves = [
       '/images/caves/fico-2.jpg',
       '/images/caves/fico-8.jpg',
       '/images/caves/fico-9.jpg',
+      '/images/caves/fico-10.jpg',
     ],
   },
-  {
-    name: 'Grotta Sifone',
-    access: 'Boat access · Restricted',
-    description: 'A multi-sump cave system with a restricted entrance, an initial sump, a short dry section, and further sumps beyond. White limestone walls, tight passages, and changing morphology make it an excellent objective for qualified sidemount cave divers.',
-    tags: ['Challenging', 'Multiple sumps', 'Sidemount only'],
-    images: [
-      '/images/caves/maseduoe-1.jpg',
-      '/images/caves/maseduoe-2.jpg',
-      '/images/caves/maseduoe-3.jpg',
-    ],
-  },
+  // Hidden for now: Grotta Sifone
+  //   {
+  //     name: 'Grotta Sifone',
+  //     access: 'Boat access · Restricted',
+  //     description: 'A multi-sump cave system with a restricted entrance, an initial sump, a short dry section, and further sumps beyond. White limestone walls, tight passages, and changing morphology make it an excellent objective for qualified sidemount cave divers.',
+  //     tags: ['Challenging', 'Multiple sumps', 'Sidemount only'],
+  //     images: [
+  //       '/images/caves/maseduoe-1.jpg',
+  //       '/images/caves/maseduoe-2.jpg',
+  //       '/images/caves/maseduoe-3.jpg',
+  //     ],
+  //   },
 ];
