@@ -42,13 +42,14 @@ export const openWater = [
       // hidden: 'https://images.unsplash.com/photo-1583212292454-1fe6229603b7?w=900&q=70&auto=format&fit=crop',
     ],
   },
-  {
-    name: 'Le Gorgonie',
-    access: 'Boat access · ~50 m',
-    description: 'A deep reef north of Cala Gonone, descending to approximately 50 metres. Le Gorgonie is defined by steep rocky terrain, clear open water, and extensive growths of Mediterranean gorgonians that become increasingly prominent with depth.',
-    tags: ['Reef', 'Deep', 'Gorgonians'],
-    images: ['https://images.unsplash.com/photo-1518467166778-b88f373ffec7?w=900&q=70&auto=format&fit=crop'],
-  },
+  // Hidden for now: Le Gorgonie
+  //   {
+  //     name: 'Le Gorgonie',
+  //     access: 'Boat access · ~50 m',
+  //     description: 'A deep reef north of Cala Gonone, descending to approximately 50 metres. Le Gorgonie is defined by steep rocky terrain, clear open water, and extensive growths of Mediterranean gorgonians that become increasingly prominent with depth.',
+  //     tags: ['Reef', 'Deep', 'Gorgonians'],
+  //     images: ['https://images.unsplash.com/photo-1518467166778-b88f373ffec7?w=900&q=70&auto=format&fit=crop'],
+  //   },
   {
     name: 'Galleria & Swim-throughs',
     access: 'Boat access · Shallow',
@@ -75,7 +76,7 @@ export const openWater = [
       { src: '/images/training-site-3.jpg', alt: 'Diver making the OK sign over a seagrass meadow' },
       { src: '/images/training-site-4.jpg', alt: 'Diver in a mask swimming toward the camera over seagrass' },
       { src: '/images/training-site-5.jpg', alt: 'Divers with DPVs crossing a sandy patch between seagrass beds' },
-      'https://images.unsplash.com/photo-1559825481-12a05cc00344?w=900&q=70&auto=format&fit=crop',
+      // hidden: 'https://images.unsplash.com/photo-1559825481-12a05cc00344?w=900&q=70&auto=format&fit=crop',
     ],
   },
 ];
