@@ -39,7 +39,7 @@ export const openWater = [
         credit: 'Kees.BL',
         url: 'https://sketchfab.com/3d-models/nasello-9671bbd86d214a428a5ab8d4d94bd1ab'
       },
-      'https://images.unsplash.com/photo-1583212292454-1fe6229603b7?w=900&q=70&auto=format&fit=crop',
+      // hidden: 'https://images.unsplash.com/photo-1583212292454-1fe6229603b7?w=900&q=70&auto=format&fit=crop',
     ],
   },
   {
