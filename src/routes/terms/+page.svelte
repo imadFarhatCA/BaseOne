@@ -19,8 +19,8 @@
     <p class="section-label">Coming Soon</p>
     <h2>Full terms are being finalised.</h2>
     <p class="lead mt-sm">Please contact us directly at <a href="mailto:info@baseone.it">info@baseone.it</a> for any questions about our booking terms, cancellation policy, or liability.</p>
-    <p class="mt-sm">Key points in the meantime:</p>
-    <ul class="check-list mt-md">
+    <p class="lead mt-sm">Key points in the meantime:</p>
+    <ul class="check-list terms-list mt-md">
       <li>Cancellations less than 12 hours before a dive are charged at 100%.</li>
       <li>No-shows are charged in full.</li>
       <li>All divers must complete a Liability Release before their first dive.</li>
@@ -31,3 +31,8 @@
     </div>
   </div>
 </section>
+
+<style>
+  /* Bullets use the same font, size and colour as the paragraphs above them */
+  .terms-list li { font-size: clamp(1.05rem, 2vw, 1.2rem); line-height: 1.7; color: var(--text-muted); }
+</style>
