@@ -111,7 +111,7 @@
 </section>
 
 <!-- ── Phreatic ─────────────────────────────────────────────── -->
-<section class="section phreatic-section">
+<section class="section section-alt phreatic-section">
   <div class="container">
     <div class="section-header blur-reveal">
       <p class="section-label">Citizen Science &amp; Community</p>
