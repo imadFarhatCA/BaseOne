@@ -30,7 +30,7 @@
   }
 </script>
 
-<div class="image-carousel" class:dark={theme === 'dark'} class:has-video={images.some((i) => i.video)} class:has-model={images.some((i) => i.model)}>
+<div class="image-carousel" class:dark={theme === 'dark'} class:all-video={images.length > 0 && images.every((i) => i.video)} class:has-model={images.some((i) => i.model)}>
   {#if showArrows && !hideNav}
     <div class="image-carousel-nav">
       <button class="gallery-arrow" type="button" on:click={() => scroll(-1)} aria-label="Previous" disabled={atStart}>←</button>
@@ -58,12 +58,13 @@
 <style>
   .image-carousel { position: relative; }
   /* When a carousel mixes videos and photos, all cards share the video height */
-  .image-carousel.has-video :global(.gallery-card) { height: clamp(380px, 46vw, 440px) !important; flex: 0 0 min(250px, 62vw) !important; }
+  /* Only a carousel made purely of videos gets tall portrait cards; mixed ones keep the standard card size */
+  .image-carousel.all-video :global(.gallery-card) { height: clamp(380px, 46vw, 440px) !important; flex: 0 0 min(250px, 62vw) !important; }
   /* 3D model card: wider and taller so the model is comfortable to explore */
   .image-carousel.has-model :global(.gallery-card) { height: clamp(320px, 38vw, 420px) !important; }
   :global(.gallery-card-model) { flex: 0 0 min(640px, 86vw) !important; }
   /* Portrait video cards */
-  :global(.gallery-card-video) { flex: 0 0 min(250px, 62vw) !important; height: clamp(380px, 46vw, 440px) !important; }
+  .image-carousel.all-video :global(.gallery-card-video) { flex: 0 0 min(250px, 62vw) !important; height: clamp(380px, 46vw, 440px) !important; }
   :global(.gallery-card-video video) { width: 100%; height: 100%; object-fit: cover; display: block; }
   :global(.gallery-card) { position: relative; }
   .gallery-credit {
