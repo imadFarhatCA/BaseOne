@@ -11,11 +11,8 @@
   // ── Base One Experience ──
   const experienceShots = [
     { src: '/images-experience/exp-1.jpg', alt: 'Diver in a drysuit and rebreather on a boat at sea' },
-    { src: '/images-experience/exp-2.jpg', alt: 'Base One team members at the helm of the boat' },
     { src: '/images-experience/exp-3.jpg', alt: 'Diver adjusting a hood before a dive' },
-    { src: '/images-experience/exp-4.jpg', alt: 'Diver at the surface holding a DPV' },
     { src: '/images-experience/exp-5.jpg', alt: 'Technical diver in a drysuit and rebreather aboard the boat' },
-    { src: '/images-experience/exp-6.jpg', alt: 'Looking out to a Base One RIB on the water' },
     { src: '/images-experience/exp-7.jpg', alt: 'Divers in drysuits seated on the boat before a dive' },
     { src: '/images-experience/exp-8.jpg', alt: 'Divers checking equipment before a dive' },
     { src: '/images-experience/exp-9.jpg', alt: 'Divers carrying gear along the rocky shore' },
