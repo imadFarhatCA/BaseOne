@@ -10,15 +10,15 @@
 
   // ── Base One Experience ──
   const experienceShots = [
-    { src: '/images-experience/exp-1.jpg', alt: 'Four smiling Base One team members in Cala Gonone' },
-    { src: '/images-experience/exp-2.jpg', alt: 'Divers jumping into the sea together below the cliffs' },
+    { src: '/images-experience/exp-1.jpg', alt: 'Diver in a drysuit and rebreather on a boat at sea' },
+    { src: '/images-experience/exp-2.jpg', alt: 'Base One team members at the helm of the boat' },
     { src: '/images-experience/exp-3.jpg', alt: 'Diver adjusting a hood before a dive' },
-    { src: '/images-experience/exp-4.jpg', alt: 'Two Base One team members relaxing on the seafront' },
-    { src: '/images-experience/exp-5.jpg', alt: 'Group selfie with gelato in Cala Gonone' },
+    { src: '/images-experience/exp-4.jpg', alt: 'Diver at the surface holding a DPV' },
+    { src: '/images-experience/exp-5.jpg', alt: 'Technical diver in a drysuit and rebreather aboard the boat' },
     { src: '/images-experience/exp-6.jpg', alt: 'Looking out to a Base One RIB on the water' },
-    { src: '/images-experience/exp-7.jpg', alt: 'Divers smiling for a selfie on the boat in the marina' },
-    { src: '/images-experience/exp-8.jpg', alt: 'Group of divers laughing together on the boat' },
-    { src: '/images-experience/exp-9.jpg', alt: 'Divers in drysuits on a RIB below the Cala Gonone cliffs' },
+    { src: '/images-experience/exp-7.jpg', alt: 'Divers in drysuits seated on the boat before a dive' },
+    { src: '/images-experience/exp-8.jpg', alt: 'Divers checking equipment before a dive' },
+    { src: '/images-experience/exp-9.jpg', alt: 'Divers carrying gear along the rocky shore' },
   ];
 
   // ── Topside activities (for non-divers) - verified placeholders, swap later ──
@@ -106,8 +106,8 @@
   {/if}
   <div class="hero-content">
     <div class="eyebrow stone">Cala Gonone, Sardinia</div>
-    <h1>Serious Diving,<br>Properly Supported</h1>
-    <p class="hero-sub">Cave diving, training, projects, and expedition-level logistics from Cala Gonone, Sardinia.</p>
+    <h1>Built for Mastery,<br>Ready for Anything</h1>
+    <p class="hero-sub">Cave and Technical diving training, exploration projects and expedition-level logistics for individuals and teams in Cala Gonone, Sardinia</p>
     <ul class="hero-highlights">
       <li>Cave &amp; CCR</li><li>Tech &amp; Open Water</li><li>GUE Training Hub</li><li>AION Group</li>
     </ul>
